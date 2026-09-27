@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    border-bottom: 2px solid #333;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+nav a {
+    margin-right: 1rem;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.projet {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+footer {
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #777;
+}
