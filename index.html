@@ -9,200 +9,360 @@
 <body>
     <header>
         <h1>Jules Thurel</h1>
-        <p>Élève-ingénieur ENSEEIHT · Génie électrique et électronique</p>
+        <p>Engineering student · ENSEEIHT · Electrical and Electronics Engineering</p>
     </header>
 
     <nav>
-        <a href="#presentation">Présentation</a>
-        <a href="#formation">Formation</a>
-        <a href="#experiences">Expériences</a>
-        <a href="#projets">Projets futurs</a>
-        <a href="#mobilite">Mobilité internationale</a>
-        <a href="#sport">Sport / Activités</a>
+        <a href="#welcome">Welcome</a>
+        <a href="#engineering">Engineering</a>
+        <a href="#career">Career</a>
+        <a href="#mobility">Mobility</a>
+        <a href="#civic">Civic Engagement</a>
+        <a href="#activities">Activities</a>
+        <a href="#contact">Contact</a>
     </nav>
 
     <main>
-        <section id="presentation">
-            <h2>Présentation</h2>
+        <section id="welcome">
+            <h2>Welcome</h2>
             <p>
-                J'ai 20 ans et je suis actuellement élève-ingénieur à l'ENSEEIHT (N7) à Toulouse,
-                en filière 3EA (Énergie Électrique, Électronique, Automatique).
+                I am 20 years old and I am currently an engineering student at ENSEEIHT (N7) in Toulouse, in the 3EA program (Electrical Energy, Electronics, Automation).
             </p>
             <p>
-                Passionné par l'électronique de puissance et les systèmes autonomes, j'aime
-                concevoir, simuler et tester des montages concrets. Mon stage au CERN et mon
-                projet personnel de convertisseur Buck en classes préparatoires m'ont confirmé
-                cette vocation.
+                Driven by a passion for power electronics and autonomous systems, I thrive on designing, simulating, and testing practical circuits. My internship at CERN and a personal Buck converter project during my preparatory studies cemented this ambition.
             </p>
             <p>
-                Je mets à profit ma méthode et mon sérieux dans tout domaine proche de la
-                conception en électronique. Titulaire du permis B, je suis mobile pour des
-                stages ou des projets en France comme à l'étranger.
+                I apply my method and my rigor in every field related to electronic design.
             </p>
         </section>
 
-        <section id="formation">
-            <h2>Formation</h2>
-
-            <article class="item">
-                <h3>ENSEEIHT — École d'ingénieurs (Toulouse)</h3>
-                <p class="dates">2026 — aujourd'hui</p>
+        <section id="engineering">
+            <h2>Engineering course</h2>
+            <h3>Skills</h3>
+            <div class="skills-container">
+        
+                <!-- Colonne 1 -->
+                <div class="skill-column">
+                    <strong>
+                        Programmation :
+                    </strong>
+                    <div class="skill-row">
+            
+                        <img src="./logo/Py.png" height="50" alt="logo Python">
+                        <p>Python</p> 
+                    </div>
+                    <div class="skill-row">           
+                        <img src="./logo/C_logo.png" height="50" alt="logo C">
+                        <p>C</p>
+                    </div>
+                    <div class="skill-row">           
+                        <img src="./logo/cpp.png" height="50" alt="logo C++">
+                        <p>C++</p>
+                </div>
+            </div>
+            
+            <!-- Colonne 2 -->
+            <div class="skill-column">
+                <strong>
+                    Simulation & calculs :
+                </strong>
+                <div class="skill-row">
+                    <img src="./logo/ltspice_logo.png" height="50" alt="logo LTspice">
+                    <p>LTspice</p>
+                </div>
+                <div class="skill-row">
+                    <img src="./logo/Matlab_Logo.png" height="50" alt="logo Matlab">
+                    <p>Matlab/Simulink</p>
+                </div>
+                <div class="skill-row">
+                    <img src="./logo/Octave_logo.png" height="50" alt="logo Octave">
+                    <p>Octave</p>
+                </div>
+            </div>
+            
+            <!-- Colonne 3 -->
+            <div class="skill-column">
+                <strong>
+                    Operating Systems :
+                </strong>
+                <div class="skill-row">
+                    <img src="./logo/Debian_logo.png" height="50" alt="logo Debian">
+                    <p>Debian</p>
+                </div>
+                <div class="skill-row">
+                    <img src="./logo/raspberry_logo.png" height="50" alt="logo Raspberry Pi">
+                    <p>Raspberry Pi</p>
+                </div>
+                <div class="skill-row">
+                    <img src="./logo/Arduino_logo.svg" height="40" alt="logo Arduino">
+                    <p>Arduino</p>
+                </div>
+            </div>
+            </div>
+        <h3>Projects</h3>
+            <div class="projects-container">
                 <p>
-                    Filière 3EA : Énergie Électrique, Électronique, Automatique.<br>
-                    1ère année du cycle ingénieur, avec une forte composante en systèmes
-                    électriques, commande et électronique de puissance.
+                    <li><strong>Power electronics :</strong></li> Design and simulation of a Buck converter in LTspice, implemented on a breadboard with real components, achieving efficient voltage regulation. Focused on automation and regulation techniques, including PI control and feedback loops.
                 </p>
-            </article>
 
-            <article class="item">
-                <h3>Les Lazaristes — CPGE (Lyon)</h3>
-                <p class="dates">2024 — 2026</p>
-                <p>
-                    Classes Préparatoires aux Grandes Écoles, filière MPSI puis PSI
-                    (Physique et Sciences de l'Ingénieur).<br>
-                    Bases solides en mathématiques, physique et sciences de l'ingénieur.
-                </p>
-            </article>
 
-            <article class="item">
-                <h3>Lycée International (Ferney-Voltaire)</h3>
-                <p class="dates">2021 — 2024</p>
+
+                <div class="carousel">
+                    <div class="slider" role="region" aria-label="Images du projet électronique">
+                        <input type="radio" name="project-slide" id="s1" checked>
+                        <input type="radio" name="project-slide" id="s2">
+                        <input type="radio" name="project-slide" id="s3">
+                        <input type="radio" name="project-slide" id="s4">
+                        <input type="radio" name="project-slide" id="s5">
+                        <input type="radio" name="project-slide" id="s6">
+                        <div class="slides">
+                            <figure class="slide">
+                                <img src="photo tipe/angle_breadboard.png" alt="Convertisseur Buck">
+                                <figcaption>Réalisation sur une breadboard d'un asservissement en tension analogique d'un convertisseur Buck dans le cadre de mon TIPE. Ce projet m'a permis de comprendre les principes de base de l'électronique de puissance et de l'automatique.</figcaption>
+                            </figure>
+                            <figure class="slide">
+                                <img src="photo tipe/circuit.png" alt="Circuit électronique">
+                                <figcaption>Schéma de principe représentant les différentes connexions entre les composants majeurs :<br> La partie de puissance : étage de commutation et filtre LC du buck.<br> La partie de commande : le correcteur PI / Le PWM / le driver high-side.</figcaption>
+                            </figure>
+                            <figure class="slide">
+                                <img src="photo tipe/tipe_jules_pv.png" alt="jules avec tipe">
+                                <figcaption>Essai en condition réelle avec panneau photovoltaïque.</figcaption>
+                            </figure>
+                            <figure class="slide">
+                                <img src="photo tipe/multimeter.png" alt="test en condition réelledu buckavec panneau solaire">
+                                <figcaption>Mesure du bon fonctionnement de la régulation du buck en condition réelle avec panneau solaire. <br>
+                                Tension de sortie = 5.01V pour une tension d'entrée Vref = 5.0V</figcaption>
+                            </figure>
+                            <figure class="slide">
+                                <img src="photo tipe/FTBFG.png" alt="Gain en fonction en boucle fermée">
+                                <figcaption>Réalisation de la fonction de transfert en boucle fermée en gain à l'aide d'un TFA. <br>
+                                Vérification de la cohérence de la simulation avec la mesure.</figcaption>
+                            </figure>
+                            <figure class="slide">
+                                <img src="photo tipe/FTBFP.png" alt="phase de la FTBF">
+                                <figcaption>Réalisation de la fonction de transfert en boucle fermée en phase à l'aide d'un TFA.<br> 
+                                Vérification de la cohérence de la simulation avec la mesure.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="nav">
+                            <label for="s6" class="prev prev-s1" aria-label="Image précédente">&lt;</label>
+                            <label for="s1" class="prev prev-s2" aria-label="Image précédente">&lt;</label>
+                            <label for="s2" class="prev prev-s3" aria-label="Image précédente">&lt;</label>
+                            <label for="s3" class="prev prev-s4" aria-label="Image précédente">&lt;</label>
+                            <label for="s4" class="prev prev-s5" aria-label="Image précédente">&lt;</label>
+                            <label for="s5" class="prev prev-s6" aria-label="Image précédente">&lt;</label>
+                            <label for="s2" class="next next-s1" aria-label="Image suivante">&gt;</label>
+                            <label for="s3" class="next next-s2" aria-label="Image suivante">&gt;</label>
+                            <label for="s4" class="next next-s3" aria-label="Image suivante">&gt;</label>
+                            <label for="s5" class="next next-s4" aria-label="Image suivante">&gt;</label>
+                            <label for="s6" class="next next-s5" aria-label="Image suivante">&gt;</label>
+                            <label for="s1" class="next next-s6" aria-label="Image suivante">&gt;</label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
                 <p>
-                    Spécialités scientifiques avec option Maths Expertes et Anglais Euro.<br>
-                    Baccalauréat mention Très Bien, avec félicitations du jury.
+                    <li><strong>Arduino project : (Not finished)</strong></li> Development of a radar using Arduino, integrating sensors, servomotors and displays.
                 </p>
-            </article>
+                <p>
+                    <li><strong>TFA control :</strong></li> Implementation of a python code that controls a TFA (Transfer Function Analyser) via serial ports, allowing for automated measurements and data acquisition.
+                </p>
+            </div>
+        <h3>N7 Clubs</h3>
+            <div class="clubs-list">
+                <article class="club-card">
+                    <img src="./logo/7robot_logo.png" alt="Logo 7Robot">
+                    <div>
+                        <h4>7Robot</h4>
+                        <p>Participation in the N7 robotics club, where I contributed to the design and programming of autonomous robots for competitions.</p>
+                    </div>
+                </article>
+                <article class="club-card">
+                    <img src="./logo/racingteam_logo.jpeg" alt="Logo N7 Racing Team">
+                    <div>
+                        <h4>Racing Team</h4>
+                        <p>Participation in the N7 racing car building club, where I contribute in the implementation and the regulation of the battery systems of an complete electric car</p>
+                    </div>
+                </article>
+            </div>
+
         </section>
 
-        <section id="experiences">
-            <h2>Expériences</h2>
-
-            <article class="item">
-                <h3>Stage au CERN</h3>
-                <p class="dates">2023 — 1 semaine</p>
-                <p>
-                    Initiative personnelle : immersion au sein d'une section spécialisée
-                    dans le design de convertisseurs de puissance.
-                </p>
-                <p>
-                    Développement d'un programme Python pour piloter un TFA
-                    (Transfer Function Analyser) : paramétrage, traitement et export
-                    des résultats en CSV.
-                </p>
-            </article>
-
-            <article class="item">
-                <h3>Club de robotique de l'N7 et Racing Team</h3>
-                <p class="dates">2026 — aujourd'hui</p>
-                <p>
-                    Participation aux projets techniques du club de robotique de l'ENSEEIHT
-                    et à la Racing Team 2026.
-                </p>
-            </article>
-
-            <article class="item">
-                <h3>Cours particuliers en maths et physique-chimie</h3>
-                <p class="dates">2026</p>
-                <p>
-                    Dispense de cours particuliers pour des élèves de niveau lycée.
-                </p>
-            </article>
+        <section id="career">
+            <h2>Career</h2>
+            <p>
+                I am currently seeking an internship in the field of power electronics, autonomous systems, or embedded systems.
+            </p>
+            <div class="profile-links">
+                <a class="profile-button" href="./cv-jules-thurel_V6.pdf" download>CV (français)</a>
+                <a class="profile-button" href="./cv-jules-thurel_Vfinal_anglais.pdf" download>CV (English)</a>
+                <a class="profile-button" href="https://www.linkedin.com/in/jules-thurel-329495418/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <br>
+            </div>
+            <h3>Inspiring Engineers</h3>
+            <div class="slider profile-carousel" role="region" aria-label="Profils d'ingénieurs inspirants">
+                <input type="radio" name="career-profile" id="career-profile-bruno" checked>
+                <input type="radio" name="career-profile" id="career-profile-tony">
+                <input type="radio" name="career-profile" id="career-profile-yves">
+                <div class="profile-slides">
+                    <article class="profile-slide">
+                        <img class="profile-avatar" src="./logo/profil_logo.png" alt="Logo de profil de Bruno">
+                        <h3>Bruno</h3>
+                        <p>Ingénieur en électronique de puissance, il conçoit des convertisseurs et suit leurs essais. Il aime voir ses prototypes fonctionner en conditions réelles, mais apprécie moins le temps consacré aux rapports et aux procédures de validation.</p>
+                    </article>
+                    <article class="profile-slide">
+                        <img class="profile-avatar" src="./logo/profil_logo.png" alt="Logo de profil de Tony">
+                        <h3>Tony</h3>
+                        <p>Ingénieur en systèmes embarqués, il développe des cartes électroniques et leur logiciel. Il aime mêler matériel et programmation, mais trouve parfois le débogage de problèmes intermittents frustrant.</p>
+                    </article>
+                    <article class="profile-slide">
+                        <img class="profile-avatar" src="./logo/profil_logo.png" alt="Logo de profil de Yves">
+                        <h3>Yves</h3>
+                        <p>Ingénieur en réseaux électriques, il étudie le raccordement des énergies renouvelables. Il aime contribuer à la transition énergétique, mais apprécie moins les contraintes réglementaires et les délais des grands projets.</p>
+                    </article>
+                </div>
+                <div class="nav">
+                    <label for="career-profile-yves" class="prev prev-profile-bruno" aria-label="Profil précédent">&lt;</label>
+                    <label for="career-profile-bruno" class="prev prev-profile-tony" aria-label="Profil précédent">&lt;</label>
+                    <label for="career-profile-tony" class="prev prev-profile-yves" aria-label="Profil précédent">&lt;</label>
+                    <label for="career-profile-tony" class="next next-profile-bruno" aria-label="Profil suivant">&gt;</label>
+                    <label for="career-profile-yves" class="next next-profile-tony" aria-label="Profil suivant">&gt;</label>
+                    <label for="career-profile-bruno" class="next next-profile-yves" aria-label="Profil suivant">&gt;</label>
+                </div>
+            </div>
         </section>
 
-        <section id="projets">
-            <h2>Projets futurs</h2>
-
-            <article class="item">
-                <h3>Approfondir l'électronique de puissance</h3>
-                <p>
-                    Concevoir des convertisseurs plus complexes (flyback, forward, onduleurs)
-                    et améliorer les boucles d'asservissement, en passant du mode tension
-                    au mode courant.
-                </p>
-            </article>
-
-            <article class="item">
-                <h3>Systèmes autonomes et mécatronique</h3>
-                <p>
-                    Développer des projets combinant électronique de puissance, commande
-                    et mécanique : drones, robots mobiles, systèmes embarqués sur
-                    Raspberry Pi ou Arduino.
-                </p>
-            </article>
-
-            <article class="item">
-                <h3>Stage en entreprise à l'international</h3>
-                <p>
-                    Effectuer un stage dans un laboratoire ou une entreprise spécialisée
-                    en électronique de puissance, si possible à l'étranger, pour confronter
-                    ma formation à d'autres méthodes de travail.
-                </p>
-            </article>
+        <section id="mobilty">
+            <h2>International mobility</h2>
+            <p>
+                for mobility .... .
+            </p>
+            <p>
+                C1 level in English <br> A2 level in Spanish
+            </p>
+               
+            
         </section>
 
-        <section id="mobilite">
-            <h2>Mobilité internationale</h2>
-
-            <article class="item">
-                <h3>Anglais — niveau C1</h3>
-                <p>
-                    Capacité à suivre des cours, rédiger des rapports techniques et
-                    échanger professionnellement en anglais. Utilisé quotidiennement
-                    dans la documentation technique et les projets.
-                </p>
-            </article>
-
-            <article class="item">
-                <h3>Espagnol — niveau A2</h3>
-                <p>
-                    Bases conversationnelles, en cours d'amélioration.
-                </p>
-            </article>
-
-            <article class="item">
-                <h3>Expérience internationale</h3>
-                <p>
-                    Scolarité au Lycée International de Ferney-Voltaire (section Anglais Euro),
-                    à proximité de Genève, avec un environnement multiculturel.
-                </p>
-                <p>
-                    Stage au CERN (Genève, Suisse), dans un contexte scientifique
-                    international.
-                </p>
-            </article>
+        <section id="civic">
+            <h2>Civic Engagement</h2>
+            <div class="civic-list">
+                <article class="civic-bubble">
+                    <h3>Ingé+</h3>
+                    <p>Ma participation à Ingé+ me permet de contribuer à une initiative collective et à la vie étudiante. Elle valorise l’engagement, l’écoute et l’esprit d’équipe.</p>
+                </article>
+                <article class="civic-bubble">
+                    <h3>Le procès de King Kong</h3>
+                    <p>Cette expérience de pièce de théatre intéractive sur le harcèlement et les violences sexuelles et sexiste fut une expérience enrichissante et ...</p>
+                </article>
+                <article class="civic-bubble">
+                    <h3>Clean Walk à Toulouse</h3>
+                    <p>Participer à une Clean Walk contribue à garder les espaces publics plus propres et à sensibiliser à la réduction des déchets, dans un esprit d’action collective et écologique.</p>
+                </article>
+            </div>
         </section>
 
-        <section id="sport">
-            <h2>Sport / Activités</h2>
+        <section id="activities">
+            <h2>Sports & activities</h2>
+            <div class="activities-list">
+                <article class="activity-item">
+                    <div class="activity-gallery activity-gallery-static">
+                        <img src="baketball.jpg" alt="Terrain de basketball">
+                    </div>
+                    <div class="activity-copy">
+                        <h3>Club de basketball</h3>
+                        <p>Pratique du basket-ball en club de 2018-2024. Implication dans la vie associative de mon club.</p>
+                        <p>Reprise de l'activité depuis 2026 avec l'AS INP de Toulouse.</p>
+                    </div>
+                </article>
+                <article class="activity-item">
+                    <div class="activity-gallery activity-gallery-static">
+                        <img src="piscine.jpg" alt="Piscine">
+                    </div>
+                    <div class="activity-copy">
+                        <h3>Natation et chasse sous-marine</h3>
+                        <p>Pratique de la natation depuis 2012. </p>
+                        <p>Pratique de la chasse sous-marine depuis mes 16 ans, respect de l'environnement.</p>
+                    </div>
+                </article>
+                <article class="activity-item">
+                    <div class="activity-gallery" data-activity-gallery role="group" aria-label="Photos de voiture radiocommandée">
+                        <div class="activity-gallery-track">
+                            <img src="RC-car.jpg" alt="Voiture radiocommandée, vue avant">
+                            <img src="RC-car-back.jpg" alt="Voiture radiocommandée, vue arrière">
+                        </div>
+                        <button class="gallery-control previous" type="button" aria-label="Photo précédente">&lsaquo;</button>
+                        <button class="gallery-control next" type="button" aria-label="Photo suivante">&rsaquo;</button>
+                    </div>
+                    <div class="activity-copy">
+                        <h3>Voitures RC</h3>
+                        <p>Pratique de la voiture radiocommandée depuis 2015, passion pour l'électronique et la mécanique. Montage de ma propre voiture avec kit en 2019.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-            <article class="item">
-                <h3>Basketball en club</h3>
-                <p>
-                    Pratique régulière en compétition, qui m'a appris la rigueur,
-                    l'esprit d'équipe et la gestion du stress.
-                </p>
-            </article>
-
-            <article class="item">
-                <h3>Natation et pêche sous-marine</h3>
-                <p>
-                    Activités qui développent l'endurance, la concentration et
-                    le respect du milieu naturel.
-                </p>
-            </article>
-
-            <article class="item">
-                <h3>Modélisme et échecs</h3>
-                <p>
-                    Voitures RC : plaisir de concevoir, régler et piloter des modèles réduits.<br>
-                    Échecs : goût de la stratégie et de l'analyse posée.
-                </p>
-            </article>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>
+                <strong>Telephone : </strong>07 69 74 07 43<br>
+                 <strong>e-mail : </strong><a href="mailto:jules.thurel@thurel.fr">jules.thurel@thurel.fr</a><br>
+                <strong>Linkedin : </strong><a href="https://www.linkedin.com/in/jules-thurel-329495418/">linkedin</a>
+            </p>
+            
         </section>
     </main>
 
     <footer>
         <p>© 2026 Jules Thurel · <a href="mailto:jules.thurel@thurel.fr">jules.thurel@thurel.fr</a></p>
     </footer>
+    <script>
+        document.querySelectorAll("[data-activity-gallery]").forEach((gallery) => {
+            const track = gallery.querySelector(".activity-gallery-track");
+            const photos = Array.from(track.querySelectorAll("img"));
+            let activeIndex = 0;
+            let pointerStart = null;
+
+            const showPhoto = (index) => {
+                activeIndex = (index + photos.length) % photos.length;
+                track.style.transform = `translateX(-${activeIndex * 50}%)`;
+                photos.forEach((photo, photoIndex) => {
+                    photo.setAttribute("aria-hidden", String(photoIndex !== activeIndex));
+                });
+            };
+
+            gallery.querySelector(".previous").addEventListener("click", () => showPhoto(activeIndex - 1));
+            gallery.querySelector(".next").addEventListener("click", () => showPhoto(activeIndex + 1));
+            gallery.addEventListener("pointerdown", (event) => {
+                pointerStart = { x: event.clientX, y: event.clientY };
+            });
+            gallery.addEventListener("pointerup", (event) => {
+                if (!pointerStart) return;
+                const deltaX = event.clientX - pointerStart.x;
+                const deltaY = event.clientY - pointerStart.y;
+                pointerStart = null;
+                if (Math.abs(deltaX) > 40 && Math.abs(deltaX) > Math.abs(deltaY)) {
+                    showPhoto(activeIndex + (deltaX < 0 ? 1 : -1));
+                }
+            });
+            gallery.addEventListener("pointercancel", () => {
+                pointerStart = null;
+            });
+            showPhoto(activeIndex);
+        });
+
+        const activitiesLink = document.querySelector('nav a[href="#activities"]');
+        const activityItems = Array.from(document.querySelectorAll("#activities .activity-item"));
+
+        activitiesLink.addEventListener("click", () => {
+            activityItems.forEach((item, index) => {
+                item.classList.remove("activity-enter");
+                item.style.setProperty("--activity-delay", `${index * 500}ms`);
+            });
+            void activityItems[0].offsetWidth;
+            activityItems.forEach((item) => item.classList.add("activity-enter"));
+        });
+    </script>
 </body>
 </html>

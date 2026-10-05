@@ -65,6 +65,30 @@ section p {
     margin-bottom: 0.8rem;
 }
 
+.profile-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+}
+
+.profile-button {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    border: 1px solid #0066cc;
+    border-radius: 4px;
+    background: #0066cc;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+.profile-button:hover {
+    background: #fff;
+    color: #0066cc;
+}
+
 .item {
     background: #f9f9f9;
     padding: 1rem 1.2rem;
@@ -85,6 +109,360 @@ section p {
     margin-bottom: 0.5rem;
 }
 
+.skills-container {
+    display: flex;              /* met les 2 colonnes côte à côte */
+    justify-content: center;    /* centre le tout horizontalement */
+    gap: 80px;                  /* espace entre les 2 colonnes */
+}
+
+.skill-column {
+    display: flex;
+    flex-direction: column;     /* empile les skills verticalement */
+    gap: 10px;
+}
+
+.skill-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.skill-row p {
+    margin: 0;
+}
+.skill-row img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.slides {
+    display: flex;
+    width: 600%;
+    transition: transform 1.5s ease;
+}
+
+.slide {
+    flex: 0 0 16.666667%;
+    width: 16.666667%;
+    margin: 0;
+}
+
+.slide img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+}
+
+.slide figcaption {
+    height: 8rem;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 3.5rem;
+    color: #333;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.slide figcaption.caption-list {
+    display: block;
+    text-align: left;
+}
+
+.caption-list p {
+    margin: 0 0 0.25rem;
+}
+
+.caption-list ul {
+    margin: 0 0 0.5rem 1.25rem;
+}
+
+.caption-list li {
+    padding-left: 0.15rem;
+}
+
+#s1:checked ~ .slides { transform: translateX(0); }
+#s2:checked ~ .slides { transform: translateX(-16.666667%); }
+#s3:checked ~ .slides { transform: translateX(-33.333333%); }
+#s4:checked ~ .slides { transform: translateX(-50%); }
+#s5:checked ~ .slides { transform: translateX(-66.666667%); }
+#s6:checked ~ .slides { transform: translateX(-83.333333%); }
+
+.nav label {
+    position: absolute;
+    top: calc((100% - 8rem) / 2);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    line-height: 1;
+    user-select: none;
+}
+
+.nav .prev { left: 12px; }
+.nav .next { right: 12px; }
+
+#s1:checked ~ .nav .prev-s1,
+#s1:checked ~ .nav .next-s1,
+#s2:checked ~ .nav .prev-s2,
+#s2:checked ~ .nav .next-s2,
+#s3:checked ~ .nav .prev-s3,
+#s3:checked ~ .nav .next-s3,
+#s4:checked ~ .nav .prev-s4,
+#s4:checked ~ .nav .next-s4,
+#s5:checked ~ .nav .prev-s5,
+#s5:checked ~ .nav .next-s5,
+#s6:checked ~ .nav .prev-s6,
+#s6:checked ~ .nav .next-s6 { display: flex; }
+
+.slider:has(input:focus-visible) .nav label {
+    outline: 2px solid #0066cc;
+    outline-offset: 2px;
+}
+
+.profile-slides {
+    display: flex;
+    width: 300%;
+    transition: transform 1.5s ease;
+}
+
+.profile-slide {
+    display: flex;
+    flex: 0 0 33.333333%;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 3.5rem;
+    text-align: center;
+}
+
+.profile-avatar {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 0.75rem;
+    object-fit: contain;
+}
+
+.profile-slide h3 {
+    margin-bottom: 0.5rem;
+    color: #245b85;
+}
+
+.profile-slide p {
+    max-width: 60ch;
+    margin: 0;
+}
+
+#career-profile-bruno:checked ~ .profile-slides { transform: translateX(0); }
+#career-profile-tony:checked ~ .profile-slides { transform: translateX(-33.333333%); }
+#career-profile-yves:checked ~ .profile-slides { transform: translateX(-66.666667%); }
+
+#career-profile-bruno:checked ~ .nav .prev-profile-bruno,
+#career-profile-bruno:checked ~ .nav .next-profile-bruno,
+#career-profile-tony:checked ~ .nav .prev-profile-tony,
+#career-profile-tony:checked ~ .nav .next-profile-tony,
+#career-profile-yves:checked ~ .nav .prev-profile-yves,
+#career-profile-yves:checked ~ .nav .next-profile-yves { display: flex; }
+
+.profile-carousel .nav label {
+    top: 50%;
+}
+
+.skills-container + h3 {
+    margin-top: 5rem;
+}
+
+.clubs-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.club-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0;
+    text-align: center;
+}
+
+.club-card img {
+    flex: 0 0 160px;
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+}
+
+.club-card h4 {
+    margin-bottom: 0.35rem;
+    color: #245b85;
+}
+
+.club-card p {
+    margin: 0;
+}
+
+.activities-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.activity-item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-areas: "image copy";
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid #d5e5f4;
+    border-radius: 6px;
+    background: #f3f8fc;
+    --activity-offset: -48px;
+}
+
+.activity-item:nth-child(even) {
+    grid-template-areas: "copy image";
+    --activity-offset: 48px;
+}
+
+.activity-item.activity-enter {
+    animation: activity-enter 650ms ease both;
+    animation-delay: var(--activity-delay, 0ms);
+}
+
+@keyframes activity-enter {
+    from {
+        opacity: 0;
+        transform: translateX(var(--activity-offset));
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.activity-gallery {
+    grid-area: image;
+    position: relative;
+    overflow: hidden;
+    min-height: 190px;
+    aspect-ratio: 16 / 9;
+    touch-action: pan-y;
+}
+
+.activity-gallery-track {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    width: 200%;
+    transition: transform 300ms ease;
+}
+
+.activity-gallery-track img {
+    flex: 0 0 50%;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.activity-gallery-static img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-control {
+    position: absolute;
+    top: 50%;
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    transform: translateY(-50%);
+    border: 0;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.gallery-control.previous {
+    left: 0.75rem;
+}
+
+.gallery-control.next {
+    right: 0.75rem;
+}
+
+.gallery-control:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+.activity-copy {
+    grid-area: copy;
+    display: grid;
+    gap: 0.4rem;
+    padding: 1.5rem;
+}
+
+.activity-copy h3 {
+    margin: 0;
+    color: #245b85;
+}
+
+.activity-copy p {
+    margin: 0;
+}
+                /* Civic engagement section styles */
+.civic-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    gap: 1rem;
+}
+
+.civic-bubble {
+    padding: 1.25rem;
+    border: 1px solid #d5e5f4;
+    border-radius: 8px;
+    background: #f3f8fc;
+}
+
+.civic-bubble h3 {
+    margin-bottom: 0.5rem;
+    color: #245b85;
+}
+
+.civic-bubble p {
+    margin: 0;
+}
+
 footer {
     border-top: 1px solid #ccc;
     padding-top: 1rem;
@@ -97,4 +475,37 @@ footer {
 footer a {
     color: #0066cc;
     text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .clubs-list {
+        grid-template-columns: 1fr;
+    }
+
+    .activity-item,
+    .activity-item:nth-child(even) {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "image"
+            "copy";
+    }
+
+    .activity-gallery {
+        min-height: 0;
+        aspect-ratio: 16 / 9;
+    }
+
+    .activity-copy {
+        padding: 1rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .activity-item.activity-enter {
+        animation: none;
+    }
+
+    .profile-slides {
+        transition: none;
+    }
 }
