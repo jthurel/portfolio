@@ -7,20 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Jules Thurel</h1>
-        <p>Engineering student · ENSEEIHT · Electrical and Electronics Engineering</p>
+    <header class="hero">
+        <div class="hero-copy">
+            <p class="hero-eyebrow">Portfolio · 3EA</p>
+            <h1>Jules Thurel</h1>
+            <p class="hero-role">Engineering student at ENSEEIHT <span>N7 · 3EA</span></p>
+            <p class="hero-focus">Power electronics, embedded systems and autonomous technologies.</p>
+        </div>
+        <div class="hero-portrait">
+            <img src="photo_acceui.jpg" alt="Portrait of Jules Thurel">
+        </div>
     </header>
 
-    <nav>
-        <a href="#welcome">Welcome</a>
-        <a href="#engineering">Engineering</a>
-        <a href="#career">Career</a>
-        <a href="#mobility">Mobility</a>
-        <a href="#civic">Civic Engagement</a>
-        <a href="#activities">Activities</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <div class="navigation-shell" data-navigation-shell>
+        <nav>
+            <a href="#welcome">Welcome</a>
+            <a href="#engineering">Engineering</a>
+            <a href="#career">Career</a>
+            <a href="#mobility">Mobility</a>
+            <a href="#civic">Civic Engagement</a>
+            <a href="#activities">Activities</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
 
     <main>
         <section id="welcome">
@@ -40,117 +49,78 @@
             <h2>Engineering course</h2>
             <h3>Skills</h3>
             <div class="skills-container">
-        
-                <!-- Colonne 1 -->
                 <div class="skill-column">
-                    <strong>
-                        Programmation :
-                    </strong>
-                    <div class="skill-row">
-            
-                        <img src="./logo/Py.png" height="50" alt="logo Python">
-                        <p>Python</p> 
-                    </div>
-                    <div class="skill-row">           
-                        <img src="./logo/C_logo.png" height="50" alt="logo C">
-                        <p>C</p>
-                    </div>
-                    <div class="skill-row">           
-                        <img src="./logo/cpp.png" height="50" alt="logo C++">
-                        <p>C++</p>
+                    <strong>Programmation :</strong>
+                    <div class="skill-row"><img src="./logo/Py.png" height="50" alt="logo Python"><p>Python</p></div>
+                    <div class="skill-row"><img src="./logo/C_logo.png" height="50" alt="logo C"><p>C</p></div>
+                    <div class="skill-row"><img src="./logo/cpp.png" height="50" alt="logo C++"><p>C++</p></div>
+                </div>
+                <div class="skill-column">
+                    <strong>Simulation &amp; calculs :</strong>
+                    <div class="skill-row"><img src="./logo/ltspice_logo.png" height="50" alt="logo LTspice"><p>LTspice</p></div>
+                    <div class="skill-row"><img src="./logo/Matlab_Logo.png" height="50" alt="logo Matlab"><p>Matlab/Simulink</p></div>
+                    <div class="skill-row"><img src="./logo/Octave_logo.png" height="50" alt="logo Octave"><p>Octave</p></div>
+                </div>
+                <div class="skill-column">
+                    <strong>Operating Systems :</strong>
+                    <div class="skill-row"><img src="./logo/Debian_logo.png" height="50" alt="logo Debian"><p>Debian</p></div>
+                    <div class="skill-row"><img src="./logo/raspberry_logo.png" height="50" alt="logo Raspberry Pi"><p>Raspberry Pi</p></div>
+                    <div class="skill-row"><img src="./logo/Arduino_logo.svg" height="40" alt="logo Arduino"><p>Arduino</p></div>
+                </div>
+                <div class="skill-column">
+                    <strong>soft skills :</strong>
+                    <div class="skill-row"><img src="./logo/pb_solving_logo.jpeg" height="40" alt="logo Problem Solving"><p>Problem Solving</p></div>
+                    <div class="skill-row"><img src="./logo/leader_logo.jpeg" height="50" alt="logo leadership"><p>Leadership</p></div>
+                    <div class="skill-row"><img src="./logo/com_logo.png" height="50" alt="logo Communication"><p>Communication</p></div>
                 </div>
             </div>
-            
-            <!-- Colonne 2 -->
-            <div class="skill-column">
-                <strong>
-                    Simulation & calculs :
-                </strong>
-                <div class="skill-row">
-                    <img src="./logo/ltspice_logo.png" height="50" alt="logo LTspice">
-                    <p>LTspice</p>
-                </div>
-                <div class="skill-row">
-                    <img src="./logo/Matlab_Logo.png" height="50" alt="logo Matlab">
-                    <p>Matlab/Simulink</p>
-                </div>
-                <div class="skill-row">
-                    <img src="./logo/Octave_logo.png" height="50" alt="logo Octave">
-                    <p>Octave</p>
-                </div>
-            </div>
-            
-            <!-- Colonne 3 -->
-            <div class="skill-column">
-                <strong>
-                    Operating Systems :
-                </strong>
-                <div class="skill-row">
-                    <img src="./logo/Debian_logo.png" height="50" alt="logo Debian">
-                    <p>Debian</p>
-                </div>
-                <div class="skill-row">
-                    <img src="./logo/raspberry_logo.png" height="50" alt="logo Raspberry Pi">
-                    <p>Raspberry Pi</p>
-                </div>
-                <div class="skill-row">
-                    <img src="./logo/Arduino_logo.svg" height="40" alt="logo Arduino">
-                    <p>Arduino</p>
-                </div>
-            </div>
-            </div>
-        <h3>Projects</h3>
+            <h3>Projects</h3>
             <div class="projects-container">
-                <p>
-                    <li><strong>Power electronics :</strong></li> Design and simulation of a Buck converter in LTspice, implemented on a breadboard with real components, achieving efficient voltage regulation. Focused on automation and regulation techniques, including PI control and feedback loops.
-                </p>
-
-
-
-                <div class="carousel">
-                    <div class="slider" role="region" aria-label="Images du projet électronique">
-                        <input type="radio" name="project-slide" id="s1" checked>
-                        <input type="radio" name="project-slide" id="s2">
-                        <input type="radio" name="project-slide" id="s3">
-                        <input type="radio" name="project-slide" id="s4">
-                        <input type="radio" name="project-slide" id="s5">
-                        <input type="radio" name="project-slide" id="s6">
-                        <div class="slides">
-                            <figure class="slide">
-                                <img src="photo tipe/angle_breadboard.png" alt="Convertisseur Buck">
-                                <figcaption>Réalisation sur une breadboard d'un asservissement en tension analogique d'un convertisseur Buck dans le cadre de mon TIPE. Ce projet m'a permis de comprendre les principes de base de l'électronique de puissance et de l'automatique.</figcaption>
-                            </figure>
-                            <figure class="slide">
-                                <img src="photo tipe/circuit.png" alt="Circuit électronique">
-                                <figcaption>Schéma de principe représentant les différentes connexions entre les composants majeurs :<br> La partie de puissance : étage de commutation et filtre LC du buck.<br> La partie de commande : le correcteur PI / Le PWM / le driver high-side.</figcaption>
-                            </figure>
-                            <figure class="slide">
-                                <img src="photo tipe/tipe_jules_pv.png" alt="jules avec tipe">
-                                <figcaption>Essai en condition réelle avec panneau photovoltaïque.</figcaption>
-                            </figure>
-                            <figure class="slide">
-                                <img src="photo tipe/multimeter.png" alt="test en condition réelledu buckavec panneau solaire">
-                                <figcaption>Mesure du bon fonctionnement de la régulation du buck en condition réelle avec panneau solaire. <br>
-                                Tension de sortie = 5.01V pour une tension d'entrée Vref = 5.0V</figcaption>
-                            </figure>
-                            <figure class="slide">
-                                <img src="photo tipe/FTBFG.png" alt="Gain en fonction en boucle fermée">
-                                <figcaption>Réalisation de la fonction de transfert en boucle fermée en gain à l'aide d'un TFA. <br>
-                                Vérification de la cohérence de la simulation avec la mesure.</figcaption>
-                            </figure>
-                            <figure class="slide">
-                                <img src="photo tipe/FTBFP.png" alt="phase de la FTBF">
-                                <figcaption>Réalisation de la fonction de transfert en boucle fermée en phase à l'aide d'un TFA.<br> 
-                                Vérification de la cohérence de la simulation avec la mesure.</figcaption>
-                            </figure>
-                        </div>
-                        <div class="nav">
-                            <label for="s6" class="prev prev-s1" aria-label="Image précédente">&lt;</label>
-                            <label for="s1" class="prev prev-s2" aria-label="Image précédente">&lt;</label>
-                            <label for="s2" class="prev prev-s3" aria-label="Image précédente">&lt;</label>
-                            <label for="s3" class="prev prev-s4" aria-label="Image précédente">&lt;</label>
-                            <label for="s4" class="prev prev-s5" aria-label="Image précédente">&lt;</label>
-                            <label for="s5" class="prev prev-s6" aria-label="Image précédente">&lt;</label>
+                <article class="buck-project">
+                    <p class="buck-project-summary">
+                        <strong>Power electronics:</strong> Design and simulation of a Buck converter in LTspice, implemented on a breadboard with real components, achieving efficient voltage regulation. Focused on automation and regulation techniques, including PI control and feedback loops.
+                    </p>
+                    <div class="carousel">
+                        <div class="slider" role="region" aria-label="Images du projet électronique">
+                            <input type="radio" name="project-slide" id="s1" checked>
+                            <input type="radio" name="project-slide" id="s2">
+                            <input type="radio" name="project-slide" id="s3">
+                            <input type="radio" name="project-slide" id="s4">
+                            <input type="radio" name="project-slide" id="s5">
+                            <input type="radio" name="project-slide" id="s6">
+                            <div class="slides">
+                                <figure class="slide">
+                                    <img src="photo tipe/angle_breadboard.png" alt="Convertisseur Buck">
+                                    <figcaption>Réalisation sur une breadboard d'un asservissement en tension analogique d'un convertisseur Buck dans le cadre de mon TIPE. Ce projet m'a permis de comprendre les principes de base de l'électronique de puissance et de l'automatique.</figcaption>
+                                </figure>
+                                <figure class="slide">
+                                    <img src="photo tipe/circuit.png" alt="Circuit électronique">
+                                    <figcaption>Schéma de principe représentant les différentes connexions entre les composants majeurs :<br> La partie de puissance : étage de commutation et filtre LC du buck.<br> La partie de commande : le correcteur PI / Le PWM / le driver high-side.</figcaption>
+                                </figure>
+                                <figure class="slide">
+                                    <img src="photo tipe/tipe_jules_pv.png" alt="jules avec tipe">
+                                    <figcaption>Essai en condition réelle avec panneau photovoltaïque.</figcaption>
+                                </figure>
+                                <figure class="slide">
+                                    <img src="photo tipe/multimeter.png" alt="test en condition réelledu buckavec panneau solaire">
+                                    <figcaption>Mesure du bon fonctionnement de la régulation du buck en condition réelle avec panneau solaire.<br>Tension de sortie = 5.01V pour une tension d'entrée Vref = 5.0V</figcaption>
+                                </figure>
+                                <figure class="slide">
+                                    <img src="photo tipe/FTBFG.png" alt="Gain en fonction en boucle fermée">
+                                    <figcaption>Réalisation de la fonction de transfert en boucle fermée en gain à l'aide d'un TFA.<br>Vérification de la cohérence de la simulation avec la mesure.</figcaption>
+                                </figure>
+                                <figure class="slide">
+                                    <img src="photo tipe/FTBFP.png" alt="phase de la FTBF">
+                                    <figcaption>Réalisation de la fonction de transfert en boucle fermée en phase à l'aide d'un TFA.<br>Vérification de la cohérence de la simulation avec la mesure.</figcaption>
+                                </figure>
+                            </div>
+                            <div class="nav">
+                                <label for="s6" class="prev prev-s1" aria-label="Image précédente">&lt;</label>
+                                <label for="s1" class="prev prev-s2" aria-label="Image précédente">&lt;</label>
+                                <label for="s2" class="prev prev-s3" aria-label="Image précédente">&lt;</label>
+                                <label for="s3" class="prev prev-s4" aria-label="Image précédente">&lt;</label>
+                                <label for="s4" class="prev prev-s5" aria-label="Image précédente">&lt;</label>
+                                <label for="s5" class="prev prev-s6" aria-label="Image précédente">&lt;</label>
                             <label for="s2" class="next next-s1" aria-label="Image suivante">&gt;</label>
                             <label for="s3" class="next next-s2" aria-label="Image suivante">&gt;</label>
                             <label for="s4" class="next next-s3" aria-label="Image suivante">&gt;</label>
@@ -160,14 +130,36 @@
                         </div>
                     </div>
                 </div>
+                </article>
 
+            <div class="project-details-list">
+                <details class="project-card">
+                    <summary>
+                        <img src="arduino_radar.jpeg" alt="Radar Arduino avec capteur ultrasonore et servomoteur">
+                        <span class="project-card-heading">
+                            <strong>Arduino radar</strong>
+                            <span class="project-card-hint">Prototype en cours · Cliquer pour découvrir le projet</span>
+                        </span>
+                    </summary>
+                    <div class="project-card-details">
+                        <p>Développement d'un radar à balayage autour d'une carte Arduino, d'un capteur ultrasonore et d'un servomoteur. Le servo oriente le capteur, qui relève la distance des objets dans différentes directions.</p>
+                        <p>Les mesures sont transmises à un ordinateur pour afficher une représentation du radar en temps réel. Ce prototype permet d'explorer l'acquisition de données, le pilotage d'un servo et la visualisation des mesures. Projet non terminé.</p>
+                    </div>
+                </details>
+                <details class="project-card">
+                    <summary>
+                        <img src="TFA.jpeg" alt="Analyseur de fonction de transfert TFA">
+                        <span class="project-card-heading">
+                            <strong>TFA control</strong>
+                            <span class="project-card-hint">Automatisation de mesures · Cliquer pour découvrir le projet</span>
+                        </span>
+                    </summary>
+                    <div class="project-card-details">
+                        <p>Développement d'un programme Python qui pilote un analyseur de fonction de transfert (TFA) par liaison série. Le programme automatise les mesures et récupère les données de l'appareil.</p>
+                        <p>Cette automatisation facilite l'acquisition de mesures répétées et leur exploitation pour étudier la réponse fréquentielle d'un système, notamment dans le cadre de mon projet de convertisseur Buck.</p>
+                    </div>
+                </details>
             </div>
-                <p>
-                    <li><strong>Arduino project : (Not finished)</strong></li> Development of a radar using Arduino, integrating sensors, servomotors and displays.
-                </p>
-                <p>
-                    <li><strong>TFA control :</strong></li> Implementation of a python code that controls a TFA (Transfer Function Analyser) via serial ports, allowing for automated measurements and data acquisition.
-                </p>
             </div>
         <h3>N7 Clubs</h3>
             <div class="clubs-list">
@@ -198,7 +190,6 @@
                 <a class="profile-button" href="./cv-jules-thurel_V6.pdf" download>CV (français)</a>
                 <a class="profile-button" href="./cv-jules-thurel_Vfinal_anglais.pdf" download>CV (English)</a>
                 <a class="profile-button" href="https://www.linkedin.com/in/jules-thurel-329495418/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <br>
             </div>
             <h3>Inspiring Engineers</h3>
             <div class="slider profile-carousel" role="region" aria-label="Profils d'ingénieurs inspirants">
@@ -213,7 +204,7 @@
                     </article>
                     <article class="profile-slide">
                         <img class="profile-avatar" src="./logo/profil_logo.png" alt="Logo de profil de Tony">
-                        <h3>Tony</h3>
+                        <h3>Elon Musk</h3>
                         <p>Ingénieur en systèmes embarqués, il développe des cartes électroniques et leur logiciel. Il aime mêler matériel et programmation, mais trouve parfois le débogage de problèmes intermittents frustrant.</p>
                     </article>
                     <article class="profile-slide">
@@ -233,7 +224,7 @@
             </div>
         </section>
 
-        <section id="mobilty">
+        <section id="mobility">
             <h2>International mobility</h2>
             <p>
                 for mobility .... .
@@ -247,19 +238,41 @@
 
         <section id="civic">
             <h2>Civic Engagement</h2>
-            <div class="civic-list">
-                <article class="civic-bubble">
-                    <h3>Ingé+</h3>
-                    <p>Ma participation à Ingé+ me permet de contribuer à une initiative collective et à la vie étudiante. Elle valorise l’engagement, l’écoute et l’esprit d’équipe.</p>
-                </article>
-                <article class="civic-bubble">
-                    <h3>Le procès de King Kong</h3>
-                    <p>Cette expérience de pièce de théatre intéractive sur le harcèlement et les violences sexuelles et sexiste fut une expérience enrichissante et ...</p>
-                </article>
-                <article class="civic-bubble">
-                    <h3>Clean Walk à Toulouse</h3>
-                    <p>Participer à une Clean Walk contribue à garder les espaces publics plus propres et à sensibiliser à la réduction des déchets, dans un esprit d’action collective et écologique.</p>
-                </article>
+            <div class="civic-carousel" data-civic-carousel role="region" aria-label="Engagements citoyens">
+                <div class="civic-viewport">
+                    <div class="civic-track">
+                        <article class="civic-slide">
+                            <img src="./logo/ingep_logo.jpeg" alt="Logo Ingé+">
+                            <div class="civic-copy">
+                                <h3>Ingé+</h3>
+                                <p>Ma participation à Ingé+ me permet de contribuer à une initiative collective et à la vie étudiante. Elle valorise l’engagement, l’écoute et l’esprit d’équipe.</p>
+                            </div>
+                        </article>
+                        <article class="civic-slide">
+                            <img src="./logo/proces_kk_logo.jpeg" alt="Visuel du Procès de King Kong">
+                            <div class="civic-copy">
+                                <h3>Le Procès de King Kong</h3>
+                                <p>Participation à une pièce de théâtre interactive autour du harcèlement et des violences sexistes et sexuelles. Une expérience collective pour ouvrir le dialogue sur ces enjeux.</p>
+                            </div>
+                        </article>
+                        <article class="civic-slide">
+                            <img src="./logo/clean_walk_logo.jpeg" alt="Logo Clean Walk">
+                            <div class="civic-copy">
+                                <h3>Clean Walk à Toulouse</h3>
+                                <p>Participer à une Clean Walk contribue à garder les espaces publics plus propres et à sensibiliser à la réduction des déchets, dans un esprit d’action collective et écologique.</p>
+                            </div>
+                        </article>
+                        <article class="civic-slide">
+                            <img src="./logo/fresque_climat_logo.png" alt="Logo de la Fresque du Climat">
+                            <div class="civic-copy">
+                                <h3>La Fresque du Climat</h3>
+                                <p>Atelier collaboratif pour comprendre les causes et les conséquences du changement climatique et échanger autour des leviers d’action.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <button class="civic-control previous" type="button" aria-label="Engagement précédent">&lsaquo;</button>
+                <button class="civic-control next" type="button" aria-label="Engagement suivant">&rsaquo;</button>
             </div>
         </section>
 
@@ -363,6 +376,30 @@
             void activityItems[0].offsetWidth;
             activityItems.forEach((item) => item.classList.add("activity-enter"));
         });
+
+        document.querySelectorAll("[data-civic-carousel]").forEach((carousel) => {
+            const viewport = carousel.querySelector(".civic-viewport");
+            const track = carousel.querySelector(".civic-track");
+            const slides = Array.from(track.querySelectorAll(".civic-slide"));
+            let activeIndex = 0;
+
+            const showSlide = (index) => {
+                activeIndex = (index + slides.length) % slides.length;
+                const activeSlide = slides[activeIndex];
+                const offset = viewport.clientWidth / 2 - activeSlide.offsetLeft - activeSlide.clientWidth / 2;
+                track.style.transform = `translateX(${offset}px)`;
+                slides.forEach((slide, slideIndex) => {
+                    slide.classList.toggle("is-active", slideIndex === activeIndex);
+                    slide.setAttribute("aria-hidden", String(slideIndex !== activeIndex));
+                });
+            };
+
+            carousel.querySelector(".previous").addEventListener("click", () => showSlide(activeIndex - 1));
+            carousel.querySelector(".next").addEventListener("click", () => showSlide(activeIndex + 1));
+            window.addEventListener("resize", () => showSlide(activeIndex));
+            showSlide(activeIndex);
+        });
+
     </script>
 </body>
 </html>
