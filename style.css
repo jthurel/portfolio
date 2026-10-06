@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: system-ui, -apple-system, sans-serif;
     line-height: 1.6;
@@ -20,7 +24,6 @@ body {
     gap: 1.5rem;
     min-height: 360px;
     padding-bottom: 1.5rem;
-    border-bottom: 2px solid #333;
     margin-bottom: 1rem;
 }
 
@@ -107,6 +110,12 @@ body {
     }
 }
 
+@media (max-width: 1199px) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
 .navigation-shell {
     margin-bottom: 2rem;
 }
@@ -116,7 +125,6 @@ nav {
     flex-wrap: wrap;
     gap: 0.5rem;
     padding: 1rem 0;
-    border-bottom: 1px solid #ccc;
     background: transparent;
 }
 
@@ -139,7 +147,7 @@ nav {
     .navigation-shell nav {
         display: flex;
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
         gap: 0.25rem;
         padding: 0;
         border: 0;
@@ -148,9 +156,17 @@ nav {
     }
 
     .navigation-shell nav a {
-        padding: 0.55rem 0.75rem;
-        border-radius: 0;
-        text-align:center;
+        display: grid;
+        width: min(100%, 172px);
+        height: 42px;
+        place-items: center;
+        padding: 0.2rem 0.4rem;
+        border: 1px solid #c9dceb;
+        border-radius: 999px;
+        background: #fff;
+        font-size: 0.85rem;
+        line-height: 1.1;
+        text-align: center;
     }
 }
 
@@ -167,13 +183,43 @@ nav a:hover {
     background: #e6f0ff;
 }
 
-section {
-    margin-bottom: 3rem;
+nav a[aria-current="location"] {
+    border-color: #7ea8c7;
+    background: #c9deef;
+    box-shadow: inset 0 0 0 1px rgba(40, 91, 130, 0.12);
+    color: #173b56;
+    font-weight: 700;
+}
+
+main > section {
+    position: relative;
+    z-index: 0;
+    padding: 3rem 2rem;
+    margin: 0 -2rem;
+    background: transparent;
     scroll-margin-top: 1rem;
 }
 
+main > section::before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    content: "";
+}
+
+main > section:nth-child(odd)::before {
+    background: #dceaf5;
+}
+
+main > section:nth-child(even)::before {
+    background: #fff;
+}
+
 section h2 {
-    border-bottom: 2px solid #0066cc;
     padding-bottom: 0.3rem;
     margin-bottom: 1.5rem;
     color: #0066cc;
@@ -190,6 +236,79 @@ section > h2 + h3 {
 
 section p {
     margin-bottom: 0.8rem;
+}
+
+.mobility-languages,
+.mobility-plan,
+.mobility-cern {
+    margin-top: 2.5rem;
+}
+
+.mobility-languages {
+    margin-top: 0;
+}
+
+.mobility-subtitle {
+    margin: 0 0 0.75rem;
+    color: #245b85;
+    font-size: 1.2rem;
+}
+
+.language-levels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.language-level {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+}
+
+.language-level dd {
+    color: #245b85;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.mobility-universities {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.25rem;
+}
+
+.mobility-university {
+    padding-left: 1rem;
+    border-left: 3px solid #b9d0e2;
+}
+
+.mobility-university h4 {
+    margin-bottom: 0.4rem;
+    color: #245b85;
+    font-size: 1.05rem;
+}
+
+.mobility-university p {
+    margin-bottom: 0.5rem;
+}
+
+.mobility-country {
+    color: #666;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.mobility-university a {
+    color: #0066cc;
+    font-size: 0.9rem;
+    overflow-wrap: anywhere;
+}
+
+.mobility-cern {
+    padding-left: 1rem;
+    border-left: 3px solid #b9d0e2;
 }
 
 .profile-links {
@@ -380,12 +499,116 @@ section p {
 }
 
 .project-card-details {
-    padding: 1rem;
-    border-top: 1px solid #d5e5f4;
+    position: fixed;
+    z-index: 50;
+    top: 50%;
+    right: 1.5rem;
+    width: min(400px, calc(100vw - 3rem));
+    max-height: calc(100vh - 3rem);
+    overflow-y: auto;
+    padding: 1.5rem;
+    transform: translateY(-50%);
+    border: 1px solid #b9d0e2;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 16px 40px rgba(24, 55, 78, 0.2);
+}
+
+.project-card-detail-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.project-card-detail-title {
+    margin: 0;
+    color: #173b56;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.project-card-close {
+    display: grid;
+    flex: 0 0 36px;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: 1px solid #c9dceb;
+    border-radius: 50%;
+    background: #f3f8fc;
+    color: #245b85;
+    cursor: pointer;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.project-card-close:hover {
+    background: #dceaf5;
+}
+
+.project-card-close:focus-visible {
+    outline: 2px solid #0066cc;
+    outline-offset: 2px;
 }
 
 .project-card-details p:last-child {
     margin-bottom: 0;
+}
+
+.buck-project {
+    padding: 1.25rem;
+    border: 1px solid #d5e5f4;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    background: #f3f8fc;
+    box-shadow: 0 4px 14px rgba(24, 55, 78, 0.08);
+}
+
+.buck-project-trigger {
+    display: grid;
+    gap: 0.35rem;
+    width: 100%;
+    padding: 0 0 1rem;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    text-align: left;
+}
+
+.buck-project-trigger:focus-visible {
+    outline: 2px solid #0066cc;
+    outline-offset: 4px;
+}
+
+.buck-project-title {
+    color: #245b85;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.buck-project-hint {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.buck-detail-panel[hidden] {
+    display: none;
+}
+
+.project-document-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.buck-project .slider {
+    border-radius: 4px;
+    background: #fff;
 }
 
 #s1:checked ~ .slides { transform: translateX(0); }
@@ -710,8 +933,7 @@ section p {
 }
 
 footer {
-    border-top: 1px solid #ccc;
-    padding-top: 1rem;
+    padding-top: 2rem;
     margin-top: 3rem;
     font-size: 0.9rem;
     color: #777;
@@ -724,6 +946,10 @@ footer a {
 }
 
 @media (max-width: 600px) {
+    .buck-project {
+        padding: 0.85rem;
+    }
+
     .skills-container {
         flex-wrap: wrap;
         gap: 2rem;
@@ -731,6 +957,11 @@ footer a {
 
     .clubs-list {
         grid-template-columns: 1fr;
+    }
+
+    .mobility-universities {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
     .activity-item,
@@ -764,6 +995,17 @@ footer a {
 
     .civic-control {
         top: 4.5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .project-card-details {
+        top: 1rem;
+        right: 1rem;
+        width: calc(100vw - 2rem);
+        max-height: calc(100vh - 2rem);
+        padding: 1.25rem;
+        transform: none;
     }
 }
 

@@ -77,9 +77,22 @@
             <h3>Projects</h3>
             <div class="projects-container">
                 <article class="buck-project">
-                    <p class="buck-project-summary">
-                        <strong>Power electronics:</strong> Design and simulation of a Buck converter in LTspice, implemented on a breadboard with real components, achieving efficient voltage regulation. Focused on automation and regulation techniques, including PI control and feedback loops.
-                    </p>
+                    <button class="buck-project-trigger" type="button" aria-expanded="false" aria-controls="buck-detail-panel">
+                        <span class="buck-project-title">TIPE · Buck converter control</span>
+                        <span class="buck-project-hint">One-year preparatory-class project · Click for details</span>
+                    </button>
+                    <aside class="project-card-details buck-detail-panel" id="buck-detail-panel" role="region" aria-labelledby="buck-detail-title" hidden>
+                        <div class="project-card-detail-header">
+                            <h3 class="project-card-detail-title" id="buck-detail-title">TIPE · Buck converter control</h3>
+                            <button class="project-card-close" type="button" aria-label="Fermer la description">&times;</button>
+                        </div>
+                        <p>Projet suivi pendant une année en classe préparatoire, en parallèle des cours, pour répondre au thème « Cycle et boucle ».</p>
+                        <p>Le travail porte sur la conception, la simulation et les essais d’un convertisseur Buck asservi, afin d’étudier la régulation de tension et le comportement d’une boucle de rétroaction.</p>
+                        <div class="project-document-links">
+                            <a class="profile-button" href="./Mcot_30561_vfinal_dot.pdf" target="_blank" rel="noopener noreferrer">Consulter le MCOT</a>
+                            <a class="profile-button" href="./presentation_TIPE_portfolio.pdf" target="_blank" rel="noopener noreferrer">Voir la présentation</a>
+                        </div>
+                    </aside>
                     <div class="carousel">
                         <div class="slider" role="region" aria-label="Images du projet électronique">
                             <input type="radio" name="project-slide" id="s1" checked>
@@ -141,7 +154,11 @@
                             <span class="project-card-hint">Prototype en cours · Cliquer pour découvrir le projet</span>
                         </span>
                     </summary>
-                    <div class="project-card-details">
+                    <div class="project-card-details" role="region" aria-labelledby="arduino-detail-title">
+                        <div class="project-card-detail-header">
+                            <h3 class="project-card-detail-title" id="arduino-detail-title">Arduino radar</h3>
+                            <button class="project-card-close" type="button" aria-label="Fermer la description">&times;</button>
+                        </div>
                         <p>Développement d'un radar à balayage autour d'une carte Arduino, d'un capteur ultrasonore et d'un servomoteur. Le servo oriente le capteur, qui relève la distance des objets dans différentes directions.</p>
                         <p>Les mesures sont transmises à un ordinateur pour afficher une représentation du radar en temps réel. Ce prototype permet d'explorer l'acquisition de données, le pilotage d'un servo et la visualisation des mesures. Projet non terminé.</p>
                     </div>
@@ -154,7 +171,11 @@
                             <span class="project-card-hint">Automatisation de mesures · Cliquer pour découvrir le projet</span>
                         </span>
                     </summary>
-                    <div class="project-card-details">
+                    <div class="project-card-details" role="region" aria-labelledby="tfa-detail-title">
+                        <div class="project-card-detail-header">
+                            <h3 class="project-card-detail-title" id="tfa-detail-title">TFA control</h3>
+                            <button class="project-card-close" type="button" aria-label="Fermer la description">&times;</button>
+                        </div>
                         <p>Développement d'un programme Python qui pilote un analyseur de fonction de transfert (TFA) par liaison série. Le programme automatise les mesures et récupère les données de l'appareil.</p>
                         <p>Cette automatisation facilite l'acquisition de mesures répétées et leur exploitation pour étudier la réponse fréquentielle d'un système, notamment dans le cadre de mon projet de convertisseur Buck.</p>
                     </div>
@@ -198,13 +219,13 @@
                 <input type="radio" name="career-profile" id="career-profile-yves">
                 <div class="profile-slides">
                     <article class="profile-slide">
-                        <img class="profile-avatar" src="./logo/profil_logo.png" alt="Logo de profil de Bruno">
+                        <img class="profile-avatar" src="./logo/cropped_avatar.jpeg" alt="Logo de profil de Bruno">
                         <h3>Bruno</h3>
                         <p>Ingénieur en électronique de puissance, il conçoit des convertisseurs et suit leurs essais. Il aime voir ses prototypes fonctionner en conditions réelles, mais apprécie moins le temps consacré aux rapports et aux procédures de validation.</p>
                     </article>
                     <article class="profile-slide">
-                        <img class="profile-avatar" src="./logo/profil_logo.png" alt="Logo de profil de Tony">
-                        <h3>Elon Musk</h3>
+                        <img class="profile-avatar" src="./logo/cropped_avatar_tony.jpg" alt="Logo de profil de Tony">
+                        <h3>Tony Fourmont</h3>
                         <p>Ingénieur en systèmes embarqués, il développe des cartes électroniques et leur logiciel. Il aime mêler matériel et programmation, mais trouve parfois le débogage de problèmes intermittents frustrant.</p>
                     </article>
                     <article class="profile-slide">
@@ -226,14 +247,50 @@
 
         <section id="mobility">
             <h2>International mobility</h2>
-            <p>
-                for mobility .... .
-            </p>
-            <p>
-                C1 level in English <br> A2 level in Spanish
-            </p>
-               
-            
+            <div class="mobility-languages">
+                <h3 class="mobility-subtitle">Languages</h3>
+                <dl class="language-levels">
+                    <div class="language-level">
+                        <dt>English</dt>
+                        <dd>C1</dd>
+                    </div>
+                    <div class="language-level">
+                        <dt>Spanish</dt>
+                        <dd>A2</dd>
+                    </div>
+                </dl>
+            </div>
+
+            <div class="mobility-plan">
+                <h3 class="mobility-subtitle">Semester or internship in Europe</h3>
+                <p>I would like to complete a study semester or internship in Europe, ideally in electrical engineering, power electronics, or energy systems. I want to stay within Europe to keep the experience culturally rich while limiting its environmental impact, with a preference for destinations reachable by train.</p>
+                <p>These three universities are potential academic destinations to explore, subject to available exchange agreements and programmes:</p>
+                <div class="mobility-universities">
+                    <article class="mobility-university">
+                        <p class="mobility-country">The Netherlands</p>
+                        <h4>TU Delft</h4>
+                        <p>Electrical engineering, power electronics, and sustainable energy systems.</p>
+                        <a href="https://www.tudelft.nl/en/eemcs" target="_blank" rel="noopener noreferrer">Electrical Engineering, Mathematics and Computer Science</a>
+                    </article>
+                    <article class="mobility-university">
+                        <p class="mobility-country">Germany</p>
+                        <h4>RWTH Aachen</h4>
+                        <p>Electrical engineering, energy conversion, and power systems.</p>
+                        <a href="https://www.elektrotechnik.rwth-aachen.de/" target="_blank" rel="noopener noreferrer">Faculty of Electrical Engineering and Information Technology</a>
+                    </article>
+                    <article class="mobility-university">
+                        <p class="mobility-country">Switzerland</p>
+                        <h4>ETH Zurich</h4>
+                        <p>Electrical engineering and information technology, with strong research in energy and electronics.</p>
+                        <a href="https://ee.ethz.ch/" target="_blank" rel="noopener noreferrer">Department of Information Technology and Electrical Engineering</a>
+                    </article>
+                </div>
+            </div>
+
+            <div class="mobility-cern">
+                <h3 class="mobility-subtitle">My internship at CERN</h3>
+                <p>My internship at CERN gave me the opportunity to experience a professional environment from the inside and meet colleagues from different nationalities. Working in this international setting showed me the value of exchanging perspectives, adapting to different ways of working, and collaborating across cultures.</p>
+            </div>
         </section>
 
         <section id="civic">
@@ -330,6 +387,17 @@
     <footer>
         <p>© 2026 Jules Thurel · <a href="mailto:jules.thurel@thurel.fr">jules.thurel@thurel.fr</a></p>
     </footer>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <script>
         document.querySelectorAll("[data-activity-gallery]").forEach((gallery) => {
             const track = gallery.querySelector(".activity-gallery-track");
@@ -398,6 +466,95 @@
             carousel.querySelector(".next").addEventListener("click", () => showSlide(activeIndex + 1));
             window.addEventListener("resize", () => showSlide(activeIndex));
             showSlide(activeIndex);
+        });
+
+        const navigationLinks = Array.from(document.querySelectorAll(".navigation-shell nav a"));
+        const navigationSections = navigationLinks
+            .map((link) => document.querySelector(link.getAttribute("href")))
+            .filter(Boolean);
+        const buckTrigger = document.querySelector(".buck-project-trigger");
+        const buckPanel = document.querySelector(".buck-detail-panel");
+        const closeBuckPanel = () => {
+            buckPanel.hidden = true;
+            buckTrigger.setAttribute("aria-expanded", "false");
+        };
+        const setActiveNavigation = (section) => {
+            navigationLinks.forEach((link) => {
+                if (link.hash === `#${section.id}`) {
+                    link.setAttribute("aria-current", "location");
+                } else {
+                    link.removeAttribute("aria-current");
+                }
+            });
+
+            if (section.id !== "engineering") {
+                document.querySelectorAll(".project-card[open]").forEach((card) => {
+                    card.open = false;
+                });
+                closeBuckPanel();
+            }
+        };
+
+        navigationLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+                if (link.hash !== "#engineering") {
+                    document.querySelectorAll(".project-card[open]").forEach((card) => {
+                        card.open = false;
+                    });
+                    closeBuckPanel();
+                }
+            });
+        });
+
+        setActiveNavigation(navigationSections[0]);
+
+        const updateActiveNavigation = () => {
+            const viewportAnchor = window.innerHeight * 0.25;
+            let activeSection = navigationSections[0];
+
+            navigationSections.forEach((section) => {
+                if (section.getBoundingClientRect().top <= viewportAnchor) {
+                    activeSection = section;
+                }
+            });
+
+            if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+                activeSection = navigationSections[navigationSections.length - 1];
+            }
+
+            setActiveNavigation(activeSection);
+        };
+
+        window.addEventListener("scroll", updateActiveNavigation, { passive: true });
+        window.addEventListener("resize", updateActiveNavigation);
+        updateActiveNavigation();
+
+        const projectCards = Array.from(document.querySelectorAll(".project-card"));
+        buckTrigger.addEventListener("click", () => {
+            projectCards.forEach((card) => {
+                card.open = false;
+            });
+            buckPanel.hidden = !buckPanel.hidden;
+            buckTrigger.setAttribute("aria-expanded", String(!buckPanel.hidden));
+        });
+        buckPanel.querySelector(".project-card-close").addEventListener("click", () => {
+            closeBuckPanel();
+            buckTrigger.focus();
+        });
+
+        projectCards.forEach((card) => {
+            card.querySelector(".project-card-close").addEventListener("click", () => {
+                card.open = false;
+                card.querySelector("summary").focus();
+            });
+            card.addEventListener("toggle", () => {
+                if (card.open) {
+                    closeBuckPanel();
+                    projectCards.forEach((otherCard) => {
+                        if (otherCard !== card) otherCard.open = false;
+                    });
+                }
+            });
         });
 
     </script>
