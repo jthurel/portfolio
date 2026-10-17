@@ -20,7 +20,10 @@
     </header>
 
     <div class="navigation-shell" data-navigation-shell>
-        <nav>
+        <button class="navigation-close" type="button" data-close-navigation aria-label="Close navigation" aria-controls="site-navigation" aria-expanded="true">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <nav id="site-navigation">
             <a href="#welcome">Welcome</a>
             <a href="#engineering">Engineering</a>
             <a href="#career">Career</a>
@@ -30,6 +33,9 @@
             <a href="#contact">Contact</a>
         </nav>
     </div>
+    <button class="navigation-open" type="button" data-open-navigation aria-label="Open navigation" aria-controls="site-navigation" aria-expanded="false" hidden>
+        <span class="navigation-open-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+    </button>
 
     <main>
         <section id="welcome">
@@ -127,6 +133,7 @@
                                     <figcaption>Réalisation de la fonction de transfert en boucle fermée en phase à l'aide d'un TFA.<br>Vérification de la cohérence de la simulation avec la mesure.</figcaption>
                                 </figure>
                             </div>
+                            <output class="slide-counter" aria-live="polite" aria-label="Image 1 sur 6">1/6</output>
                             <div class="nav">
                                 <label for="s6" class="prev prev-s1" aria-label="Image précédente">&lt;</label>
                                 <label for="s1" class="prev prev-s2" aria-label="Image précédente">&lt;</label>
@@ -213,36 +220,56 @@
                 <a class="profile-button" href="https://www.linkedin.com/in/jules-thurel-329495418/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
             <h3>Inspiring Engineers</h3>
-            <div class="slider profile-carousel" role="region" aria-label="Profils d'ingénieurs inspirants">
-                <input type="radio" name="career-profile" id="career-profile-bruno" checked>
-                <input type="radio" name="career-profile" id="career-profile-tony">
-                <input type="radio" name="career-profile" id="career-profile-yves">
-                <div class="profile-slides">
-                    <article class="profile-slide">
-                        <img class="profile-avatar" src="./logo/cropped_avatar.jpeg" alt="Logo de profil de Bruno">
-                        <h3>Bruno</h3>
-                        <p>Ingénieur en électronique de puissance, il conçoit des convertisseurs et suit leurs essais. Il aime voir ses prototypes fonctionner en conditions réelles, mais apprécie moins le temps consacré aux rapports et aux procédures de validation.</p>
-                    </article>
-                    <article class="profile-slide">
-                        <img class="profile-avatar" src="./logo/cropped_avatar_tony.jpg" alt="Logo de profil de Tony">
-                        <h3>Tony Fourmont</h3>
-                        <p>Ingénieur en systèmes embarqués, il développe des cartes électroniques et leur logiciel. Il aime mêler matériel et programmation, mais trouve parfois le débogage de problèmes intermittents frustrant.</p>
-                    </article>
-                    <article class="profile-slide">
-                        <img class="profile-avatar" src="./logo/profil_logo.png" alt="Logo de profil de Yves">
-                        <h3>Yves</h3>
-                        <p>Ingénieur en réseaux électriques, il étudie le raccordement des énergies renouvelables. Il aime contribuer à la transition énergétique, mais apprécie moins les contraintes réglementaires et les délais des grands projets.</p>
-                    </article>
-                </div>
-                <div class="nav">
-                    <label for="career-profile-yves" class="prev prev-profile-bruno" aria-label="Profil précédent">&lt;</label>
-                    <label for="career-profile-bruno" class="prev prev-profile-tony" aria-label="Profil précédent">&lt;</label>
-                    <label for="career-profile-tony" class="prev prev-profile-yves" aria-label="Profil précédent">&lt;</label>
-                    <label for="career-profile-tony" class="next next-profile-bruno" aria-label="Profil suivant">&gt;</label>
-                    <label for="career-profile-yves" class="next next-profile-tony" aria-label="Profil suivant">&gt;</label>
-                    <label for="career-profile-bruno" class="next next-profile-yves" aria-label="Profil suivant">&gt;</label>
-                </div>
+            <div class="profile-cards" role="region" aria-label="Inspiring engineers">
+                <article class="profile-card">
+                    <button class="profile-card-trigger" type="button" data-profile-trigger="bruno" aria-expanded="false" aria-controls="profile-detail-panel">
+                        <img class="profile-card-photo" src="./logo/cropped_avatar.jpeg" alt="Portrait of Bruno">
+                        <span class="profile-card-copy">
+                            <span class="profile-card-name">Bruno</span>
+                            <span class="profile-card-role">Analog and digital electronics engineer</span>
+                            <span class="profile-card-meta">Experience: 26 years of experience</span>
+                            <span class="profile-card-meta">Company: Thalès Alenia Space</span>
+                        </span>
+                        <span class="profile-open-icon" aria-hidden="true">+</span>
+                    </button>
+                </article>
+                <article class="profile-card">
+                    <button class="profile-card-trigger" type="button" data-profile-trigger="tony" aria-expanded="false" aria-controls="profile-detail-panel">
+                        <img class="profile-card-photo" src="./logo/cropped_avatar_tony.jpg" alt="Portrait of Tony Fourmont">
+                        <span class="profile-card-copy">
+                            <span class="profile-card-name">Tony Fourmont</span>
+                            <span class="profile-card-role">Power electronics engineer</span>
+                            <span class="profile-card-meta">Experience: 19 years of experience</span>
+                            <span class="profile-card-meta">Company: Safran</span>
+                        </span>
+                        <span class="profile-open-icon" aria-hidden="true">+</span>
+                    </button>
+                </article>
+                <article class="profile-card">
+                    <button class="profile-card-trigger" type="button" data-profile-trigger="vincent" aria-expanded="false" aria-controls="profile-detail-panel">
+                        <img class="profile-card-photo" src="./logo/vincent.jpg" alt="Portrait of Vincent">
+                        <span class="profile-card-copy">
+                            <span class="profile-card-name">Vincent</span>
+                            <span class="profile-card-role">Technologist and expert in electronic reliability and radiation</span>
+                            <span class="profile-card-meta">Experience: 19 years of experience</span>
+                            <span class="profile-card-meta">Company: ArianeGroup</span>
+                        </span>
+                        <span class="profile-open-icon" aria-hidden="true">+</span>
+                    </button>
+                </article>
             </div>
+            <aside class="project-card-details profile-detail-panel" id="profile-detail-panel" role="region" aria-labelledby="profile-detail-title" hidden>
+                <div class="project-card-detail-header">
+                    <h3 class="project-card-detail-title" id="profile-detail-title"></h3>
+                    <button class="project-card-close" type="button" aria-label="Close profile details">&times;</button>
+                </div>
+                <p class="profile-detail-role" id="profile-detail-role"></p>
+                <dl class="profile-detail-meta">
+                    <div><dt>Experience</dt><dd id="profile-detail-experience"></dd></div>
+                    <div><dt>Company</dt><dd id="profile-detail-company"></dd></div>
+                </dl>
+                <div id="profile-detail-description"></div>
+            </aside>
         </section>
 
         <section id="mobility">
@@ -267,18 +294,21 @@
                 <p>These three universities are potential academic destinations to explore, subject to available exchange agreements and programmes:</p>
                 <div class="mobility-universities">
                     <article class="mobility-university">
+                        <img class="mobility-university-image" src="./tu_deft.webp" alt="TU Delft campus">
                         <p class="mobility-country">The Netherlands</p>
                         <h4>TU Delft</h4>
                         <p>Electrical engineering, power electronics, and sustainable energy systems.</p>
                         <a href="https://www.tudelft.nl/en/eemcs" target="_blank" rel="noopener noreferrer">Electrical Engineering, Mathematics and Computer Science</a>
                     </article>
                     <article class="mobility-university">
+                        <img class="mobility-university-image" src="./logo/munchen.jpeg" alt="View of Munich, Germany">
                         <p class="mobility-country">Germany</p>
-                        <h4>RWTH Aachen</h4>
+                        <h4>TUM Munich</h4>
                         <p>Electrical engineering, energy conversion, and power systems.</p>
-                        <a href="https://www.elektrotechnik.rwth-aachen.de/" target="_blank" rel="noopener noreferrer">Faculty of Electrical Engineering and Information Technology</a>
+                        <a href="https://www.tum.de/en/" target="_blank" rel="noopener noreferrer">Technical University of Munich</a>
                     </article>
                     <article class="mobility-university">
+                        <img class="mobility-university-logo" src="./logo/uth_logo.png" alt="ETH Zurich logo">
                         <p class="mobility-country">Switzerland</p>
                         <h4>ETH Zurich</h4>
                         <p>Electrical engineering and information technology, with strong research in energy and electronics.</p>
@@ -302,28 +332,32 @@
                             <img src="./logo/ingep_logo.jpeg" alt="Logo Ingé+">
                             <div class="civic-copy">
                                 <h3>Ingé+</h3>
-                                <p>Ma participation à Ingé+ me permet de contribuer à une initiative collective et à la vie étudiante. Elle valorise l’engagement, l’écoute et l’esprit d’équipe.</p>
+                                <p id="civic-description-inp">Ingé+ est un programme de parrainage qui réunit cette année 20 étudiants de l'INP autour d'une même mission : accompagner des étudiants de BTS dans leur parcours et leurs questionnements sur l'orientation. Concrètement, chaque parrain ou marraine échange environ une fois par mois avec ses filleuls, à distance (groupe WhatsApp, visios) ou en présentiel pour les BTS toulousains, pour faire connaissance, partager des conseils sur les matières, l'ingénierie, les filières et les entreprises. Ce qui fait la force du programme, c'est son esprit d'entraide : chacun donne selon ses disponibilités, sans avoir besoin d'être un expert, car l'essentiel est d'être présent et à l'écoute. En tant que parrain, je vois dans INP+ un engagement citoyen concret : donner de mon temps, rassurer et orienter ceux qui hésitent, et transmettre l'envie de poursuivre ses études, dans une logique de solidarité et de partage entre étudiants.</p>
+                                <button class="civic-expand" type="button" aria-expanded="false" aria-controls="civic-description-inp" aria-label="Afficher tout le texte" hidden>+</button>
                             </div>
                         </article>
                         <article class="civic-slide">
                             <img src="./logo/proces_kk_logo.jpeg" alt="Visuel du Procès de King Kong">
                             <div class="civic-copy">
                                 <h3>Le Procès de King Kong</h3>
-                                <p>Participation à une pièce de théâtre interactive autour du harcèlement et des violences sexistes et sexuelles. Une expérience collective pour ouvrir le dialogue sur ces enjeux.</p>
+                                <p id="civic-description-king-kong">Participation à une pièce de théâtre interactive autour du harcèlement et des violences sexistes et sexuelles. Une expérience collective pour ouvrir le dialogue sur ces enjeux.</p>
+                                <button class="civic-expand" type="button" aria-expanded="false" aria-controls="civic-description-king-kong" aria-label="Afficher tout le texte" hidden>+</button>
                             </div>
                         </article>
                         <article class="civic-slide">
                             <img src="./logo/clean_walk_logo.jpeg" alt="Logo Clean Walk">
                             <div class="civic-copy">
                                 <h3>Clean Walk à Toulouse</h3>
-                                <p>Participer à une Clean Walk contribue à garder les espaces publics plus propres et à sensibiliser à la réduction des déchets, dans un esprit d’action collective et écologique.</p>
+                                <p id="civic-description-clean-walk">Participer à une Clean Walk contribue à garder les espaces publics plus propres et à sensibiliser à la réduction des déchets, dans un esprit d’action collective et écologique.</p>
+                                <button class="civic-expand" type="button" aria-expanded="false" aria-controls="civic-description-clean-walk" aria-label="Afficher tout le texte" hidden>+</button>
                             </div>
                         </article>
                         <article class="civic-slide">
                             <img src="./logo/fresque_climat_logo.png" alt="Logo de la Fresque du Climat">
                             <div class="civic-copy">
                                 <h3>La Fresque du Climat</h3>
-                                <p>Atelier collaboratif pour comprendre les causes et les conséquences du changement climatique et échanger autour des leviers d’action.</p>
+                                <p id="civic-description-climat">Atelier collaboratif pour comprendre les causes et les conséquences du changement climatique et échanger autour des leviers d’action.</p>
+                                <button class="civic-expand" type="button" aria-expanded="false" aria-controls="civic-description-climat" aria-label="Afficher tout le texte" hidden>+</button>
                             </div>
                         </article>
                     </div>
@@ -378,7 +412,7 @@
             <p>
                 <strong>Telephone : </strong>07 69 74 07 43<br>
                  <strong>e-mail : </strong><a href="mailto:jules.thurel@thurel.fr">jules.thurel@thurel.fr</a><br>
-                <strong>Linkedin : </strong><a href="https://www.linkedin.com/in/jules-thurel-329495418/">linkedin</a>
+                <a href="https://www.linkedin.com/in/jules-thurel-329495418/">Linkedin</a>
             </p>
             
         </section>
@@ -451,6 +485,22 @@
             const slides = Array.from(track.querySelectorAll(".civic-slide"));
             let activeIndex = 0;
 
+            slides.forEach((slide) => {
+                const description = slide.querySelector(".civic-copy p");
+                const expandButton = slide.querySelector(".civic-expand");
+                if (description.textContent.trim().length <= 220) return;
+
+                description.classList.add("is-collapsed");
+                expandButton.hidden = false;
+                expandButton.addEventListener("click", () => {
+                    const expanded = expandButton.getAttribute("aria-expanded") === "true";
+                    description.classList.toggle("is-collapsed", expanded);
+                    expandButton.setAttribute("aria-expanded", String(!expanded));
+                    expandButton.setAttribute("aria-label", expanded ? "Afficher tout le texte" : "Réduire le texte");
+                    expandButton.textContent = expanded ? "+" : "−";
+                });
+            });
+
             const showSlide = (index) => {
                 activeIndex = (index + slides.length) % slides.length;
                 const activeSlide = slides[activeIndex];
@@ -469,15 +519,117 @@
         });
 
         const navigationLinks = Array.from(document.querySelectorAll(".navigation-shell nav a"));
+        const navigationShell = document.querySelector("[data-navigation-shell]");
+        const navigationCloseButton = document.querySelector("[data-close-navigation]");
+        const navigationOpenButton = document.querySelector("[data-open-navigation]");
+        navigationCloseButton.addEventListener("click", () => {
+            navigationShell.hidden = true;
+            navigationCloseButton.setAttribute("aria-expanded", "false");
+            navigationOpenButton.hidden = false;
+            navigationOpenButton.focus();
+        });
+        navigationOpenButton.addEventListener("click", () => {
+            navigationShell.hidden = false;
+            navigationCloseButton.setAttribute("aria-expanded", "true");
+            navigationOpenButton.hidden = true;
+            navigationCloseButton.focus();
+        });
         const navigationSections = navigationLinks
             .map((link) => document.querySelector(link.getAttribute("href")))
             .filter(Boolean);
         const buckTrigger = document.querySelector(".buck-project-trigger");
         const buckPanel = document.querySelector(".buck-detail-panel");
+        const buckSlider = document.querySelector(".buck-project .slider");
+        const buckSlideCounter = buckSlider.querySelector(".slide-counter");
+        buckSlider.querySelectorAll('input[name="project-slide"]').forEach((slide, index) => {
+            slide.addEventListener("change", () => {
+                const count = `${index + 1}/6`;
+                buckSlideCounter.value = count;
+                buckSlideCounter.textContent = count;
+                buckSlideCounter.setAttribute("aria-label", `Image ${index + 1} sur 6`);
+            });
+        });
+        const profileTriggers = Array.from(document.querySelectorAll("[data-profile-trigger]"));
+        const profilePanel = document.querySelector(".profile-detail-panel");
+        const profileCloseButton = profilePanel.querySelector(".project-card-close");
+        const profileTitle = document.querySelector("#profile-detail-title");
+        const profileRole = document.querySelector("#profile-detail-role");
+        const profileExperience = document.querySelector("#profile-detail-experience");
+        const profileCompany = document.querySelector("#profile-detail-company");
+        const profileDescription = document.querySelector("#profile-detail-description");
+        const profileDetails = {
+            bruno: {
+                name: "Bruno Crousevial",
+                role: "Analog and digital electronics engineer",
+                experience: "26 years of experience",
+                company: "Thalès Alenia Space",
+                paragraphs: [
+                    "His skills cover the full V-cycle development of a product: he designs electronic boards, interfaces with digital teams (firmware and software), and designs digital circuits on FPGA. This end-to-end command of the development cycle means he can follow a product from the first specifications through to validation, coordinating with the different technical teams involved along the way.",
+                    "In small companies, he learned to be versatile and hands-on, covering the whole design chain, adapting quickly to varied projects, and taking on broad responsibilities. In a large group like Thales, he now works within structured, large-scale industrial programs, with rigorous processes and cross-functional teams.",
+                    "What I find interesting about his career path is precisely this combination: the agility and breadth acquired in SMEs, paired with the rigor and scale of a major group. It's the kind of profile that can both design a board down to the smallest detail and navigate the complex organization of a large industrial player — a real asset in electronics, where practical know-how and structured methodology matter equally. His career illustrates how experience in small structures and in a global group can complement each other rather than oppose each other."
+                ]
+            },
+            tony: {
+                name: "Tony Fourmont",
+                role: "Power electronics engineer",
+                experience: "19 years of experience",
+                company: "Safran",
+                paragraphs: [
+                    "He designs low- and medium-power converters for aeronautical applications. His work covers the full design chain, from defining power supply architectures and simulating converters (DC/DC, AC/DC) to PCB layout, prototyping, and technical documentation, as well as providing industrial support during series production.",
+                    "What I find fascinating about his job is that it sits at the crossroads of rigorous engineering and real-world applications: every converter he designs must meet strict client specifications and perform reliably in the demanding environment of aircraft. It's a field where precision, creative design, and hands-on prototyping come together. His background, from a Bac F3 in electrotechnics to a DESS in power electronics, reflects a genuine, long-standing passion for the discipline."
+                    ]
+            },
+            vincent: {
+                name: "Vincent Rouet",
+                role: "Technologist and expert in electronic reliability and radiation",
+                experience: "19 years of experience",
+                company: "ArianeGroup",
+                paragraphs: [
+                    "Vincent is a component technologist (EEE and assembly) and an expert in radiation effects and electronics reliability at ArianeGroup SAS, where he also heads the technologists' department. His core mission is to ensure the reliability and quality of electronic equipment, guaranteeing optimal operation under the specific conditions of each mission.",
+                    "His responsibilities span several key areas: defining technical requirements for materials and processes to prove the durability of electronic designs in mission environments; supporting design offices in managing embedded technologies; analyzing technological risks for electronic products and sub-assemblies, particularly COTS (commercial off-the-shelf) components, to assess risk and technology maturity; reviewing technical files from the design stage and analyzing technological choices against requirements; supporting the supply chain for subcontracted products throughout the product life cycle; inspecting boards and electronic sub-assemblies according to standards; carrying out technological and process surveys at subcontractors and analyzing each manufacturing step; contributing to anomaly resolution in production and operations; and participating in quality alerts and technology obsolescence notices.",
+                    "Before joining ArianeGroup, he spent 14 years at Airbus Group Innovations as a research engineer in electronics reliability and head of the electronics assembly and integration reliability department. He also spent three years at VITEC MULTIMEDIA as an electronics and computer engineer in a design office.",
+                    "What I find fascinating about his work is that it sits at the heart of space and aeronautics, where a single component failure can jeopardize an entire mission. His role combines deep technical expertise in radiation effects, reliability, and COTS risk analysis with a broad vision of the product life cycle, from design to supply chain and production. Rigor, curiosity, and a thorough understanding of materials and processes help ensure that equipment survives the extreme conditions of space."
+                ]
+            }
+        };
+        let activeProfileTrigger = null;
         const closeBuckPanel = () => {
             buckPanel.hidden = true;
             buckTrigger.setAttribute("aria-expanded", "false");
         };
+        const closeProfilePanel = () => {
+            profilePanel.hidden = true;
+            profileTriggers.forEach((trigger) => trigger.setAttribute("aria-expanded", "false"));
+            activeProfileTrigger = null;
+        };
+        const openProfilePanel = (trigger) => {
+            if (activeProfileTrigger === trigger && !profilePanel.hidden) {
+                closeProfilePanel();
+                return;
+            }
+
+            const profile = profileDetails[trigger.dataset.profileTrigger];
+            activeProfileTrigger = trigger;
+            profileTitle.textContent = profile.name;
+            profileRole.textContent = profile.role;
+            profileExperience.textContent = profile.experience;
+            profileCompany.textContent = profile.company;
+            profileDescription.replaceChildren(...profile.paragraphs.map((text) => {
+                const paragraph = document.createElement("p");
+                paragraph.textContent = text;
+                return paragraph;
+            }));
+            profilePanel.hidden = false;
+            profileTriggers.forEach((item) => item.setAttribute("aria-expanded", String(item === trigger)));
+        };
+        profileTriggers.forEach((trigger) => {
+            trigger.addEventListener("click", () => openProfilePanel(trigger));
+        });
+        profileCloseButton.addEventListener("click", () => {
+            const triggerToFocus = activeProfileTrigger;
+            closeProfilePanel();
+            triggerToFocus?.focus();
+        });
         const setActiveNavigation = (section) => {
             navigationLinks.forEach((link) => {
                 if (link.hash === `#${section.id}`) {
@@ -493,6 +645,10 @@
                 });
                 closeBuckPanel();
             }
+
+            if (section.id !== "career") {
+                closeProfilePanel();
+            }
         };
 
         navigationLinks.forEach((link) => {
@@ -502,6 +658,9 @@
                         card.open = false;
                     });
                     closeBuckPanel();
+                }
+                if (link.hash !== "#career") {
+                    closeProfilePanel();
                 }
             });
         });
