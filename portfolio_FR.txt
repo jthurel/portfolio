@@ -1,0 +1,223 @@
+Portfolio · ENSEEIHT · 3EA
+Jules Thurel
+Étudiant ingénieur spécialisé en électronique de puissance, systèmes embarqués et technologies autonomes.
+
+CV (anglais)
+CV (français)
+Me contacter
+
+Lieu : Toulouse, France
+Formation : Ingénieur N7 · 3EA
+Recherche : Stage en électronique de puissance
+EN
+FR
+
+Bienvenue
+Ingénierie
+Carrière
+Mobilité
+Engagement citoyen
+Activités
+Contact
+
+----------------------------------------
+
+Bienvenue
+
+J'ai 20 ans et je suis actuellement étudiant ingénieur à l'ENSEEIHT (N7) à Toulouse, dans la filière 3EA (Énergie Électrique, Électronique, Automatique).
+
+Animé par une passion pour l'électronique de puissance et les systèmes autonomes, j'aime concevoir, simuler et tester des circuits concrets. Mon stage au CERN et un projet personnel de convertisseur Buck pendant mes études en classe préparatoire ont renforcé cette ambition.
+
+J'applique ma méthode et ma rigueur dans tous les domaines liés à la conception électronique.
+
+----------------------------------------
+
+Ingénierie
+
+Compétences
+
+Programmation
+Python
+C
+C++
+
+Simulation & calculs
+LTspice
+Matlab/Simulink
+Octave
+
+Systèmes
+Debian
+Raspberry Pi
+Arduino
+
+Compétences transversales
+Résolution de problèmes
+Leadership
+Communication
+
+Projets
+
+TIPE · Convertisseur Buck
+1/6
+Réalisation sur une breadboard d'un asservissement en tension analogique d'un convertisseur Buck dans le cadre de mon TIPE. Ce projet m'a permis de comprendre les principes de base de l'électronique de puissance et de l'automatique.
+Schéma de principe représentant les différentes connexions entre les composants majeurs : La partie de puissance : étage de commutation et filtre LC du buck. La partie de commande : le correcteur PI / Le PWM / le driver high-side.
+Essai en condition réelle avec panneau photovoltaïque.
+Mesure du bon fonctionnement de la régulation du buck en condition réelle avec panneau solaire. Tension de sortie = 5.01V pour une tension d'entrée Vref = 5.0V
+Réalisation de la fonction de transfert en boucle fermée en gain à l'aide d'un TFA. Vérification de la cohérence de la simulation avec la mesure.
+Réalisation de la fonction de transfert en boucle fermée en phase à l'aide d'un TFA. Vérification de la cohérence de la simulation avec la mesure.
+Projet suivi pendant une année en classe préparatoire autour de la conception, de la simulation et des essais d’un convertisseur Buck asservi, dans le cadre du thème « Cycle et boucle ».
+Consulter le MCOT
+Voir la présentation
+
+Arduino radar
+Prototype Arduino avec capteur ultrasonore monté sur servomoteur.
+Développement d'un radar à balayage autour d'une carte Arduino, d'un capteur ultrasonore et d'un servomoteur. Le servo oriente le capteur, qui relève la distance des objets dans différentes directions.
+Les mesures sont transmises à un ordinateur pour afficher une représentation du radar en temps réel. Ce prototype permet d'explorer l'acquisition de données, le pilotage d'un servo et la visualisation des mesures. Projet non terminé.
+
+TFA control
+1/3
+Analyseur de fonction de transfert utilisé pour réaliser les mesures.
+Interface développée pour configurer l'analyseur, lancer les mesures et récupérer les données.
+Exemple de paramètres chargés pour configurer une mesure sur l'analyseur.
+Développement d'un programme Python qui pilote un analyseur de fonction de transfert (TFA) par liaison série. Le programme automatise les mesures et récupère les données de l'appareil.
+Cette automatisation facilite l'acquisition de mesures répétées et leur exploitation pour étudier la réponse fréquentielle d'un système, notamment dans le cadre de mon projet de convertisseur Buck.
+Consulter le rapport de stage TFA
+
+Clubs de l'N7
+
+7Robot
+Participation au club de robotique de l'N7, où j'ai contribué à la conception et à la programmation de robots autonomes pour des compétitions.
+
+Racing Team
+Participation au club de construction de voiture de course de l'N7, où j'aimerais contribuer à la mise en œuvre et à la régulation des systèmes de batteries de la voiture électrique. Ce club m'apporte des connaissances et de l'expérience sur différents logiciels tels que Kicad ou Plecs
+
+----------------------------------------
+
+Carrière
+
+Je recherche actuellement un stage dans le domaine de l'électronique de puissance, des systèmes autonomes ou des systèmes embarqués.
+
+CV (français)
+CV (anglais)
+LinkedIn
+
+CERN · 2023 · Stage d'une semaine
+Stage au CERN
+J'ai pris l'initiative de rejoindre une section du CERN spécialisée dans la conception de convertisseurs de puissance pour un stage d'une semaine.
+J'ai développé un programme Python pour piloter un analyseur de fonction de transfert (TFA), configurer les mesures, traiter les relevés et exporter les résultats en CSV. Ce travail est présenté dans mon projet TFA control, où les mesures automatisées appuient l'analyse de la réponse fréquentielle de mon convertisseur Buck.
+Travailler avec des collègues de nationalités différentes m'a montré la valeur de l'échange de points de vue, de l'adaptation à différentes façons de travailler et de la collaboration entre cultures.
+
+Ingénieurs inspirants
+
+Bruno
+Ingénieur en électronique analogique et numérique
+Expérience : 26 ans d'expérience
+Entreprise : Thalès Alenia Space
+
+Tony Fourmont
+Ingénieur en électronique de puissance
+Expérience : 19 ans d'expérience
+Entreprise : Safran
+
+Vincent
+Technologue et expert en fiabilité électronique et radiations
+Expérience : 19 ans d'expérience
+Entreprise : ArianeGroup
+
+Bruno Crousevial
+Ingénieur en électronique analogique et numérique
+Expérience : 26 ans d'expérience
+Entreprise : Thalès Alenia Space
+Ses compétences couvrent le développement complet d'un produit en cycle en V : il conçoit des cartes électroniques, assure l'interface avec les équipes numériques (firmware et logiciel) et conçoit des circuits numériques sur FPGA. Cette maîtrise de bout en bout du cycle de développement lui permet de suivre un produit depuis les premières spécifications jusqu'à la validation, en coordonnant les différentes équipes techniques impliquées tout au long du processus.
+Dans les petites entreprises, il a appris à être polyvalent et pragmatique, à couvrir toute la chaîne de conception, à s'adapter rapidement à des projets variés et à assumer de larges responsabilités. Dans un grand groupe comme Thales, il travaille désormais au sein de programmes industriels structurés et de grande envergure, avec des processus rigoureux et des équipes transverses.
+Ce que je trouve intéressant dans son parcours, c'est précisément cette combinaison : l'agilité et la polyvalence acquises en PME, associées à la rigueur et à l'échelle d'un grand groupe. C'est le genre de profil capable à la fois de concevoir une carte dans les moindres détails et de s'orienter dans l'organisation complexe d'un grand acteur industriel — un véritable atout en électronique, où le savoir-faire pratique et la méthodologie structurée comptent autant l'un que l'autre. Son parcours illustre comment l'expérience dans de petites structures et dans un groupe mondial peuvent se compléter plutôt que s'opposer.
+
+Tony Fourmont
+Ingénieur en électronique de puissance
+Expérience : 19 ans d'expérience
+Entreprise : Safran
+Il conçoit des convertisseurs de faible et moyenne puissance pour des applications aéronautiques. Son travail couvre toute la chaîne de conception, de la définition des architectures d'alimentation et de la simulation des convertisseurs (DC/DC, AC/DC) jusqu'au routage de PCB, au prototypage et à la documentation technique, ainsi qu'au support industriel pendant la production en série.
+Ce que je trouve fascinant dans son métier, c'est qu'il se situe au croisement d'une ingénierie rigoureuse et d'applications concrètes : chaque convertisseur qu'il conçoit doit répondre à des spécifications clients strictes et fonctionner de manière fiable dans l'environnement exigeant d'un avion. C'est un domaine où précision, conception créative et prototypage pratique se rejoignent. Son parcours, d'un Bac F3 en électrotechnique à un DESS en électronique de puissance, reflète une passion sincère et ancienne pour la discipline.
+
+Vincent Rouet
+Technologue et expert en fiabilité électronique et radiations
+Expérience : 19 ans d'expérience
+Entreprise : ArianeGroup
+Vincent est technologue composants (EEE et assemblage) et expert des effets des radiations et de la fiabilité électronique chez ArianeGroup SAS, où il dirige également le département des technologues. Sa mission principale est d'assurer la fiabilité et la qualité des équipements électroniques, en garantissant un fonctionnement optimal dans les conditions spécifiques de chaque mission.
+Ses responsabilités couvrent plusieurs domaines clés : définir les exigences techniques sur les matériaux et les procédés afin de prouver la durabilité des conceptions électroniques dans les environnements de mission ; accompagner les bureaux d'études dans la gestion des technologies embarquées ; analyser les risques technologiques des produits et sous-ensembles électroniques, notamment les composants COTS (commercial off-the-shelf), pour évaluer le risque et la maturité technologique ; examiner les dossiers techniques dès la conception et analyser les choix technologiques par rapport aux exigences ; accompagner la chaîne d'approvisionnement des produits sous-traités tout au long du cycle de vie ; inspecter les cartes et sous-ensembles électroniques selon les normes ; réaliser des audits technologiques et de procédés chez les sous-traitants et analyser chaque étape de fabrication ; contribuer à la résolution d'anomalies en production et en exploitation ; et participer aux alertes qualité et aux avis d'obsolescence technologique.
+Avant de rejoindre ArianeGroup, il a passé 14 ans chez Airbus Group Innovations comme ingénieur de recherche en fiabilité électronique et responsable du département fiabilité de l'assemblage et de l'intégration électroniques. Il a également passé trois ans chez VITEC MULTIMEDIA comme ingénieur en électronique et informatique dans un bureau d'études.
+Ce que je trouve fascinant dans son travail, c'est qu'il se situe au cœur du spatial et de l'aéronautique, où la défaillance d'un seul composant peut compromettre toute une mission. Son rôle associe une expertise technique pointue en effets des radiations, en fiabilité et en analyse de risques COTS à une vision large du cycle de vie du produit, de la conception à la chaîne d'approvisionnement et à la production. La rigueur, la curiosité et une compréhension approfondie des matériaux et des procédés contribuent à garantir que les équipements survivent aux conditions extrêmes de l'espace.
+
+----------------------------------------
+
+Mobilité
+
+Langues
+Anglais C1
+Espagnol A2
+
+Semestre ou stage en Europe
+J'aimerais effectuer un semestre d'études ou un stage en Europe, idéalement en génie électrique, électronique de puissance ou systèmes énergétiques. Je souhaite rester en Europe pour que l'expérience reste culturellement riche tout en limitant son impact environnemental, avec une préférence pour les destinations accessibles en train.
+Ces trois universités sont des destinations académiques potentielles à explorer, sous réserve des accords d'échange et des programmes disponibles :
+
+Pays-Bas
+TU Delft
+Génie électrique, électronique de puissance et systèmes énergétiques durables.
+Electrical Engineering, Mathematics and Computer Science
+
+Allemagne
+TUM Munich
+Génie électrique, conversion d'énergie et systèmes de puissance.
+Technical University of Munich
+
+Suisse
+ETH Zurich
+Génie électrique et technologies de l'information, avec une forte recherche en énergie et en électronique.
+Department of Information Technology and Electrical Engineering
+
+Mon stage au CERN
+Mon stage au CERN m'a permis de découvrir un environnement professionnel de l'intérieur et de rencontrer des collègues de nationalités différentes. Travailler dans ce cadre international m'a montré la valeur de l'échange de points de vue, de l'adaptation à différentes façons de travailler et de la collaboration entre cultures.
+
+----------------------------------------
+
+Engagement citoyen
+
+Ingé+
+Ingé+ est un programme de parrainage qui réunit cette année 20 étudiants de l'INP autour d'une même mission : accompagner des étudiants de BTS dans leur parcours et leurs questionnements sur l'orientation.
+Concrètement, chaque parrain ou marraine échange environ une fois par mois avec ses filleuls, à distance (groupe WhatsApp, visios) ou en présentiel pour les BTS toulousains, pour faire connaissance, partager des conseils sur les matières, l'ingénierie, les filières et les entreprises. Ce qui fait la force du programme, c'est son esprit d'entraide : chacun donne selon ses disponibilités, sans avoir besoin d'être un expert, car l'essentiel est d'être présent et à l'écoute. En tant que parrain, je vois dans INP+ un engagement citoyen concret : donner de mon temps, rassurer et orienter ceux qui hésitent, et transmettre l'envie de poursuivre ses études, dans une logique de solidarité et de partage entre étudiants.
+
+Le Procès de King Kong
+Participation à une pièce de théâtre interactive autour du harcèlement et des violences sexistes et sexuelles. Une expérience collective pour ouvrir le dialogue sur ces enjeux.
+
+Clean Walk à Toulouse
+Participer à une Clean Walk contribue à garder les espaces publics plus propres et à sensibiliser à la réduction des déchets, dans un esprit d’action collective et écologique.
+
+La Fresque du Climat
+Atelier collaboratif pour comprendre les causes et les conséquences du changement climatique et échanger autour des leviers d’action.
+
+----------------------------------------
+
+Activités
+Sports & activités
+
+Club de basketball
+Pratique du basket-ball en club de 2018-2024. Implication dans la vie associative de mon club.
+Reprise de l'activité depuis 2026 avec l'AS INP de Toulouse.
+
+Natation et chasse sous-marine
+Pratique de la natation depuis 2012.
+Pratique de la chasse sous-marine depuis mes 16 ans, respect de l'environnement.
+
+Voitures RC
+Pratique de la voiture radiocommandée depuis 2015, passion pour l'électronique et la mécanique. Montage de ma propre voiture avec kit en 2019.
+
+----------------------------------------
+
+Contact
+
+Téléphone : 07 69 74 07 43
+e-mail : jules.thurel@thurel.fr
+LinkedIn
+
+© 2026 Jules Thurel · jules.thurel@thurel.fr

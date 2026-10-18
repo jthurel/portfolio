@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jules Thurel - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="translations.js"></script>
+</head>
+<body>
+    <div class="hero-shell">
+    <header class="hero">
+        <div class="hero-portrait">
+            <img src="photo_acceui.jpg" alt="Portrait of Jules Thurel" data-i18n-alt="hero.portraitAlt">
+        </div>
+        <div class="hero-copy">
+            <p class="hero-eyebrow" data-i18n="hero.eyebrow">Portfolio · ENSEEIHT · 3EA</p>
+            <h1>Jules Thurel</h1>
+            <p class="hero-focus" data-i18n="hero.focus">Engineering student focused on power electronics, embedded systems and autonomous technologies.</p>
+            <div class="hero-actions">
+                <a class="profile-button" href="./cv-jules-thurel_Vfinal_anglais.pdf" download data-i18n="hero.cvEnglish">CV (English)</a>
+                <a class="profile-button" href="./cv-jules-thurel_V6.pdf" download data-i18n="hero.cvFrench">CV (French)</a>
+                <a class="profile-button profile-button-secondary" href="#contact" data-i18n="hero.contact">Contact me</a>
+            </div>
+        </div>
+    </header>
+
+    <dl class="hero-facts" aria-label="Key facts" data-i18n-aria-label="facts.aria">
+        <div><dt data-i18n="facts.locationLabel">Location</dt><dd data-i18n="facts.location">Toulouse, France</dd></div>
+        <div><dt data-i18n="facts.educationLabel">Education</dt><dd data-i18n="facts.education">Engineer N7 · 3EA</dd></div>
+        <div><dt data-i18n="facts.searchLabel">Looking for</dt><dd data-i18n="facts.search">Internship in power electronics</dd></div>
+        <div><dt class="visually-hidden" data-i18n="language.label">Language</dt><dd><span class="language-switch" role="group" aria-label="Select language" data-i18n-aria-label="language.aria"><button type="button" data-language-choice="en" aria-label="English" data-i18n-aria-label="language.english" aria-pressed="true">EN</button><button type="button" data-language-choice="fr" aria-label="French" data-i18n-aria-label="language.french" aria-pressed="false">FR</button></span></dd></div>
+    </dl>
+    </div>
+
+    <div class="section-tabs">
+        <nav aria-label="Section navigation" data-i18n-aria-label="nav.aria">
+            <a href="#welcome" aria-current="location" data-i18n="nav.welcome">Welcome</a>
+            <a href="#engineering" data-i18n="nav.engineering">Engineering</a>
+            <a href="#career" data-i18n="nav.career">Career</a>
+            <a href="#mobility" data-i18n="nav.mobility">Mobility</a>
+            <a href="#civic" data-i18n="nav.civic">Civic engagement</a>
+            <a href="#activities" data-i18n="nav.activities">Activities</a>
+            <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+    </div>
+
+    <main>
+        <section id="welcome">
+            <h2 data-i18n="welcome.title">Welcome</h2>
+            <div class="welcome-copy">
+                <p data-i18n="welcome.p1">I am 20 years old and I am currently an engineering student at ENSEEIHT (N7) in Toulouse, in the 3EA program (Electrical Energy, Electronics, Automation).</p>
+                <p data-i18n="welcome.p2">Driven by a passion for power electronics and autonomous systems, I thrive on designing, simulating, and testing practical circuits. My internship at CERN and a personal Buck converter project during my preparatory studies cemented this ambition.</p>
+                <p data-i18n="welcome.p3">I apply my method and my rigor in every field related to electronic design.</p>
+            </div>
+        </section>
+
+        <section id="engineering">
+            <h2 data-i18n="engineering.title">Engineering</h2>
+            <h3 data-i18n="skills.title">Skills</h3>
+            <div class="skills-container">
+                <div class="skill-column">
+                    <strong data-i18n="skills.programming">Programming</strong>
+                    <div class="skill-row"><img src="./logo/Py.png" height="50" alt="Python logo"><p>Python</p></div>
+                    <div class="skill-row"><img src="./logo/C_logo.png" height="50" alt="C logo"><p>C</p></div>
+                    <div class="skill-row"><img src="./logo/cpp.png" height="50" alt="C++ logo"><p>C++</p></div>
+                </div>
+                <div class="skill-column">
+                    <strong data-i18n="skills.simulation">Simulation &amp; calculations</strong>
+                    <div class="skill-row"><img src="./logo/ltspice_logo.png" height="50" alt="LTspice logo"><p>LTspice</p></div>
+                    <div class="skill-row"><img src="./logo/Matlab_Logo.png" height="50" alt="Matlab logo"><p>Matlab/Simulink</p></div>
+                    <div class="skill-row"><img src="./logo/Octave_logo.png" height="50" alt="Octave logo"><p>Octave</p></div>
+                </div>
+                <div class="skill-column">
+                    <strong data-i18n="skills.systems">Systems</strong>
+                    <div class="skill-row"><img src="./logo/Debian_logo.png" height="50" alt="Debian logo"><p>Debian</p></div>
+                    <div class="skill-row"><img src="./logo/raspberry_logo.png" height="50" alt="Raspberry Pi logo"><p>Raspberry Pi</p></div>
+                    <div class="skill-row"><img src="./logo/Arduino_logo.svg" height="40" alt="Arduino logo"><p>Arduino</p></div>
+                </div>
+                <div class="skill-column">
+                    <strong data-i18n="skills.soft">Soft skills</strong>
+                    <div class="skill-row"><img src="./logo/pb_solving_logo.jpeg" height="40" alt="Problem-solving logo"><p data-i18n="skills.problemSolving">Problem Solving</p></div>
+                    <div class="skill-row"><img src="./logo/leader_logo.jpeg" height="50" alt="Leadership logo"><p data-i18n="skills.leadership">Leadership</p></div>
+                    <div class="skill-row"><img src="./logo/com_logo.png" height="50" alt="Communication logo"><p data-i18n="skills.communication">Communication</p></div>
+                </div>
+            </div>
+            <h3 data-i18n="projects.title">Projects</h3>
+            <div class="projects-container">
+                <article class="project-card">
+                    <div class="project-card-heading"><h4 data-i18n="buck.title">TIPE · Buck converter</h4></div>
+                    <div class="project-card-preview">
+                        <div class="project-card-image-stage">
+                            <div class="slider project-image-slider" data-buck-carousel role="region" aria-label="TIPE project images" data-i18n-aria-label="buck.region">
+                                <figure><img data-buck-image src="photo tipe/angle_breadboard.png" alt="Buck converter built on a breadboard"></figure>
+                                <output class="slide-counter" data-buck-counter aria-live="polite" aria-label="Image 1 of 6">1/6</output>
+                                <button class="carousel-control previous" type="button" data-buck-previous aria-label="Previous image" data-i18n-aria-label="carousel.previous">&lsaquo;</button>
+                                <button class="carousel-control next" type="button" data-buck-next aria-label="Next image" data-i18n-aria-label="carousel.next">&rsaquo;</button>
+                            </div>
+                        </div>
+                        <p class="project-image-caption" data-buck-caption></p>
+                    </div>
+                    <div class="project-card-details" id="tipe-project-details">
+                        <p data-i18n="buck.description">A project followed over one year in preparatory class, covering the design, simulation and testing of a controlled Buck converter, as part of the theme "Cycle and loop".</p>
+                        <div class="project-document-links">
+                            <a class="profile-button" href="./Mcot_30561_vfinal_dot_EN.pdf" data-en-href="./Mcot_30561_vfinal_dot_EN.pdf" data-fr-href="./Mcot_30561_vfinal_dot.pdf" target="_blank" rel="noopener noreferrer" data-i18n="buck.mcot">View the MCOT</a>
+                            <a class="profile-button" href="./presentation_TIPE_portfolio.pdf" target="_blank" rel="noopener noreferrer" data-i18n="buck.presentation">View the presentation</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card" id="arduino-radar">
+                    <div class="project-card-heading"><h4 data-i18n="radar.title">Arduino radar</h4></div>
+                    <div class="project-card-preview">
+                        <div class="project-card-image-stage"><img src="arduino_radar.jpeg" alt="Arduino radar with ultrasonic sensor and servo motor" data-i18n-alt="radar.alt"></div>
+                        <p class="project-image-caption" data-i18n="radar.caption">Arduino prototype with an ultrasonic sensor mounted on a servo motor.</p>
+                    </div>
+                    <div class="project-card-details" id="radar-project-details">
+                        <p data-i18n="radar.p1">Development of a scanning radar built around an Arduino board, an ultrasonic sensor and a servo motor. The servo orients the sensor, which measures the distance to objects in different directions.</p>
+                        <p data-i18n="radar.p2">The measurements are sent to a computer to display a real-time representation of the radar. This prototype makes it possible to explore data acquisition, servo control and measurement visualization. Project not finished.</p>
+                    </div>
+                </article>
+                <article class="project-card" id="tfa-control">
+                    <div class="project-card-heading"><h4 data-i18n="tfa.title">TFA control</h4></div>
+                    <div class="project-card-preview">
+                        <div class="project-card-image-stage">
+                            <div class="slider project-image-slider" data-tfa-carousel role="region" aria-label="TFA project images" data-i18n-aria-label="tfa.region">
+                                <figure><img data-tfa-image src="./TFA/photo_TFA.jpg" alt="Transfer function analyser used for the measurements"></figure>
+                                <output class="slide-counter" data-tfa-counter aria-live="polite" aria-label="Image 1 of 3">1/3</output>
+                                <button class="carousel-control previous" type="button" data-tfa-previous aria-label="Previous image" data-i18n-aria-label="carousel.previous">&lsaquo;</button>
+                                <button class="carousel-control next" type="button" data-tfa-next aria-label="Next image" data-i18n-aria-label="carousel.next">&rsaquo;</button>
+                            </div>
+                        </div>
+                        <p class="project-image-caption" data-tfa-caption></p>
+                    </div>
+                    <div class="project-card-details" id="tfa-project-details">
+                        <p data-i18n="tfa.p1">Development of a Python program that controls a transfer function analyser (TFA) through a serial connection. The program automates the measurements and retrieves the data from the device.</p>
+                        <p data-i18n="tfa.p2">This automation makes it easier to acquire repeated measurements and use them to study the frequency response of a system, notably as part of my Buck converter project.</p>
+                        <div class="project-document-links">
+                            <a class="profile-button" href="./TFA/Thurel-Jules_2023-10-29_CERN-Internship-Report.pdf" data-en-href="./TFA/Thurel-Jules_2023-10-29_CERN-Internship-Report.pdf" data-fr-href="./TFA/Thurel-Jules_2023-10-29_Rapport-Stage-CERN.pdf" target="_blank" rel="noopener noreferrer" data-i18n="tfa.report">Read the TFA internship report</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <h3 data-i18n="clubs.title">N7 Clubs</h3>
+            <div class="clubs-list">
+                <article class="club-card">
+                    <img src="./logo/7robot_logo.png" alt="7Robot logo">
+                    <div><h4>7Robot</h4><p data-i18n="clubs.robot">Participation in the N7 robotics club, where I contributed to the design and programming of autonomous robots for competitions.</p></div>
+                </article>
+                <article class="club-card">
+                    <img src="./logo/racingteam_logo.jpeg" alt="N7 Racing Team logo">
+                    <div><h4>Racing Team</h4><p data-i18n="clubs.racing">Participation in the N7 racing team, where I would like to contribute to implementing and regulating the electric car's battery systems. The club is helping me gain experience with software such as KiCad and PLECS.</p></div>
+                </article>
+            </div>
+        </section>
+
+        <section hidden aria-hidden="true">
+                                <button class="carousel-control next" type="button" data-buck-next aria-label="Image suivante">&rsaquo;</button>
+                            </div>
+                        </div>
+                        <p class="project-image-caption" data-buck-caption>Réalisation sur breadboard d'un asservissement en tension analogique d'un convertisseur Buck.</p>
+                    </div>
+                    <div class="project-card-details" id="tipe-project-details">
+                        <p>Projet suivi pendant une année en classe préparatoire autour de la conception, de la simulation et des essais d’un convertisseur Buck asservi, dans le cadre du thème « Cycle et boucle ».</p>
+                        <div class="project-document-links">
+                            <a class="profile-button" href="./Mcot_30561_vfinal_dot_EN.pdf" data-en-href="./Mcot_30561_vfinal_dot_EN.pdf" data-fr-href="./Mcot_30561_vfinal_dot.pdf" target="_blank" rel="noopener noreferrer">Consulter le MCOT</a>
+                            <a class="profile-button" href="./presentation_TIPE_portfolio.pdf" target="_blank" rel="noopener noreferrer">Voir la présentation</a>
+                        </div>
+                    </div>
+                </article>
+                    <h2 data-i18n="welcome.title">Welcome</h2>
+                <article class="project-card" id="arduino-radar">
+                        <p data-i18n="welcome.p1">I am 20 years old and I am currently an engineering student at ENSEEIHT (N7) in Toulouse, in the 3EA program (Electrical Energy, Electronics, Automation).</p>
+                        <p data-i18n="welcome.p2">Driven by a passion for power electronics and autonomous systems, I thrive on designing, simulating, and testing practical circuits. My internship at CERN and a personal Buck converter project during my preparatory studies cemented this ambition.</p>
+                        <p data-i18n="welcome.p3">I apply my method and my rigor in every field related to electronic design.</p>
+                    <div class="project-card-preview">
+                        <div class="project-card-image-stage">
+                            <img src="arduino_radar.jpeg" alt="Radar Arduino avec capteur ultrasonore et servomoteur">
+                        </div>
+                    <h2 data-i18n="engineering.title">Engineering</h2>
+                    <h3 data-i18n="skills.title">Skills</h3>
+                    <div class="project-card-details" id="radar-project-details">
+                        <p>Développement d'un radar à balayage autour d'une carte Arduino, d'un capteur ultrasonore et d'un servomoteur. Le servo oriente le capteur, qui relève la distance des objets dans différentes directions.</p>
+                            <strong data-i18n="skills.programming">Programming</strong>
+                            <div class="skill-row"><img src="./logo/Py.png" height="50" alt="Python logo"><p>Python</p></div>
+                </article>
+
+                            <strong data-i18n="skills.simulation">Simulation &amp; calculations</strong>
+                    <div class="project-card-heading">
+                        <h4>TFA control</h4>
+                            <strong data-i18n="skills.systems">Systems</strong>
+                    <div class="project-card-preview">
+                        <div class="project-card-image-stage">
+                            <strong data-i18n="skills.soft">Soft skills</strong>
+                            <div class="skill-row"><img src="./logo/pb_solving_logo.jpeg" height="40" alt="Problem-solving logo"><p data-i18n="skills.problemSolving">Problem Solving</p></div>
+                            <div class="skill-row"><img src="./logo/leader_logo.jpeg" height="50" alt="Leadership logo"><p data-i18n="skills.leadership">Leadership</p></div>
+                            <div class="skill-row"><img src="./logo/com_logo.png" height="50" alt="Communication logo"><p data-i18n="skills.communication">Communication</p></div>
+                                <button class="carousel-control next" type="button" data-tfa-next aria-label="Image suivante">&rsaquo;</button>
+                            </div>
+                    <h3 data-i18n="projects.title">Projects</h3>
+                        <p class="project-image-caption" data-tfa-caption>Analyseur de fonction de transfert utilisé pour réaliser les mesures.</p>
+                    </div>
+                    <div class="project-card-details" id="tfa-project-details">
+                                <h4 data-i18n="buck.title">TIPE · Buck converter</h4>
+                        <p>Cette automatisation facilite l'acquisition de mesures répétées et leur exploitation pour étudier la réponse fréquentielle d'un système, notamment dans le cadre de mon projet de convertisseur Buck.</p>
+                        <div class="project-document-links">
+                            <a class="profile-button" href="./TFA/Thurel-Jules_2023-10-29_CERN-Internship-Report.pdf" data-en-href="./TFA/Thurel-Jules_2023-10-29_CERN-Internship-Report.pdf" data-fr-href="./TFA/Thurel-Jules_2023-10-29_Rapport-Stage-CERN.pdf" target="_blank" rel="noopener noreferrer">Consulter le rapport de stage TFA</a>
+                        </div>
+                                        <figure><img data-buck-image src="photo tipe/angle_breadboard.png" alt="Buck converter built on a breadboard"></figure>
+                </article>
+            </div>
+            <h3>N7 Clubs</h3>
+            <div class="clubs-list">
+                <article class="club-card">
+                                <p class="project-card-details" id="tipe-project-details"><p data-i18n="buck.description">A project followed over one year in preparatory class, covering the design, simulation and testing of a controlled Buck converter, as part of the theme "Cycle and loop".</p>
+                    <div>
+                        <h4>7Robot</h4>
+                        <p>Participation in the N7 robotics club, where I contributed to the design and programming of autonomous robots for competitions.</p>
+                    </div>
+                </article>
+                <article class="club-card">
+                    <img src="./logo/racingteam_logo.jpeg" alt="Logo N7 Racing Team">
+                    <div>
+                        <h4>Racing Team</h4>
+                        <p>Participation in the N7 racing car building club, where I would like to contribute in the implementation and the regulation of the battery systems of the electric car. This clubs brings me the knowledge and experience in different logiciels such as Kicad or Plecs</p>
+                    </div>
+                </article>
+            </div>
+
+        </section>
+
+        <section id ="career">
+            <h2 data-i18n="career.title">Career</h2>
+            <p data-i18n="career.search">I am currently seeking an internship in the field of power electronics, autonomous systems, or embedded systems.</p>
+            <div class="profile-links">
+                <a class="profile-button" href="./cv-jules-thurel_V6.pdf" download data-i18n="career.cvFrench">CV (French)</a>
+                <a class="profile-button" href="./cv-jules-thurel_Vfinal_anglais.pdf" download data-i18n="career.cvEnglish">CV (English)</a>
+                <a class="profile-button" href="https://www.linkedin.com/in/jules-thurel-329495418/" target="_blank" rel="noopener noreferrer" data-i18n="career.linkedin">LinkedIn</a>
+            </div>
+            <article class="internship-card">
+                <div>
+                    <p class="category-label" data-i18n="internship.label">CERN · 2023 · One-week internship</p>
+                    <h3 data-i18n="internship.title">Internship at CERN</h3>
+                    <img class="internship-logo" src="./logo/cern_logo.png" alt="CERN logo" data-i18n-alt="internship.logoAlt">
+                </div>
+                <div>
+                    <p data-i18n="internship.p1">I took the initiative to join a CERN section specializing in power-converter design for a one-week internship.</p>
+                    <p><span data-i18n="internship.p2.before">I developed a Python program to control a Transfer Function Analyser (TFA), configure measurements, process readings, and export results to CSV. This work is presented in my </span><a href="#tfa-control" data-i18n="internship.p2.link">TFA control project</a><span data-i18n="internship.p2.after">, where automated measurements support the frequency-response analysis of my Buck converter.</span></p>
+                    <p data-i18n="internship.p3">Working with colleagues from different nationalities showed me the value of exchanging perspectives, adapting to different ways of working, and collaborating across cultures.</p>
+                </div>
+            </article>
+            <h3 data-i18n="inspiring.title">Inspiring Engineers</h3>
+            <div class="profile-cards" role="region" aria-label="Inspiring Engineers" data-i18n-aria-label="inspiring.title">
+                <article class="profile-card">
+                    <button class="profile-card-trigger" type="button" data-profile-trigger="bruno" aria-expanded="false" aria-controls="profile-detail-panel">
+                        <img class="profile-card-photo" src="./logo/cropped_avatar.jpeg" alt="Portrait of Bruno" data-i18n-alt="profile.bruno.alt">
+                        <span class="profile-card-copy">
+                            <span class="profile-card-name" data-i18n="profile.bruno.name">Bruno</span>
+                            <span class="profile-card-role" data-i18n="profile.bruno.role">Analog and digital electronics engineer</span>
+                            <span class="profile-card-meta" data-i18n="profile.bruno.experience">Experience: 26 years</span>
+                            <span class="profile-card-meta" data-i18n="profile.bruno.company">Company: Thalès Alenia Space</span>
+                        </span>
+                        <span class="profile-open-icon" aria-hidden="true">+</span>
+                    </button>
+                </article>
+                <article class="profile-card">
+                    <button class="profile-card-trigger" type="button" data-profile-trigger="tony" aria-expanded="false" aria-controls="profile-detail-panel">
+                        <img class="profile-card-photo" src="./logo/cropped_avatar_tony.jpg" alt="Portrait of Tony Fourmont" data-i18n-alt="profile.tony.alt">
+                        <span class="profile-card-copy">
+                            <span class="profile-card-name" data-i18n="profile.tony.name">Tony Fourmont</span>
+                            <span class="profile-card-role" data-i18n="profile.tony.role">Power electronics engineer</span>
+                            <span class="profile-card-meta" data-i18n="profile.tony.experience">Experience: 19 years</span>
+                            <span class="profile-card-meta" data-i18n="profile.tony.company">Company: Safran</span>
+                        </span>
+                        <span class="profile-open-icon" aria-hidden="true">+</span>
+                    </button>
+                </article>
+                <article class="profile-card">
+                    <button class="profile-card-trigger" type="button" data-profile-trigger="vincent" aria-expanded="false" aria-controls="profile-detail-panel">
+                        <img class="profile-card-photo" src="./logo/vincent.jpg" alt="Portrait of Vincent" data-i18n-alt="profile.vincent.alt">
+                        <span class="profile-card-copy">
+                            <span class="profile-card-name" data-i18n="profile.vincent.name">Vincent</span>
+                            <span class="profile-card-role" data-i18n="profile.vincent.role">Technologist and expert in electronic reliability and radiation</span>
+                            <span class="profile-card-meta" data-i18n="profile.vincent.experience">Experience: 19 years</span>
+                            <span class="profile-card-meta" data-i18n="profile.vincent.company">Company: ArianeGroup</span>
+                        </span>
+                        <span class="profile-open-icon" aria-hidden="true">+</span>
+                    </button>
+                </article>
+            </div>
+            <aside class="project-card-details profile-detail-panel" id="profile-detail-panel" role="region" aria-labelledby="profile-detail-title" aria-label="Profile details" data-i18n-aria-label="profile.detailsLabel" hidden>
+                <div class="project-card-detail-header">
+                    <h3 class="project-card-detail-title" id="profile-detail-title"></h3>
+                    <button class="project-card-close" type="button" aria-label="Close profile details" data-i18n-aria-label="profile.close">&times;</button>
+                </div>
+                <p class="profile-detail-role" id="profile-detail-role"></p>
+                <dl class="profile-detail-meta">
+                    <div><dt data-i18n="profile.experienceLabel">Experience</dt><dd id="profile-detail-experience"></dd></div>
+                    <div><dt data-i18n="profile.companyLabel">Company</dt><dd id="profile-detail-company"></dd></div>
+                </dl>
+                <div id="profile-detail-description"></div>
+            </aside>
+        </section>
+
+        <section id="mobility">
+            <h2 data-i18n="mobility.title">Mobility</h2>
+            <div class="mobility-languages">
+                <h3 class="mobility-subtitle" data-i18n="mobility.languages">Languages</h3>
+                <dl class="language-levels">
+                    <div class="language-level">
+                        <dt data-i18n="mobility.english">English</dt>
+                        <dd>C1</dd>
+                    </div>
+                    <div class="language-level">
+                        <dt data-i18n="mobility.spanish">Spanish</dt>
+                        <dd>A2</dd>
+                    </div>
+                </dl>
+            </div>
+
+            <div class="mobility-plan">
+                <h3 class="mobility-subtitle" data-i18n="mobility.plan.title">Semester or internship in Europe</h3>
+                <p data-i18n="mobility.plan.p1">I would like to complete a study semester or internship in Europe, ideally in electrical engineering, power electronics, or energy systems. I want to stay within Europe to keep the experience culturally rich while limiting its environmental impact, with a preference for destinations reachable by train.</p>
+                <p data-i18n="mobility.plan.p2">These three universities are potential academic destinations to explore, subject to available exchange agreements and programmes:</p>
+                <div class="mobility-universities">
+                    <article class="mobility-university">
+                        <img class="mobility-university-image" src="./tu_deft.webp" alt="TU Delft campus" data-i18n-alt="mobility.delft.alt">
+                        <p class="mobility-country" data-i18n="mobility.netherlands">The Netherlands</p>
+                        <h4>TU Delft</h4>
+                        <p data-i18n="mobility.delft.description">Electrical engineering, power electronics, and sustainable energy systems.</p>
+                        <a href="https://www.tudelft.nl/en/eemcs" target="_blank" rel="noopener noreferrer">Electrical Engineering, Mathematics and Computer Science</a>
+                    </article>
+                    <article class="mobility-university">
+                        <img class="mobility-university-image" src="./logo/munchen.jpeg" alt="View of Munich, Germany" data-i18n-alt="mobility.tum.alt">
+                        <p class="mobility-country" data-i18n="mobility.germany">Germany</p>
+                        <h4>TUM Munich</h4>
+                        <p data-i18n="mobility.tum.description">Electrical engineering, energy conversion, and power systems.</p>
+                        <a href="https://www.tum.de/en/" target="_blank" rel="noopener noreferrer">Technical University of Munich</a>
+                    </article>
+                    <article class="mobility-university">
+                        <img class="mobility-university-logo" src="./logo/uth_logo.png" alt="ETH Zurich logo" data-i18n-alt="mobility.eth.alt">
+                        <p class="mobility-country" data-i18n="mobility.switzerland">Switzerland</p>
+                        <h4>ETH Zurich</h4>
+                        <p data-i18n="mobility.eth.description">Electrical engineering and information technology, with strong research in energy and electronics.</p>
+                        <a href="https://ee.ethz.ch/" target="_blank" rel="noopener noreferrer">Department of Information Technology and Electrical Engineering</a>
+                    </article>
+                </div>
+            </div>
+
+            <div class="mobility-cern">
+                <h3 class="mobility-subtitle" data-i18n="mobility.cern.title">My internship at CERN</h3>
+                <p data-i18n="mobility.cern.p">My internship at CERN gave me the opportunity to experience a professional environment from the inside and meet colleagues from different nationalities. Working in this international setting showed me the value of exchanging perspectives, adapting to different ways of working, and collaborating across cultures.</p>
+            </div>
+        </section>
+
+        <section id="civic">
+            <h2 data-i18n="civic.title">Civic Engagement</h2>
+            <div class="civic-grid">
+                <article class="civic-card civic-feature">
+                    <img src="./logo/ingep_logo.jpeg" alt="Ingé+ logo" data-i18n-alt="civic.inge.alt">
+                    <div class="civic-feature-copy">
+                        <h3 data-i18n="civic.inge.title">Ingé+</h3>
+                        <p data-i18n="civic.inge.intro">Ingé+ is a mentoring program that this year brings together 20 INP students around a common mission: supporting BTS students in their path and in their questions about career guidance.</p>
+                        <div class="civic-feature-details" id="inge-plus-details" hidden>
+                            <p data-i18n="civic.inge.details">Specifically, each mentor talks with their mentees about once a month, remotely (WhatsApp group, video calls) or in person for the BTS students based in Toulouse, to get to know each other and share advice on subjects, engineering, study paths and companies. The strength of the program is its spirit of mutual support: everyone gives according to their availability, without needing to be an expert, because the essential thing is to be present and to listen. As a mentor, I see in INP+ a concrete form of civic engagement: giving my time, reassuring and guiding those who hesitate, and passing on the desire to continue their studies, in a spirit of solidarity and sharing between students.</p>
+                        </div>
+                    </div>
+                    <button class="civic-expand" type="button" data-civic-expand aria-expanded="false" aria-controls="inge-plus-details" aria-label="Show the full Ingé+ description" data-i18n-aria-label="civic.inge.expand">+</button>
+                </article>
+                <article class="civic-card">
+                    <img src="./logo/proces_kk_logo.jpeg" alt="The Trial of King Kong artwork" data-i18n-alt="civic.kingKong.alt">
+                    <h3 data-i18n="civic.kingKong.title">The Trial of King Kong</h3>
+                    <p data-i18n="civic.kingKong.p">Participation in an interactive play about harassment and sexist and sexual violence. A collective experience to open up dialogue on these issues.</p>
+                </article>
+                <article class="civic-card">
+                    <img src="./logo/clean_walk_logo.jpeg" alt="Clean Walk logo" data-i18n-alt="civic.cleanWalk.alt">
+                    <h3 data-i18n="civic.cleanWalk.title">Clean Walk in Toulouse</h3>
+                    <p data-i18n="civic.cleanWalk.p">Taking part in a Clean Walk helps keep public spaces cleaner and raises awareness about waste reduction, in a spirit of collective and ecological action.</p>
+                </article>
+                <article class="civic-card">
+                    <img src="./logo/fresque_climat_logo.png" alt="Climate Fresk logo" data-i18n-alt="civic.climate.alt">
+                    <h3 data-i18n="civic.climate.title">The Climate Fresk</h3>
+                    <p data-i18n="civic.climate.p">A collaborative workshop to understand the causes and consequences of climate change and discuss the levers for action.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="activities">
+            <h2 data-i18n="activities.title">Activities</h2>
+            <p class="section-subtitle" data-i18n="activities.subtitle">Sports &amp; activities</p>
+            <div class="activities-list">
+                <article class="activity-item">
+                    <div class="activity-gallery activity-gallery-static">
+                        <img src="baketball.jpg" alt="Basketball court" data-i18n-alt="activities.basketball.alt">
+                    </div>
+                    <div class="activity-copy">
+                        <h3 data-i18n="activities.basketball.title">Basketball club</h3>
+                        <p data-i18n="activities.basketball.p1">Played basketball in a club from 2018 to 2024. Involvement in my club's associative life.</p>
+                        <p data-i18n="activities.basketball.p2">Resumed playing in 2026 with AS INP de Toulouse.</p>
+                    </div>
+                </article>
+                <article class="activity-item">
+                    <div class="activity-gallery activity-gallery-static">
+                        <img src="piscine.jpg" alt="Swimming pool" data-i18n-alt="activities.swimming.alt">
+                    </div>
+                    <div class="activity-copy">
+                        <h3 data-i18n="activities.swimming.title">Swimming and spearfishing</h3>
+                        <p data-i18n="activities.swimming.p1">Swimming since 2012.</p>
+                        <p data-i18n="activities.swimming.p2">Spearfishing since I was 16, with respect for the environment.</p>
+                    </div>
+                </article>
+                <article class="activity-item">
+                    <div class="activity-gallery activity-gallery-static">
+                        <img src="RC-car.jpg" alt="Radio-controlled car, front view" data-i18n-alt="activities.rc.alt">
+                    </div>
+                    <div class="activity-copy">
+                        <h3 data-i18n="activities.rc.title">RC cars</h3>
+                        <p data-i18n="activities.rc.p">Radio-controlled car hobby since 2015, passion for electronics and mechanics. Built my own car from a kit in 2019.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 data-i18n="contact.title">Contact</h2>
+            <div class="contact-links">
+                <p><strong data-i18n="contact.phoneLabel">Telephone:</strong> <a href="tel:+33769740743">07 69 74 07 43</a></p>
+                <p><strong data-i18n="contact.emailLabel">E-mail:</strong> <a href="mailto:jules.thurel@thurel.fr">jules.thurel@thurel.fr</a></p>
+                <p><a href="https://www.linkedin.com/in/jules-thurel-329495418/" target="_blank" rel="noopener noreferrer" data-i18n="career.linkedin">LinkedIn</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Jules Thurel · <a href="mailto:jules.thurel@thurel.fr">jules.thurel@thurel.fr</a></p>
+    </footer>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+        const buckSlides = [
+            {
+                src: "photo tipe/angle_breadboard.png",
+                alt: "Convertisseur Buck",
+                caption: "Réalisation sur une breadboard d'un asservissement en tension analogique d'un convertisseur Buck dans le cadre de mon TIPE. Ce projet m'a permis de comprendre les principes de base de l'électronique de puissance et de l'automatique."
+            },
+            {
+                src: "photo tipe/circuit.png",
+                alt: "Circuit électronique",
+                caption: "Schéma de principe représentant les différentes connexions entre les composants majeurs : La partie de puissance : étage de commutation et filtre LC du buck. La partie de commande : le correcteur PI / Le PWM / le driver high-side."
+            },
+            {
+                src: "photo tipe/tipe_jules_pv.png",
+                alt: "jules avec tipe",
+                caption: "Essai en condition réelle avec panneau photovoltaïque."
+            },
+            {
+                src: "photo tipe/multimeter.png",
+                alt: "test en condition réelledu buckavec panneau solaire",
+                caption: "Mesure du bon fonctionnement de la régulation du buck en condition réelle avec panneau solaire. Tension de sortie = 5.01V pour une tension d'entrée Vref = 5.0V"
+            },
+            {
+                src: "photo tipe/FTBFG.png",
+                alt: "Gain en fonction en boucle fermée",
+                caption: "Réalisation de la fonction de transfert en boucle fermée en gain à l'aide d'un TFA. Vérification de la cohérence de la simulation avec la mesure."
+            },
+            {
+                src: "photo tipe/FTBFP.png",
+                alt: "phase de la FTBF",
+                caption: "Réalisation de la fonction de transfert en boucle fermée en phase à l'aide d'un TFA. Vérification de la cohérence de la simulation avec la mesure."
+            }
+        ];
+        const buckCarousel = document.querySelector("[data-buck-carousel]");
+        const buckImage = buckCarousel.querySelector("[data-buck-image]");
+        const buckCaption = document.querySelector("[data-buck-caption]");
+        const buckCounter = buckCarousel.querySelector("[data-buck-counter]");
+        let activeBuckSlide = 0;
+
+        const showBuckSlide = (index) => {
+            activeBuckSlide = (index + buckSlides.length) % buckSlides.length;
+            const slide = buckSlides[activeBuckSlide];
+            buckImage.src = slide.src;
+            buckImage.alt = slide.alt;
+            buckCaption.textContent = slide.caption;
+            buckCounter.value = `${activeBuckSlide + 1}/${buckSlides.length}`;
+            buckCounter.textContent = buckCounter.value;
+            buckCounter.setAttribute("aria-label", `Image ${activeBuckSlide + 1} sur ${buckSlides.length}`);
+        };
+
+        buckCarousel.querySelector("[data-buck-previous]").addEventListener("click", () => showBuckSlide(activeBuckSlide - 1));
+        buckCarousel.querySelector("[data-buck-next]").addEventListener("click", () => showBuckSlide(activeBuckSlide + 1));
+
+        const tfaSlides = [
+            {
+                src: "./TFA/photo_TFA.jpg",
+                alt: "Analyseur de fonction de transfert",
+                caption: "Analyseur de fonction de transfert utilisé pour réaliser les mesures."
+            },
+            {
+                src: "./TFA/GI_TFA.png",
+                alt: "Interface du programme de contrôle du TFA",
+                caption: "Interface développée pour configurer l'analyseur, lancer les mesures et récupérer les données."
+            },
+            {
+                src: "./TFA/settings_TFA.png",
+                alt: "Exemple de paramètres de mesure du TFA",
+                caption: "Exemple de paramètres chargés pour configurer une mesure sur l'analyseur."
+            }
+        ];
+        const tfaCarousel = document.querySelector("[data-tfa-carousel]");
+        const tfaImage = tfaCarousel.querySelector("[data-tfa-image]");
+        const tfaCaption = document.querySelector("[data-tfa-caption]");
+        const tfaCounter = tfaCarousel.querySelector("[data-tfa-counter]");
+        let activeTfaSlide = 0;
+
+        const showTfaSlide = (index) => {
+            activeTfaSlide = (index + tfaSlides.length) % tfaSlides.length;
+            const slide = tfaSlides[activeTfaSlide];
+            tfaImage.src = slide.src;
+            tfaImage.alt = slide.alt;
+            tfaCaption.textContent = slide.caption;
+            tfaCounter.value = `${activeTfaSlide + 1}/${tfaSlides.length}`;
+            tfaCounter.textContent = tfaCounter.value;
+            tfaCounter.setAttribute("aria-label", `Image ${activeTfaSlide + 1} sur ${tfaSlides.length}`);
+        };
+
+        tfaCarousel.querySelector("[data-tfa-previous]").addEventListener("click", () => showTfaSlide(activeTfaSlide - 1));
+        tfaCarousel.querySelector("[data-tfa-next]").addEventListener("click", () => showTfaSlide(activeTfaSlide + 1));
+
+        const observeCaptionHeight = (captionElement, slides) => {
+            let measuredWidth = 0;
+            const measureCaption = () => {
+                const width = captionElement.getBoundingClientRect().width;
+                if (!width || Math.abs(width - measuredWidth) < 1) return;
+                measuredWidth = width;
+
+                const measurement = document.createElement("p");
+                measurement.className = captionElement.className;
+                Object.assign(measurement.style, {
+                    position: "fixed",
+                    top: "0",
+                    left: "-10000px",
+                    width: `${width}px`,
+                    height: "auto",
+                    minHeight: "0",
+                    visibility: "hidden",
+                    overflow: "visible"
+                });
+                document.body.append(measurement);
+                const maxHeight = slides.reduce((height, slide) => {
+                    measurement.textContent = slide.caption;
+                    return Math.max(height, measurement.getBoundingClientRect().height);
+                }, 0);
+                measurement.remove();
+                captionElement.style.height = `${Math.ceil(maxHeight)}px`;
+            };
+
+            const observer = new ResizeObserver(measureCaption);
+            observer.observe(captionElement);
+            measureCaption();
+            return observer;
+        };
+
+        const captionResizeObservers = [
+            observeCaptionHeight(buckCaption, buckSlides),
+            observeCaptionHeight(tfaCaption, tfaSlides)
+        ];
+
+        const navigationLinks = Array.from(document.querySelectorAll(".section-tabs a"));
+        const navigationSections = navigationLinks
+            .map((link) => document.querySelector(link.getAttribute("href")))
+            .filter(Boolean);
+        const setActiveNavigation = (section) => {
+            navigationLinks.forEach((link) => {
+                if (link.hash === `#${section.id}`) {
+                    link.setAttribute("aria-current", "location");
+                } else {
+                    link.removeAttribute("aria-current");
+                }
+            });
+        };
+
+        const navigationObserver = new IntersectionObserver((entries) => {
+            const visibleSections = entries
+                .filter((entry) => entry.isIntersecting)
+                .sort((first, second) => second.intersectionRatio - first.intersectionRatio);
+            if (visibleSections.length) setActiveNavigation(visibleSections[0].target);
+        }, { rootMargin: "-20% 0px -68% 0px", threshold: [0, 0.25, 0.5] });
+
+        navigationSections.forEach((section) => navigationObserver.observe(section));
+        setActiveNavigation(navigationSections[0]);
+
+        const profileTriggers = Array.from(document.querySelectorAll("[data-profile-trigger]"));
+        const profilePanel = document.querySelector(".profile-detail-panel");
+        const profileCloseButton = profilePanel.querySelector(".project-card-close");
+        const profileTitle = document.querySelector("#profile-detail-title");
+        const profileRole = document.querySelector("#profile-detail-role");
+        const profileExperience = document.querySelector("#profile-detail-experience");
+        const profileCompany = document.querySelector("#profile-detail-company");
+        const profileDescription = document.querySelector("#profile-detail-description");
+        const profileDetails = {
+            bruno: {
+                name: "Bruno Crousevial",
+                role: "Analog and digital electronics engineer",
+                experience: "26 years of experience",
+                company: "Thalès Alenia Space",
+                paragraphs: [
+                    "His skills cover the full V-cycle development of a product: he designs electronic boards, interfaces with digital teams (firmware and software), and designs digital circuits on FPGA. This end-to-end command of the development cycle means he can follow a product from the first specifications through to validation, coordinating with the different technical teams involved along the way.",
+                    "In small companies, he learned to be versatile and hands-on, covering the whole design chain, adapting quickly to varied projects, and taking on broad responsibilities. In a large group like Thales, he now works within structured, large-scale industrial programs, with rigorous processes and cross-functional teams.",
+                    "What I find interesting about his career path is precisely this combination: the agility and breadth acquired in SMEs, paired with the rigor and scale of a major group. It's the kind of profile that can both design a board down to the smallest detail and navigate the complex organization of a large industrial player — a real asset in electronics, where practical know-how and structured methodology matter equally. His career illustrates how experience in small structures and in a global group can complement each other rather than oppose each other."
+                ]
+            },
+            tony: {
+                name: "Tony Fourmont",
+                role: "Power electronics engineer",
+                experience: "19 years of experience",
+                company: "Safran",
+                paragraphs: [
+                    "He designs low- and medium-power converters for aeronautical applications. His work covers the full design chain, from defining power supply architectures and simulating converters (DC/DC, AC/DC) to PCB layout, prototyping, and technical documentation, as well as providing industrial support during series production.",
+                    "What I find fascinating about his job is that it sits at the crossroads of rigorous engineering and real-world applications: every converter he designs must meet strict client specifications and perform reliably in the demanding environment of aircraft. It's a field where precision, creative design, and hands-on prototyping come together. His background, from a Bac F3 in electrotechnics to a DESS in power electronics, reflects a genuine, long-standing passion for the discipline."
+                    ]
+            },
+            vincent: {
+                name: "Vincent Rouet",
+                role: "Technologist and expert in electronic reliability and radiation",
+                experience: "19 years of experience",
+                company: "ArianeGroup",
+                paragraphs: [
+                    "Vincent is a component technologist (EEE and assembly) and an expert in radiation effects and electronics reliability at ArianeGroup SAS, where he also heads the technologists' department. His core mission is to ensure the reliability and quality of electronic equipment, guaranteeing optimal operation under the specific conditions of each mission.",
+                    "His responsibilities span several key areas: defining technical requirements for materials and processes to prove the durability of electronic designs in mission environments; supporting design offices in managing embedded technologies; analyzing technological risks for electronic products and sub-assemblies, particularly COTS (commercial off-the-shelf) components, to assess risk and technology maturity; reviewing technical files from the design stage and analyzing technological choices against requirements; supporting the supply chain for subcontracted products throughout the product life cycle; inspecting boards and electronic sub-assemblies according to standards; carrying out technological and process surveys at subcontractors and analyzing each manufacturing step; contributing to anomaly resolution in production and operations; and participating in quality alerts and technology obsolescence notices.",
+                    "Before joining ArianeGroup, he spent 14 years at Airbus Group Innovations as a research engineer in electronics reliability and head of the electronics assembly and integration reliability department. He also spent three years at VITEC MULTIMEDIA as an electronics and computer engineer in a design office.",
+                    "What I find fascinating about his work is that it sits at the heart of space and aeronautics, where a single component failure can jeopardize an entire mission. His role combines deep technical expertise in radiation effects, reliability, and COTS risk analysis with a broad vision of the product life cycle, from design to supply chain and production. Rigor, curiosity, and a thorough understanding of materials and processes help ensure that equipment survives the extreme conditions of space."
+                ]
+            }
+        };
+        let activeProfileTrigger = null;
+        const closeProfilePanel = () => {
+            profilePanel.hidden = true;
+            profileTriggers.forEach((trigger) => trigger.setAttribute("aria-expanded", "false"));
+            activeProfileTrigger = null;
+        };
+        const openProfilePanel = (trigger) => {
+            if (activeProfileTrigger === trigger && !profilePanel.hidden) {
+                closeProfilePanel();
+                return;
+            }
+
+            const profile = profileDetails[trigger.dataset.profileTrigger];
+            activeProfileTrigger = trigger;
+            profileTitle.textContent = profile.name;
+            profileRole.textContent = profile.role;
+            profileExperience.textContent = profile.experience;
+            profileCompany.textContent = profile.company;
+            profileDescription.replaceChildren(...profile.paragraphs.map((text) => {
+                const paragraph = document.createElement("p");
+                paragraph.textContent = text;
+                return paragraph;
+            }));
+            profilePanel.hidden = false;
+            profileTriggers.forEach((item) => item.setAttribute("aria-expanded", String(item === trigger)));
+        };
+        profileTriggers.forEach((trigger) => {
+            trigger.addEventListener("click", () => openProfilePanel(trigger));
+        });
+        profileCloseButton.addEventListener("click", () => {
+            const triggerToFocus = activeProfileTrigger;
+            closeProfilePanel();
+            triggerToFocus?.focus();
+        });
+
+        const civicExpand = document.querySelector("[data-civic-expand]");
+        const civicDetails = document.getElementById(civicExpand.getAttribute("aria-controls"));
+        civicExpand.addEventListener("click", () => {
+            const isExpanded = civicExpand.getAttribute("aria-expanded") === "true";
+            civicDetails.hidden = isExpanded;
+            civicExpand.setAttribute("aria-expanded", String(!isExpanded));
+            civicExpand.setAttribute("aria-label", isExpanded ? "Afficher la description complète de Ingé+" : "Réduire la description de Ingé+");
+            civicExpand.textContent = isExpanded ? "+" : "−";
+        });
+
+        const languageChoices = Array.from(document.querySelectorAll("[data-language-choice]"));
+        const languageDocuments = Array.from(document.querySelectorAll("[data-en-href][data-fr-href]"));
+        const selectLanguage = (language) => {
+            languageChoices.forEach((choice) => {
+                choice.setAttribute("aria-pressed", String(choice.dataset.languageChoice === language));
+            });
+            languageDocuments.forEach((link) => {
+                link.href = link.dataset[`${language}Href`];
+            });
+        };
+
+        languageChoices.forEach((choice) => {
+            choice.addEventListener("click", () => {
+                selectLanguage(choice.dataset.languageChoice);
+            });
+        });
+        selectLanguage(languageChoices.find((choice) => choice.getAttribute("aria-pressed") === "true")?.dataset.languageChoice || "en");
+    </script>
+</body>
+</html>

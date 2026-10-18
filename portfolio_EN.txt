@@ -1,0 +1,223 @@
+Portfolio · ENSEEIHT · 3EA
+Jules Thurel
+Engineering student focused on power electronics, embedded systems and autonomous technologies.
+
+CV (English)
+CV (French)
+Contact me
+
+Location: Toulouse, France
+Education: Engineer N7 · 3EA
+Looking for: Internship in power electronics
+EN
+FR
+
+Welcome
+Engineering
+Career
+Mobility
+Civic engagement
+Activities
+Contact
+
+----------------------------------------
+
+Welcome
+
+I am 20 years old and I am currently an engineering student at ENSEEIHT (N7) in Toulouse, in the 3EA program (Electrical Energy, Electronics, Automation).
+
+Driven by a passion for power electronics and autonomous systems, I thrive on designing, simulating, and testing practical circuits. My internship at CERN and a personal Buck converter project during my preparatory studies cemented this ambition.
+
+I apply my method and my rigor in every field related to electronic design.
+
+----------------------------------------
+
+Engineering
+
+Skills
+
+Programming
+Python
+C
+C++
+
+Simulation & calculations
+LTspice
+Matlab/Simulink
+Octave
+
+Systems
+Debian
+Raspberry Pi
+Arduino
+
+Soft skills
+Problem Solving
+Leadership
+Communication
+
+Projects
+
+TIPE · Buck converter
+1/6
+Breadboard implementation of an analog voltage control loop for a Buck converter as part of my TIPE. This project helped me understand the basic principles of power electronics and control engineering.
+Schematic showing the connections between the main components: the power stage: the switching stage and the LC filter of the buck converter. The control stage: the PI controller / the PWM / the high-side driver.
+Real-condition test with a photovoltaic panel.
+Measurement of the buck regulation working properly in real conditions with a solar panel. Output voltage = 5.01V for an input reference Vref = 5.0V
+Closed-loop transfer function (gain) measured using a TFA. Verification that the simulation is consistent with the measurement.
+Closed-loop transfer function (phase) measured using a TFA. Verification that the simulation is consistent with the measurement.
+A project followed over one year in preparatory class, covering the design, simulation and testing of a controlled Buck converter, as part of the theme "Cycle and loop".
+View the MCOT
+View the presentation
+
+Arduino radar
+Arduino prototype with an ultrasonic sensor mounted on a servo motor.
+Development of a scanning radar built around an Arduino board, an ultrasonic sensor and a servo motor. The servo orients the sensor, which measures the distance to objects in different directions.
+The measurements are sent to a computer to display a real-time representation of the radar. This prototype makes it possible to explore data acquisition, servo control and measurement visualization. Project not finished.
+
+TFA control
+1/3
+Transfer function analyser used to carry out the measurements.
+Interface developed to configure the analyser, start the measurements and retrieve the data.
+Example of parameters loaded to configure a measurement on the analyser.
+Development of a Python program that controls a transfer function analyser (TFA) through a serial connection. The program automates the measurements and retrieves the data from the device.
+This automation makes it easier to acquire repeated measurements and use them to study the frequency response of a system, notably as part of my Buck converter project.
+Read the TFA internship report
+
+N7 Clubs
+
+7Robot
+Participation in the N7 robotics club, where I contributed to the design and programming of autonomous robots for competitions.
+
+Racing Team
+Participation in the N7 racing car building club, where I would like to contribute in the implementation and the regulation of the battery systems of the electric car. This clubs brings me the knowledge and experience in different logiciels such as Kicad or Plecs
+
+----------------------------------------
+
+Career
+
+I am currently seeking an internship in the field of power electronics, autonomous systems, or embedded systems.
+
+CV (French)
+CV (English)
+LinkedIn
+
+CERN · 2023 · One-week internship
+Internship at CERN
+I took the initiative to join a CERN section specializing in power-converter design for a one-week internship.
+I developed a Python program to control a Transfer Function Analyser (TFA), configure measurements, process readings, and export results to CSV. This work is presented in my TFA control project, where automated measurements support the frequency-response analysis of my Buck converter.
+Working with colleagues from different nationalities showed me the value of exchanging perspectives, adapting to different ways of working, and collaborating across cultures.
+
+Inspiring Engineers
+
+Bruno
+Analog and digital electronics engineer
+Experience: 26 years of experience
+Company: Thalès Alenia Space
+
+Tony Fourmont
+Power electronics engineer
+Experience: 19 years of experience
+Company: Safran
+
+Vincent
+Technologist and expert in electronic reliability and radiation
+Experience: 19 years of experience
+Company: ArianeGroup
+
+Bruno Crousevial
+Analog and digital electronics engineer
+Experience: 26 years of experience
+Company: Thalès Alenia Space
+His skills cover the full V-cycle development of a product: he designs electronic boards, interfaces with digital teams (firmware and software), and designs digital circuits on FPGA. This end-to-end command of the development cycle means he can follow a product from the first specifications through to validation, coordinating with the different technical teams involved along the way.
+In small companies, he learned to be versatile and hands-on, covering the whole design chain, adapting quickly to varied projects, and taking on broad responsibilities. In a large group like Thales, he now works within structured, large-scale industrial programs, with rigorous processes and cross-functional teams.
+What I find interesting about his career path is precisely this combination: the agility and breadth acquired in SMEs, paired with the rigor and scale of a major group. It's the kind of profile that can both design a board down to the smallest detail and navigate the complex organization of a large industrial player — a real asset in electronics, where practical know-how and structured methodology matter equally. His career illustrates how experience in small structures and in a global group can complement each other rather than oppose each other.
+
+Tony Fourmont
+Power electronics engineer
+Experience: 19 years of experience
+Company: Safran
+He designs low- and medium-power converters for aeronautical applications. His work covers the full design chain, from defining power supply architectures and simulating converters (DC/DC, AC/DC) to PCB layout, prototyping, and technical documentation, as well as providing industrial support during series production.
+What I find fascinating about his job is that it sits at the crossroads of rigorous engineering and real-world applications: every converter he designs must meet strict client specifications and perform reliably in the demanding environment of aircraft. It's a field where precision, creative design, and hands-on prototyping come together. His background, from a Bac F3 in electrotechnics to a DESS in power electronics, reflects a genuine, long-standing passion for the discipline.
+
+Vincent Rouet
+Technologist and expert in electronic reliability and radiation
+Experience: 19 years of experience
+Company: ArianeGroup
+Vincent is a component technologist (EEE and assembly) and an expert in radiation effects and electronics reliability at ArianeGroup SAS, where he also heads the technologists' department. His core mission is to ensure the reliability and quality of electronic equipment, guaranteeing optimal operation under the specific conditions of each mission.
+His responsibilities span several key areas: defining technical requirements for materials and processes to prove the durability of electronic designs in mission environments; supporting design offices in managing embedded technologies; analyzing technological risks for electronic products and sub-assemblies, particularly COTS (commercial off-the-shelf) components, to assess risk and technology maturity; reviewing technical files from the design stage and analyzing technological choices against requirements; supporting the supply chain for subcontracted products throughout the product life cycle; inspecting boards and electronic sub-assemblies according to standards; carrying out technological and process surveys at subcontractors and analyzing each manufacturing step; contributing to anomaly resolution in production and operations; and participating in quality alerts and technology obsolescence notices.
+Before joining ArianeGroup, he spent 14 years at Airbus Group Innovations as a research engineer in electronics reliability and head of the electronics assembly and integration reliability department. He also spent three years at VITEC MULTIMEDIA as an electronics and computer engineer in a design office.
+What I find fascinating about his work is that it sits at the heart of space and aeronautics, where a single component failure can jeopardize an entire mission. His role combines deep technical expertise in radiation effects, reliability, and COTS risk analysis with a broad vision of the product life cycle, from design to supply chain and production. Rigor, curiosity, and a thorough understanding of materials and processes help ensure that equipment survives the extreme conditions of space.
+
+----------------------------------------
+
+Mobility
+
+Languages
+English C1
+Spanish A2
+
+Semester or internship in Europe
+I would like to complete a study semester or internship in Europe, ideally in electrical engineering, power electronics, or energy systems. I want to stay within Europe to keep the experience culturally rich while limiting its environmental impact, with a preference for destinations reachable by train.
+These three universities are potential academic destinations to explore, subject to available exchange agreements and programmes:
+
+The Netherlands
+TU Delft
+Electrical engineering, power electronics, and sustainable energy systems.
+Electrical Engineering, Mathematics and Computer Science
+
+Germany
+TUM Munich
+Electrical engineering, energy conversion, and power systems.
+Technical University of Munich
+
+Switzerland
+ETH Zurich
+Electrical engineering and information technology, with strong research in energy and electronics.
+Department of Information Technology and Electrical Engineering
+
+My internship at CERN
+My internship at CERN gave me the opportunity to experience a professional environment from the inside and meet colleagues from different nationalities. Working in this international setting showed me the value of exchanging perspectives, adapting to different ways of working, and collaborating across cultures.
+
+----------------------------------------
+
+Civic Engagement
+
+Ingé+
+Ingé+ is a mentoring program that this year brings together 20 INP students around a common mission: supporting BTS students in their path and in their questions about career guidance.
+Specifically, each mentor talks with their mentees about once a month, remotely (WhatsApp group, video calls) or in person for the BTS students based in Toulouse, to get to know each other and share advice on subjects, engineering, study paths and companies. The strength of the program is its spirit of mutual support: everyone gives according to their availability, without needing to be an expert, because the essential thing is to be present and to listen. As a mentor, I see in INP+ a concrete form of civic engagement: giving my time, reassuring and guiding those who hesitate, and passing on the desire to continue their studies, in a spirit of solidarity and sharing between students.
+
+The Trial of King Kong
+Participation in an interactive play about harassment and sexist and sexual violence. A collective experience to open up dialogue on these issues.
+
+Clean Walk in Toulouse
+Taking part in a Clean Walk helps keep public spaces cleaner and raises awareness about waste reduction, in a spirit of collective and ecological action.
+
+The Climate Fresk
+A collaborative workshop to understand the causes and consequences of climate change and discuss the levers for action.
+
+----------------------------------------
+
+Activities
+Sports & activities
+
+Basketball club
+Played basketball in a club from 2018 to 2024. Involvement in my club's associative life.
+Resumed playing in 2026 with AS INP de Toulouse.
+
+Swimming and spearfishing
+Swimming since 2012.
+Spearfishing since I was 16, with respect for the environment.
+
+RC cars
+Radio-controlled car hobby since 2015, passion for electronics and mechanics. Built my own car from a kit in 2019.
+
+----------------------------------------
+
+Contact
+
+Telephone: 07 69 74 07 43
+e-mail: jules.thurel@thurel.fr
+LinkedIn
+
+© 2026 Jules Thurel · jules.thurel@thurel.fr
