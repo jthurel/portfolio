@@ -6,6 +6,7 @@ window.portfolioTranslations = {
         "hero.portraitAlt": "Portrait of Jules Thurel",
         "hero.cvEnglish": "CV (English)",
         "hero.cvFrench": "CV (French)",
+        "hero.3minpitch": "3 min pitch",
         "hero.contact": "Contact me",
         "facts.aria": "Key facts",
         "facts.locationLabel": "Location",

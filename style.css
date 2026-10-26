@@ -245,14 +245,50 @@ summary:focus-visible {
     box-shadow: 0 3px 12px rgba(13, 29, 43, 0.06);
 }
 
+.section-tabs-inner {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: min(var(--content-width), calc(100% - 2.5rem));
+    margin: 0 auto;
+}
+
 .section-tabs nav {
     display: flex;
-    width: min(var(--content-width), calc(100% - 2.5rem));
+    flex: 1 1 auto;
+    min-width: 0;
     gap: 0.25rem;
     overflow-x: auto;
-    margin: 0 auto;
     scrollbar-width: thin;
     scrollbar-color: #b7cad9 transparent;
+}
+
+/* Bouton EN/FR dans la barre : visible seulement quand la barre est collée en haut */
+.tabs-language-switch {
+    flex: 0 0 auto;
+    border-color: var(--border);
+    background: var(--surface);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.section-tabs.is-stuck .tabs-language-switch {
+    opacity: 1;
+    visibility: visible;
+}
+
+.tabs-language-switch button {
+    min-height: 30px;
+    color: var(--navy-soft);
+}
+
+.tabs-language-switch button[aria-pressed="true"] {
+    color: var(--white);
+}
+
+.tabs-language-switch button:hover:not([aria-pressed="true"]) {
+    background: var(--border);
 }
 
 .section-tabs a {
@@ -937,24 +973,83 @@ section p {
 }
 
 .civic-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+/* Ligne 1 : 2 cartes (Ingé+ et l'événement), ligne 2 : 3 cartes */
+.civic-grid > .civic-feature {
+    grid-column: span 3;
+}
+
+.civic-grid > .civic-card:not(.civic-feature) {
+    grid-column: span 2;
 }
 
 .civic-feature {
     display: grid;
-    grid-column: 1 / -1;
-    grid-template-columns: 180px minmax(0, 1fr) auto;
-    align-items: center;
-    gap: 1.25rem;
+    grid-template-columns: minmax(0, 1fr) 42px;
+    align-content: start;
+    align-items: start;
+    gap: 1rem 1.25rem;
 }
 
-.civic-feature > img {
-    width: 180px;
+.civic-feature > img,
+.civic-grid > .civic-feature > img {
+    grid-column: 1 / -1;
+    width: 100%;
     height: 150px;
     margin: 0;
     border-radius: 6px;
     background: var(--surface);
     object-fit: contain;
+    object-position: center;
+}
+
+.civic-feature .civic-feature-copy {
+    grid-column: 1;
+}
+
+.civic-feature .civic-expand {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: start;
+}
+
+.civic-event .civic-feature-copy {
+    grid-column: 1 / -1;
+}
+
+.civic-event-visual {
+    display: flex;
+    grid-column: 1 / -1;
+    height: 150px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    border-radius: 6px;
+    background: linear-gradient(135deg, var(--navy-soft), var(--blue));
+    color: var(--white);
+    text-align: center;
+}
+
+.civic-event-tag {
+    padding: 0.15rem 0.7rem;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 650;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.civic-event-date {
+    font-size: 1.4rem;
+}
+
+.civic-event-list {
+    margin: 0.75rem 0 0;
+    padding-left: 1.25rem;
 }
 
 .civic-feature-copy {
@@ -1013,12 +1108,6 @@ section p {
     height: 140px;
     margin-bottom: 0.85rem;
     object-fit: contain;
-}
-
-.civic-card:first-child > img {
-    height: 180px;
-    object-fit: cover;
-    object-position: center 52%;
 }
 
 .civic-card h3 {
@@ -1088,7 +1177,7 @@ section p {
 .contact-section {
     position: relative;
     isolation: isolate;
-    padding-block: 3.5rem;
+    padding-block: 5rem;
     color: #e7eff5;
 }
 
@@ -1167,6 +1256,15 @@ footer p {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+    .civic-grid > .civic-feature,
+    .civic-grid > .civic-card:not(.civic-feature) {
+        grid-column: auto;
+    }
+
+    .civic-grid > .civic-card:last-child {
+        grid-column: 1 / -1;
+    }
+
     .projects-container {
         grid-template-columns: minmax(0, 1fr);
     }
@@ -1197,7 +1295,7 @@ footer p {
     }
 
     main,
-    .section-tabs nav {
+    .section-tabs-inner {
         width: calc(100% - 2rem);
     }
 
@@ -1291,6 +1389,30 @@ footer p {
         min-height: 0;
     }
 }
+.contact-section {
+    text-align: center;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem 2.5rem;
+}
+
+.contact-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+}
+
+.contact-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+}
 
 @media (prefers-reduced-motion: reduce) {
     html {
@@ -1305,4 +1427,117 @@ footer p {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
     }
+}
+/* ---------- Symboles des boutons (flèches, +, ×) dessinés en CSS pour un centrage exact ---------- */
+.carousel-control,
+.gallery-control {
+    font-size: 0;
+}
+
+.carousel-control::before,
+.gallery-control::before {
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid currentColor;
+    border-left: 2px solid currentColor;
+    content: "";
+}
+
+.carousel-control.previous::before,
+.gallery-control.previous::before {
+    transform: translateX(3px) rotate(45deg);
+}
+
+.carousel-control.next::before,
+.gallery-control.next::before {
+    transform: translateX(-3px) rotate(-135deg);
+}
+
+.civic-expand,
+.profile-open-icon,
+.project-card-close {
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+}
+
+.civic-expand::before,
+.civic-expand::after,
+.profile-open-icon::before,
+.profile-open-icon::after,
+.project-card-close::before,
+.project-card-close::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: var(--icon-size, 14px);
+    height: 2px;
+    border-radius: 1px;
+    background: currentColor;
+    content: "";
+    transform: translate(-50%, -50%);
+}
+
+.civic-expand { --icon-size: 16px; }
+.profile-open-icon { --icon-size: 12px; }
+.project-card-close { --icon-size: 14px; }
+
+.civic-expand::after,
+.profile-open-icon::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+/* Ingé+ ouvert : le + devient un − */
+.civic-expand[aria-expanded="true"]::after {
+    opacity: 0;
+}
+
+/* Croix de fermeture */
+.project-card-close::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.project-card-close::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+/* Conteneur en deux colonnes : texte à gauche, boutons à droite */
+.project-details-split {
+    display: flex;
+    align-items: center;          /* centre verticalement les deux blocs */
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 0 1rem 1rem;
+}
+
+/* Bloc texte : centré horizontalement et verticalement dans sa colonne */
+.project-details-text {
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    align-items: center;          /* centre verticalement */
+    justify-content: center;      /* centre horizontalement */
+    text-align: center;           /* texte centré */
+}
+
+.project-details-text p {
+    margin: 0;
+    max-width: 55ch;              /* limite la largeur pour un meilleur rendu */
+}
+
+/* Bloc boutons : empilés à droite */
+.project-document-links-stacked {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: stretch;
+}
+
+.project-document-links-stacked .profile-button {
+    min-width: 160px;
+    min-height: 44px;
+    padding: 0.55rem 1.15rem;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 0.95rem;
 }

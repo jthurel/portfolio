@@ -10,15 +10,16 @@
     <div class="hero-shell">
     <header class="hero">
         <div class="hero-portrait">
-            <img src="photo_acceui.jpg" alt="Portrait of Jules Thurel">
+            <img src="photo_jules_fond_blanc.jpg" alt="Portrait of Jules Thurel">
         </div>
         <div class="hero-copy">
             <p class="hero-eyebrow">Portfolio · ENSEEIHT · 3EA</p>
             <h1>Jules Thurel</h1>
             <p class="hero-focus" data-i18n="h_focus">Engineering student focused on power electronics, embedded systems and autonomous technologies.</p>
             <div class="hero-actions">
-                <a class="profile-button" href="./cv-jules-thurel_Vfinal_anglais.pdf" download data-i18n="cv_en">CV (English)</a>
-                <a class="profile-button" href="./cv-jules-thurel_V6.pdf" download data-i18n="cv_fr">CV (French)</a>
+                <a class="profile-button" href="./CV_Jules_Thurel_QRcode_anglais-3.pdf" download="CV-Jules-Thurel-EN.pdf" data-i18n="cv_en">CV (English)</a>
+                <a class="profile-button" href="./CV_Jules_Thurel_QRcode_francais-3.pdf" download="CV-Jules-Thurel-FR.pdf" data-i18n="cv_fr">CV (French)</a>
+                <a class="profile-button" href="#" data-i18n="pitch_btn">3 min pitch</a>
                 <a class="profile-button profile-button-secondary" href="#contact" data-i18n="contact_me">Contact me</a>
             </div>
         </div>
@@ -33,6 +34,7 @@
     </div>
 
     <div class="section-tabs">
+        <div class="section-tabs-inner">
         <nav aria-label="Section navigation">
             <a href="#welcome" aria-current="location" data-i18n="n_welcome">Welcome</a>
             <a href="#engineering" data-i18n="n_eng">Engineering</a>
@@ -42,6 +44,8 @@
             <a href="#activities" data-i18n="n_act">Activities</a>
             <a href="#contact">Contact</a>
         </nav>
+        <span class="language-switch tabs-language-switch" role="group" aria-label="Select language"><button type="button" data-language-choice="en" aria-label="English" aria-pressed="true">EN</button><button type="button" data-language-choice="fr" aria-label="Français" aria-pressed="false">FR</button></span>
+        </div>
     </div>
 
     <main>
@@ -50,7 +54,6 @@
             <div class="welcome-copy">
                 <p data-i18n="w1">I am 20 years old and I am currently an engineering student at ENSEEIHT (N7) in Toulouse, in the 3EA program (Electrical Energy, Electronics, Automation).</p>
                 <p data-i18n="w2">Driven by a passion for power electronics and autonomous systems, I thrive on designing, simulating, and testing practical circuits. My internship at CERN and a personal Buck converter project during my preparatory studies cemented this ambition.</p>
-                <p data-i18n="w3">I apply my method and my rigor in every field related to electronic design.</p>
             </div>
         </section>
 
@@ -87,24 +90,28 @@
             <div class="projects-container">
                 <article class="project-card">
                     <div class="project-card-heading">
-                        <h4 data-i18n="tipe_t">TIPE · Buck converter</h4>
+                        <h4 data-i18n="tipe_t">TIPE · Closed-loop control of a Buck converter</h4>
                     </div>
                     <div class="project-card-preview">
                         <div class="project-card-image-stage">
                             <div class="slider project-image-slider" data-buck-carousel role="region" aria-label="Images du projet TIPE">
                                 <figure><img data-buck-image src="photo tipe/angle_breadboard.png" alt="Buck converter built on a breadboard"></figure>
                                 <output class="slide-counter" data-buck-counter aria-live="polite" aria-label="Image 1 sur 6">1/6</output>
-                                <button class="carousel-control previous" type="button" data-buck-previous aria-label="Image précédente">&lsaquo;</button>
-                                <button class="carousel-control next" type="button" data-buck-next aria-label="Image suivante">&rsaquo;</button>
+                                <button class="carousel-control previous" type="button" data-buck-previous aria-label="Image précédente"></button>
+                                <button class="carousel-control next" type="button" data-buck-next aria-label="Image suivante"></button>
                             </div>
                         </div>
                         <p class="project-image-caption" data-buck-caption>Breadboard implementation of an analog voltage control loop for a Buck converter.</p>
                     </div>
                     <div class="project-card-details" id="tipe-project-details">
-                        <p data-i18n="tipe_d">A project followed for one year in preparatory class around the design, simulation and testing of a controlled Buck converter, as part of the theme “Cycle and loop”.</p>
-                        <div class="project-document-links">
+                        <div class="project-card-details project-details-split">
+                            <div class="project-details-text">
+                            <p data-i18n="tipe_d">A project followed for one year in preparatory class around the design, simulation and testing of a voltage-controlled Buck converter, as part of the theme “Cycle and loop”.</p>
+                            </div>
+                        <div class="project-document-links project-document-links-stacked">
                             <a class="profile-button" href="./Mcot_30561_vfinal_dot_EN.pdf" data-href-en="./Mcot_30561_vfinal_dot_EN.pdf" data-href-fr="./Mcot_30561_vfinal_dot.pdf" target="_blank" rel="noopener noreferrer" data-i18n="btn_mcot">View the MCOT</a>
                             <a class="profile-button" href="./presentation_TIPE_portfolio.pdf" target="_blank" rel="noopener noreferrer" data-i18n="btn_pres">View the presentation</a>
+                        </div>
                         </div>
                     </div>
                 </article>
@@ -134,8 +141,8 @@
                             <div class="slider project-image-slider" data-tfa-carousel role="region" aria-label="Images du projet TFA">
                                 <figure><img data-tfa-image src="./TFA/photo_TFA.jpg" alt="Transfer function analyser used for the measurements"></figure>
                                 <output class="slide-counter" data-tfa-counter aria-live="polite" aria-label="Image 1 sur 3">1/3</output>
-                                <button class="carousel-control previous" type="button" data-tfa-previous aria-label="Image précédente">&lsaquo;</button>
-                                <button class="carousel-control next" type="button" data-tfa-next aria-label="Image suivante">&rsaquo;</button>
+                                <button class="carousel-control previous" type="button" data-tfa-previous aria-label="Image précédente"></button>
+                                <button class="carousel-control next" type="button" data-tfa-next aria-label="Image suivante"></button>
                             </div>
                         </div>
                         <p class="project-image-caption" data-tfa-caption>Transfer function analyser used to carry out the measurements.</p>
@@ -155,14 +162,14 @@
                     <img src="./logo/7robot_logo.png" alt="Logo 7Robot">
                     <div>
                         <h4>7Robot</h4>
-                        <p data-i18n="club1">Participation in the N7 robotics club, where I contributed to the design and programming of autonomous robots for competitions.</p>
+                        <p data-i18n="club1">Participation in the N7 robotics club, where I will contribute to the design and programming of autonomous robots for Robotic France Cup .</p>
                     </div>
                 </article>
                 <article class="club-card">
                     <img src="./logo/racingteam_logo.jpeg" alt="Logo N7 Racing Team">
                     <div>
                         <h4>Racing Team</h4>
-                        <p data-i18n="club2">Participation in the N7 racing car building club, where I would like to contribute in the implementation and the regulation of the battery systems of the electric car. This clubs brings me the knowledge and experience in different software such as Kicad or Plecs</p>
+                        <p data-i18n="club2">Participation in the N7 racing car building club, where I would like to contribute in the implementation and the regulation of the battery systems of the electric car. This club gives me knowledge and experience in different software such as KiCad or PLECS.</p>
                     </div>
                 </article>
             </div>
@@ -175,8 +182,8 @@
                 I am currently seeking an internship in the field of power electronics, autonomous systems, or embedded systems.
             </p>
             <div class="profile-links">
-                <a class="profile-button" href="./cv-jules-thurel_V6.pdf" download data-i18n="cv_fr">CV (French)</a>
-                <a class="profile-button" href="./cv-jules-thurel_Vfinal_anglais.pdf" download data-i18n="cv_en">CV (English)</a>
+                <a class="profile-button" href="./CV_Jules_Thurel_QRcode_francais-3.pdf" download="CV-Jules-Thurel-FR.pdf" data-i18n="cv_fr">CV (French)</a>
+                <a class="profile-button" href="./CV_Jules_Thurel_QRcode_anglais-3.pdf" download="CV-Jules-Thurel-EN.pdf" data-i18n="cv_en">CV (English)</a>
                 <a class="profile-button" href="https://www.linkedin.com/in/jules-thurel-329495418/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
             <article class="internship-card">
@@ -200,21 +207,21 @@
                             <span class="profile-card-name">Bruno</span>
                             <span class="profile-card-role" data-i18n="role_bruno">Analog and digital electronics engineer</span>
                             <span class="profile-card-meta" data-i18n="exp26">Experience: 26 years of experience</span>
-                            <span class="profile-card-meta" data-i18n="co_bruno">Company: Thalès Alenia Space</span>
+                            <span class="profile-card-meta" data-i18n="co_bruno">Company: Thales Alenia Space</span>
                         </span>
-                        <span class="profile-open-icon" aria-hidden="true">+</span>
+                        <span class="profile-open-icon" aria-hidden="true"></span>
                     </button>
                 </article>
                 <article class="profile-card">
                     <button class="profile-card-trigger" type="button" data-profile-trigger="tony" aria-expanded="false" aria-controls="profile-detail-panel">
                         <img class="profile-card-photo" src="./logo/cropped_avatar_tony.jpg" alt="Portrait of Tony Fourmont">
                         <span class="profile-card-copy">
-                            <span class="profile-card-name">Tony Fourmont</span>
+                            <span class="profile-card-name">Tony</span>
                             <span class="profile-card-role" data-i18n="role_tony">Power electronics engineer</span>
                             <span class="profile-card-meta" data-i18n="exp19">Experience: 19 years of experience</span>
                             <span class="profile-card-meta" data-i18n="co_tony">Company: Safran</span>
                         </span>
-                        <span class="profile-open-icon" aria-hidden="true">+</span>
+                        <span class="profile-open-icon" aria-hidden="true"></span>
                     </button>
                 </article>
                 <article class="profile-card">
@@ -226,14 +233,14 @@
                             <span class="profile-card-meta" data-i18n="exp19">Experience: 19 years of experience</span>
                             <span class="profile-card-meta" data-i18n="co_vincent">Company: ArianeGroup</span>
                         </span>
-                        <span class="profile-open-icon" aria-hidden="true">+</span>
+                        <span class="profile-open-icon" aria-hidden="true"></span>
                     </button>
                 </article>
             </div>
             <aside class="project-card-details profile-detail-panel" id="profile-detail-panel" role="region" aria-labelledby="profile-detail-title" hidden>
                 <div class="project-card-detail-header">
                     <h3 class="project-card-detail-title" id="profile-detail-title"></h3>
-                    <button class="project-card-close" type="button" aria-label="Close profile details">&times;</button>
+                    <button class="project-card-close" type="button" aria-label="Close profile details"></button>
                 </div>
                 <p class="profile-detail-role" id="profile-detail-role"></p>
                 <dl class="profile-detail-meta">
@@ -302,12 +309,23 @@
                     <img src="./logo/ingep_logo.jpeg" alt="Logo Ingé+">
                     <div class="civic-feature-copy">
                         <h3>Ingé+</h3>
-                        <p data-i18n="inge_p1">Ingé+ is a mentoring program that this year brings together 20 INP students around a common mission: supporting BTS students in their path and in their questions about career guidance.</p>
+                        <p data-i18n="inge_p1">Ingé+ is a mentoring program that brings together INP students around a common mission: supporting BTS students in their path and in their questions about career guidance.</p>
                         <div class="civic-feature-details" id="inge-plus-details" hidden>
-                            <p data-i18n="inge_p2">Specifically, each mentor talks with their mentees about once a month, remotely (WhatsApp group, video calls) or in person for the BTS students based in Toulouse, to get to know each other and share advice on subjects, engineering, study paths and companies. The strength of the program is its spirit of mutual support: everyone gives according to their availability, without needing to be an expert, because the essential thing is to be present and to listen. As a mentor, I see in INP+ a concrete form of civic engagement: giving my time, reassuring and guiding those who hesitate, and passing on the desire to continue their studies, in a spirit of solidarity and sharing between students.</p>
+                            <p data-i18n="inge_p2">Specifically, each mentor talks with their mentees about once a month, remotely (WhatsApp group, video calls) or in person for the BTS students based in Toulouse, to get to know each other and share advice on subjects, engineering, study paths and companies. The strength of the program is its spirit of mutual support: everyone gives according to their availability, without needing to be an expert, because the essential thing is to be present and to listen. As a mentor, I see in Ingé+ a concrete form of civic engagement: giving my time, reassuring and guiding those who hesitate, and passing on the desire to continue their studies, in a spirit of solidarity and sharing between students.</p>
                         </div>
                     </div>
-                    <button class="civic-expand" type="button" data-civic-expand aria-expanded="false" aria-controls="inge-plus-details" aria-label="Show the full description of Ingé+">+</button>
+                    <button class="civic-expand" type="button" data-civic-expand aria-expanded="false" aria-controls="inge-plus-details" aria-label="Show the full description of Ingé+"></button>
+                </article>
+                <article class="civic-card civic-feature civic-event">
+                    <img src="./logo/futur_proche_logo.png" alt="Logo Futur Proche">
+                    <div class="civic-feature-copy">
+                        <h3 data-i18n="ev_h">Near Future</h3>
+                        <p data-i18n="ev_p">A day built around two activities, to reflect on the societal and environmental impact of technology:</p>
+                        <ul class="civic-event-list">
+                            <li data-i18n="ev_l1">A conference on the ethics of artificial intelligence</li>
+                            <li data-i18n="ev_l2">The Carbon Guesser game</li>
+                        </ul>
+                    </div>
                 </article>
                 <article class="civic-card">
                     <img src="./logo/proces_kk_logo.jpeg" alt="Visual of The Trial of King Kong">
@@ -329,7 +347,7 @@
 
         <section id="activities">
             <h2 data-i18n="n_act">Activities</h2>
-            <p class="section-subtitle" data-i18n="act_sub">Sports &amp; activities</p>
+            <p class="section-subtitle" data-i18n="act_sub">Sports &amp; hobbies</p>
             <div class="activities-list">
                 <article class="activity-item">
                     <div class="activity-gallery activity-gallery-static">
@@ -366,15 +384,26 @@
         <section id="contact" class="contact-section">
             <h2>Contact</h2>
             <div class="contact-links">
-                <p><strong data-i18n="ct_phone">Telephone:</strong> <a href="tel:+33769740743">07 69 74 07 43</a></p>
-                <p><strong>e-mail:</strong> <a href="mailto:jules.thurel@thurel.fr">jules.thurel@thurel.fr</a></p>
-                <p><a href="https://www.linkedin.com/in/jules-thurel-329495418/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-            </div>
+            <a class="contact-item" href="tel:+33769740743">
+            <img class="contact-icon" src="./logo/tel_logo.png" alt="">
+            <span class="visually-hidden" data-i18n="ct_phone">Telephone:</span>
+            <span>07 69 74 07 43</span>
+        </a>
+            <a class="contact-item" href="mailto:jules.thurel@thurel.fr">
+            <img class="contact-icon" src="./logo/email_logo.png" alt="">
+            <span class="visually-hidden" data-i18n="ct_email">e-mail:</span>
+            <span>jules.thurel@thurel.fr</span>
+        </a>
+            <a class="contact-item" href="https://www.linkedin.com/in/jules-thurel-329495418/" target="_blank" rel="noopener noreferrer">
+            <img class="contact-icon" src="./logo/linkedin_logo.png" alt="">
+            <span>LinkedIn</span>
+            </a>
+        </div>
         </section>
     </main>
 
     <footer>
-        <p>© 2026 Jules Thurel · <a href="mailto:jules.thurel@thurel.fr">jules.thurel@thurel.fr</a></p>
+        <p>© 2026 Jules Thurel </p>
     </footer>
 
     <script>
@@ -391,21 +420,20 @@
             n_civic: `Engagement citoyen`, n_act: `Activités`,
             w1: `J'ai 20 ans et je suis actuellement étudiant ingénieur à l'ENSEEIHT (N7) à Toulouse, dans la filière 3EA (Énergie Électrique, Électronique, Automatique).`,
             w2: `Animé par une passion pour l'électronique de puissance et les systèmes autonomes, j'aime concevoir, simuler et tester des circuits concrets. Mon stage au CERN et un projet personnel de convertisseur Buck pendant mes études en classe préparatoire ont renforcé cette ambition.`,
-            w3: `J'applique ma méthode et ma rigueur dans tous les domaines liés à la conception électronique.`,
             sk: `Compétences`, sk_prog: `Programmation`, sk_sim: `Simulation &amp; calculs`, sk_sys: `Systèmes`,
             sk_soft: `Compétences transversales`, sk_ps: `Résolution de problèmes`,
-            pr: `Projets`, tipe_t: `TIPE · Convertisseur Buck`,
-            tipe_d: `Projet suivi pendant une année en classe préparatoire autour de la conception, de la simulation et des essais d’un convertisseur Buck asservi, dans le cadre du thème « Cycle et boucle ».`,
+            pr: `Projets`, tipe_t: `TIPE · Asservissement d'un convertisseur Buck`,
+            tipe_d: `Projet suivi pendant une année en classe préparatoire autour de la conception, de la simulation et des essais d’un convertisseur Buck asservi analogiquement en tension, dans le cadre du thème « Cycle et boucle ».`,
             btn_mcot: `Consulter le MCOT`, btn_pres: `Voir la présentation`,
             ard_cap: `Prototype Arduino avec capteur ultrasonore monté sur servomoteur.`,
             ard_p1: `Développement d'un radar à balayage autour d'une carte Arduino, d'un capteur ultrasonore et d'un servomoteur. Le servo oriente le capteur, qui relève la distance des objets dans différentes directions.`,
-            ard_p2: `Les mesures sont transmises à un ordinateur pour afficher une représentation du radar en temps réel. Ce prototype permet d'explorer l'acquisition de données, le pilotage d'un servo et la visualisation des mesures. Projet non terminé.`,
+            ard_p2: `Les mesures sont transmises à un ordinateur pour afficher une représentation du radar en temps réel. Ce prototype permet d'explorer l'acquisition de données, le pilotage d'un servo et la visualisation des mesures. Projet en cours.`,
             tfa_p1: `Développement d'un programme Python qui pilote un analyseur de fonction de transfert (TFA) par liaison série. Le programme automatise les mesures et récupère les données de l'appareil.`,
             tfa_p2: `Cette automatisation facilite l'acquisition de mesures répétées et leur exploitation pour étudier la réponse fréquentielle d'un système, notamment dans le cadre de mon projet de convertisseur Buck.`,
             btn_tfa: `Consulter le rapport de stage TFA`,
             clubs_h: `Clubs de l'N7`,
-            club1: `Participation au club de robotique de l'N7, où j'ai contribué à la conception et à la programmation de robots autonomes pour des compétitions.`,
-            club2: `Participation au club de construction de voiture de course de l'N7, où j'aimerais contribuer à la mise en œuvre et à la régulation des systèmes de batteries de la voiture électrique. Ce club m'apporte des connaissances et de l'expérience sur différents logiciels tels que Kicad ou Plecs`,
+            club1: `Participation au club de robotique de l'N7, où je vais contribuer à la conception et à la programmation de robots autonomes pour la Coupe de France de Robotique.`,
+            club2: `Participation au club de construction de voiture de course de l'N7, où j'aimerais contribuer à la mise en œuvre et à la régulation des systèmes de batteries de la voiture électrique. Ce club m'apporte des connaissances et de l'expérience sur différents logiciels tels que KiCad ou PLECS.`,
             car_p: `Je recherche actuellement un stage dans le domaine de l'électronique de puissance, des systèmes autonomes ou des systèmes embarqués.`,
             intern_label: `CERN · 2023 · Stage d'une semaine`, intern_h: `Stage au CERN`,
             intern_p1: `J'ai pris l'initiative de rejoindre une section du CERN spécialisée dans la conception de convertisseurs de puissance pour un stage d'une semaine.`,
@@ -415,7 +443,7 @@
             role_bruno: `Ingénieur en électronique analogique et numérique`, role_tony: `Ingénieur en électronique de puissance`,
             role_vincent: `Technologue et expert en fiabilité électronique et radiations`,
             exp26: `Expérience : 26 ans d'expérience`, exp19: `Expérience : 19 ans d'expérience`,
-            co_bruno: `Entreprise : Thalès Alenia Space`, co_tony: `Entreprise : Safran`, co_vincent: `Entreprise : ArianeGroup`,
+            co_bruno: `Entreprise : Thales Alenia Space`, co_tony: `Entreprise : Safran`, co_vincent: `Entreprise : ArianeGroup`,
             p_exp: `Expérience`, p_co: `Entreprise`,
             mob_lang_h: `Langues`, lang_en: `Anglais`, lang_es: `Espagnol`,
             mob_plan_h: `Semestre ou stage en Europe`,
@@ -427,23 +455,28 @@
             u3: `Génie électrique et technologies de l'information, avec une forte recherche en énergie et en électronique.`,
             cern_h: `Mon stage au CERN`,
             cern_p: `Mon stage au CERN m'a permis de découvrir un environnement professionnel de l'intérieur et de rencontrer des collègues de nationalités différentes. Travailler dans ce cadre international m'a montré la valeur de l'échange de points de vue, de l'adaptation à différentes façons de travailler et de la collaboration entre cultures.`,
-            inge_p1: `Ingé+ est un programme de parrainage qui réunit cette année 20 étudiants de l'INP autour d'une même mission : accompagner des étudiants de BTS dans leur parcours et leurs questionnements sur l'orientation.`,
-            inge_p2: `Concrètement, chaque parrain ou marraine échange environ une fois par mois avec ses filleuls, à distance (groupe WhatsApp, visios) ou en présentiel pour les BTS toulousains, pour faire connaissance, partager des conseils sur les matières, l'ingénierie, les filières et les entreprises. Ce qui fait la force du programme, c'est son esprit d'entraide : chacun donne selon ses disponibilités, sans avoir besoin d'être un expert, car l'essentiel est d'être présent et à l'écoute. En tant que parrain, je vois dans INP+ un engagement citoyen concret : donner de mon temps, rassurer et orienter ceux qui hésitent, et transmettre l'envie de poursuivre ses études, dans une logique de solidarité et de partage entre étudiants.`,
+            inge_p1: `Ingé+ est un programme de parrainage qui réunit des étudiants de l'INP autour d'une même mission : accompagner des étudiants de BTS dans leur parcours et leurs questionnements sur l'orientation.`,
+            inge_p2: `Concrètement, chaque parrain ou marraine échange environ une fois par mois avec ses filleuls, à distance (groupe WhatsApp, visios) ou en présentiel pour les BTS toulousains, pour faire connaissance, partager des conseils sur les matières, l'ingénierie, les filières et les entreprises. Ce qui fait la force du programme, c'est son esprit d'entraide : chacun donne selon ses disponibilités, sans avoir besoin d'être un expert, car l'essentiel est d'être présent et à l'écoute. En tant que parrain, je vois dans Ingé+ un engagement citoyen concret : donner de mon temps, rassurer et orienter ceux qui hésitent, et transmettre l'envie de poursuivre ses études, dans une logique de solidarité et de partage entre étudiants.`,
+            ev_tag: `À venir`, ev_date: `[Date à ajouter]`,
+            ev_h: `Futur proche`,
+            ev_p: `Une journée construite autour de deux activités, pour réfléchir à l'impact sociétal et environnemental des technologies :`,
+            ev_l1: `Une conférence sur l'éthique de l'intelligence artificielle`,
+            ev_l2: `Le jeu Carbon Guesser`,
             kk_h: `Le Procès de King Kong`,
             kk_p: `Participation à une pièce de théâtre interactive autour du harcèlement et des violences sexistes et sexuelles. Une expérience collective pour ouvrir le dialogue sur ces enjeux.`,
             cw_h: `Clean Walk à Toulouse`,
             cw_p: `Participer à une Clean Walk contribue à garder les espaces publics plus propres et à sensibiliser à la réduction des déchets, dans un esprit d’action collective et écologique.`,
             cf_h: `La Fresque du Climat`,
             cf_p: `Atelier collaboratif pour comprendre les causes et les conséquences du changement climatique et échanger autour des leviers d’action.`,
-            act_sub: `Sports &amp; activités`,
-            a1_h: `Club de basketball`,
-            a1_p1: `Pratique du basket-ball en club de 2018-2024. Implication dans la vie associative de mon club.`,
-            a1_p2: `Reprise de l'activité depuis 2026 avec l'AS INP de Toulouse.`,
+            act_sub: `Sports &amp; centres d'intérêt`,
+            a1_h: `Basketball en club`,
+            a1_p1: `Pratique du basket-ball en club de 2018 à 2024, avec une implication dans la vie associative de mon club.`,
+            a1_p2: `Reprise de l'activité en 2026 avec l'AS INP de Toulouse.`,
             a2_h: `Natation et chasse sous-marine`,
             a2_p1: `Pratique de la natation depuis 2012.`,
-            a2_p2: `Pratique de la chasse sous-marine depuis mes 16 ans, respect de l'environnement.`,
+            a2_p2: `Pratique de la chasse sous-marine depuis mes 16 ans, dans le respect de l'environnement.`,
             a3_h: `Voitures RC`,
-            a3_p: `Pratique de la voiture radiocommandée depuis 2015, passion pour l'électronique et la mécanique. Montage de ma propre voiture avec kit en 2019.`,
+            a3_p: `Pratique de la voiture radiocommandée depuis 2015, par passion pour l'électronique et la mécanique. Montage de ma propre voiture à partir d'un kit en 2019.`,
             ct_phone: `Téléphone :`
         };
 
@@ -551,6 +584,9 @@
                 }
             }
         ];
+
+        
+
         const tfaCarousel = document.querySelector("[data-tfa-carousel]");
         const tfaImage = tfaCarousel.querySelector("[data-tfa-image]");
         const tfaCaption = document.querySelector("[data-tfa-caption]");
@@ -632,15 +668,29 @@
             });
         };
 
-        const navigationObserver = new IntersectionObserver((entries) => {
-            const visibleSections = entries
-                .filter((entry) => entry.isIntersecting)
-                .sort((first, second) => second.intersectionRatio - first.intersectionRatio);
-            if (visibleSections.length) setActiveNavigation(visibleSections[0].target);
-        }, { rootMargin: "-20% 0px -68% 0px", threshold: [0, 0.25, 0.5] });
-
-        navigationSections.forEach((section) => navigationObserver.observe(section));
-        setActiveNavigation(navigationSections[0]);
+        const sectionTabs = document.querySelector(".section-tabs");
+        let navigationTicking = false;
+        const updateNavigation = () => {
+            navigationTicking = false;
+            const line = window.innerHeight * 0.3;
+            let current = navigationSections[0];
+            navigationSections.forEach((section) => {
+                if (section.getBoundingClientRect().top <= line) current = section;
+            });
+            if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+                current = navigationSections[navigationSections.length - 1];
+            }
+            setActiveNavigation(current);
+            sectionTabs.classList.toggle("is-stuck", sectionTabs.getBoundingClientRect().top <= 0);
+        };
+        const requestNavigationUpdate = () => {
+            if (navigationTicking) return;
+            navigationTicking = true;
+            requestAnimationFrame(updateNavigation);
+        };
+        window.addEventListener("scroll", requestNavigationUpdate, { passive: true });
+        window.addEventListener("resize", requestNavigationUpdate);
+        updateNavigation();
 
         /* ---------- Ingénieurs inspirants ---------- */
         const profileTriggers = Array.from(document.querySelectorAll("[data-profile-trigger]"));
@@ -654,19 +704,15 @@
         const profileDetails = {
             bruno: {
                 name: "Bruno Crousevial",
-                company: "Thalès Alenia Space",
+                company: "Thales Alenia Space",
                 role: { en: "Analog and digital electronics engineer", fr: "Ingénieur en électronique analogique et numérique" },
                 experience: { en: "26 years of experience", fr: "26 ans d'expérience" },
                 paragraphs: {
                     en: [
-                        "His skills cover the full V-cycle development of a product: he designs electronic boards, interfaces with digital teams (firmware and software), and designs digital circuits on FPGA. This end-to-end command of the development cycle means he can follow a product from the first specifications through to validation, coordinating with the different technical teams involved along the way.",
-                        "In small companies, he learned to be versatile and hands-on, covering the whole design chain, adapting quickly to varied projects, and taking on broad responsibilities. In a large group like Thales, he now works within structured, large-scale industrial programs, with rigorous processes and cross-functional teams.",
-                        "What I find interesting about his career path is precisely this combination: the agility and breadth acquired in SMEs, paired with the rigor and scale of a major group. It's the kind of profile that can both design a board down to the smallest detail and navigate the complex organization of a large industrial player — a real asset in electronics, where practical know-how and structured methodology matter equally. His career illustrates how experience in small structures and in a global group can complement each other rather than oppose each other."
+                        "He covers the full V-cycle of a product: electronic board design, interface with firmware and software teams, and FPGA design. Having worked in both SMEs and a large group like Thales, he combines versatility and agility with industrial rigor, which I find a real asset in electronics. My conversation with him gave me a better sense of an electronics engineer's work and let me compare his personal experience in large and small companies. In the SME where he worked for 16 years, he had a wider variety of tasks and more responsibility on his projects. It is this versatility in the engineering profession that appeals to me."
                     ],
                     fr: [
-                        "Ses compétences couvrent le développement complet d'un produit en cycle en V : il conçoit des cartes électroniques, assure l'interface avec les équipes numériques (firmware et logiciel) et conçoit des circuits numériques sur FPGA. Cette maîtrise de bout en bout du cycle de développement lui permet de suivre un produit depuis les premières spécifications jusqu'à la validation, en coordonnant les différentes équipes techniques impliquées tout au long du processus.",
-                        "Dans les petites entreprises, il a appris à être polyvalent et pragmatique, à couvrir toute la chaîne de conception, à s'adapter rapidement à des projets variés et à assumer de larges responsabilités. Dans un grand groupe comme Thales, il travaille désormais au sein de programmes industriels structurés et de grande envergure, avec des processus rigoureux et des équipes transverses.",
-                        "Ce que je trouve intéressant dans son parcours, c'est précisément cette combinaison : l'agilité et la polyvalence acquises en PME, associées à la rigueur et à l'échelle d'un grand groupe. C'est le genre de profil capable à la fois de concevoir une carte dans les moindres détails et de s'orienter dans l'organisation complexe d'un grand acteur industriel — un véritable atout en électronique, où le savoir-faire pratique et la méthodologie structurée comptent autant l'un que l'autre. Son parcours illustre comment l'expérience dans de petites structures et dans un groupe mondial peuvent se compléter plutôt que s'opposer."
+                        "Il maîtrise tout le cycle en V d’un produit : conception de cartes électroniques, interface avec les équipes firmware et logiciel, et conception FPGA. Passé par des PME puis par un grand groupe comme Thales, il allie polyvalence et rigueur industrielle, ce que je trouve être un vrai atout en électronique. Mon échange avec lui m’a permis de mieux me rendre compte du travail d’un ingénieur en électronique et de comparer ses expériences personnelles entre grandes et petites entreprises. En effet, dans la PME où il a travaillé pendant 16 ans, il avait des tâches plus variées et davantage de responsabilités sur ses projets. C’est cette polyvalence dans le métier d’ingénieur qui m’attire."
                     ]
                 }
             },
@@ -678,31 +724,29 @@
                 paragraphs: {
                     en: [
                         "He designs low- and medium-power converters for aeronautical applications. His work covers the full design chain, from defining power supply architectures and simulating converters (DC/DC, AC/DC) to PCB layout, prototyping, and technical documentation, as well as providing industrial support during series production.",
-                        "What I find fascinating about his job is that it sits at the crossroads of rigorous engineering and real-world applications: every converter he designs must meet strict client specifications and perform reliably in the demanding environment of aircraft. It's a field where precision, creative design, and hands-on prototyping come together. His background, from a Bac F3 in electrotechnics to a DESS in power electronics, reflects a genuine, long-standing passion for the discipline."
+                        "What I find fascinating about his job is that it sits at the crossroads of rigorous engineering and real-world applications: every converter he designs must meet strict client specifications and perform reliably in the demanding environment of aircraft. It's a field where precision, creative design, and hands-on prototyping come together. I particularly enjoyed discussing his work with him, since the work I did for my TIPE closely resembles the day-to-day tasks he has to carry out."
                     ],
                     fr: [
                         "Il conçoit des convertisseurs de faible et moyenne puissance pour des applications aéronautiques. Son travail couvre toute la chaîne de conception, de la définition des architectures d'alimentation et de la simulation des convertisseurs (DC/DC, AC/DC) jusqu'au routage de PCB, au prototypage et à la documentation technique, ainsi qu'au support industriel pendant la production en série.",
-                        "Ce que je trouve fascinant dans son métier, c'est qu'il se situe au croisement d'une ingénierie rigoureuse et d'applications concrètes : chaque convertisseur qu'il conçoit doit répondre à des spécifications clients strictes et fonctionner de manière fiable dans l'environnement exigeant d'un avion. C'est un domaine où précision, conception créative et prototypage pratique se rejoignent. Son parcours, d'un Bac F3 en électrotechnique à un DESS en électronique de puissance, reflète une passion sincère et ancienne pour la discipline."
+                        "Ce que je trouve fascinant dans son métier, c'est qu'il se situe au croisement d'une ingénierie rigoureuse et d'applications concrètes : chaque convertisseur qu'il conçoit doit répondre à des spécifications clients strictes et fonctionner de manière fiable dans l'environnement exigeant d'un avion. C'est un domaine où précision, conception créative et prototypage pratique se rejoignent. J'ai particulièrement apprécié discuter avec lui de son métier, car le travail que j'ai effectué pour mon TIPE ressemble fortement aux tâches quotidiennes qu'il doit réaliser."
                     ]
                 }
             },
             vincent: {
                 name: "Vincent Rouet",
-                company: "ArianeGroup",
+                company: "ArianeGroup (2years), VITEC MULTIMEDIA (3years), Airbus Group Innovations (14 years)",
                 role: { en: "Technologist and expert in electronic reliability and radiation", fr: "Technologue et expert en fiabilité électronique et radiations" },
                 experience: { en: "19 years of experience", fr: "19 ans d'expérience" },
                 paragraphs: {
                     en: [
-                        "Vincent is a component technologist (EEE and assembly) and an expert in radiation effects and electronics reliability at ArianeGroup SAS, where he also heads the technologists' department. His core mission is to ensure the reliability and quality of electronic equipment, guaranteeing optimal operation under the specific conditions of each mission.",
-                        "His responsibilities span several key areas: defining technical requirements for materials and processes to prove the durability of electronic designs in mission environments; supporting design offices in managing embedded technologies; analyzing technological risks for electronic products and sub-assemblies, particularly COTS (commercial off-the-shelf) components, to assess risk and technology maturity; reviewing technical files from the design stage and analyzing technological choices against requirements; supporting the supply chain for subcontracted products throughout the product life cycle; inspecting boards and electronic sub-assemblies according to standards; carrying out technological and process surveys at subcontractors and analyzing each manufacturing step; contributing to anomaly resolution in production and operations; and participating in quality alerts and technology obsolescence notices.",
-                        "Before joining ArianeGroup, he spent 14 years at Airbus Group Innovations as a research engineer in electronics reliability and head of the electronics assembly and integration reliability department. He also spent three years at VITEC MULTIMEDIA as an electronics and computer engineer in a design office.",
-                        "What I find fascinating about his work is that it sits at the heart of space and aeronautics, where a single component failure can jeopardize an entire mission. His role combines deep technical expertise in radiation effects, reliability, and COTS risk analysis with a broad vision of the product life cycle, from design to supply chain and production. Rigor, curiosity, and a thorough understanding of materials and processes help ensure that equipment survives the extreme conditions of space."
+                        "Vincent is a component technologist (EEE and assembly) and an expert in radiation effects and electronics reliability at ArianeGroup, where he also heads the technologists' department. His core mission is to ensure the reliability and quality of electronic equipment, guaranteeing optimal operation under the specific conditions of each mission.",
+                        "His responsibilities span several key areas: defining technical requirements for materials and processes to prove the durability of electronic designs in mission environments; analyzing the technological risks of electronic products and sub-assemblies to assess risk and technology maturity; reviewing technical files from the design stage and analyzing technological choices against requirements; inspecting electronic boards and sub-assemblies according to standards; contributing to anomaly resolution in production and operations; and taking part in quality alerts and technology obsolescence notices. All of this comes with an expert eye on radiation-tolerance issues.",,
+                        "What I find fascinating about his work is that it sits at the heart of space and aeronautics, where a single component failure can jeopardize an entire mission. His rigor, curiosity, and thorough understanding of materials and processes help ensure that equipment survives the extreme conditions of space."
                     ],
                     fr: [
-                        "Vincent est technologue composants (EEE et assemblage) et expert des effets des radiations et de la fiabilité électronique chez ArianeGroup SAS, où il dirige également le département des technologues. Sa mission principale est d'assurer la fiabilité et la qualité des équipements électroniques, en garantissant un fonctionnement optimal dans les conditions spécifiques de chaque mission.",
-                        "Ses responsabilités couvrent plusieurs domaines clés : définir les exigences techniques sur les matériaux et les procédés afin de prouver la durabilité des conceptions électroniques dans les environnements de mission ; accompagner les bureaux d'études dans la gestion des technologies embarquées ; analyser les risques technologiques des produits et sous-ensembles électroniques, notamment les composants COTS (commercial off-the-shelf), pour évaluer le risque et la maturité technologique ; examiner les dossiers techniques dès la conception et analyser les choix technologiques par rapport aux exigences ; accompagner la chaîne d'approvisionnement des produits sous-traités tout au long du cycle de vie ; inspecter les cartes et sous-ensembles électroniques selon les normes ; réaliser des audits technologiques et de procédés chez les sous-traitants et analyser chaque étape de fabrication ; contribuer à la résolution d'anomalies en production et en exploitation ; et participer aux alertes qualité et aux avis d'obsolescence technologique.",
-                        "Avant de rejoindre ArianeGroup, il a passé 14 ans chez Airbus Group Innovations comme ingénieur de recherche en fiabilité électronique et responsable du département fiabilité de l'assemblage et de l'intégration électroniques. Il a également passé trois ans chez VITEC MULTIMEDIA comme ingénieur en électronique et informatique dans un bureau d'études.",
-                        "Ce que je trouve fascinant dans son travail, c'est qu'il se situe au cœur du spatial et de l'aéronautique, où la défaillance d'un seul composant peut compromettre toute une mission. Son rôle associe une expertise technique pointue en effets des radiations, en fiabilité et en analyse de risques COTS à une vision large du cycle de vie du produit, de la conception à la chaîne d'approvisionnement et à la production. La rigueur, la curiosité et une compréhension approfondie des matériaux et des procédés contribuent à garantir que les équipements survivent aux conditions extrêmes de l'espace."
+                        "Vincent est technologue composants (EEE et assemblage) et expert des effets des radiations et de la fiabilité électronique chez ArianeGroup, où il dirige également le département des technologues. Sa mission principale est d'assurer la fiabilité et la qualité des équipements électroniques, en garantissant un fonctionnement optimal dans les conditions spécifiques de chaque mission.",
+                        "Ses responsabilités couvrent plusieurs domaines clés : définir les exigences techniques sur les matériaux et les procédés afin de prouver la durabilité des conceptions électroniques dans les environnements de mission ; analyser les risques technologiques des produits et sous-ensembles électroniques, pour évaluer le risque et la maturité technologique ; examiner les dossiers techniques dès la conception et analyser les choix technologiques par rapport aux exigences ; inspecter les cartes et sous-ensembles électroniques selon les normes ; contribuer à la résolution d'anomalies en production et en exploitation ; et participer aux alertes qualité et aux avis d'obsolescence technologique. Tout cela s'accompagne d'un regard d'expert sur les problèmes de tolérance aux radiations.",
+                        "Ce que je trouve fascinant dans son travail, c'est qu'il se situe au cœur du spatial et de l'aéronautique, où la défaillance d'un seul composant peut compromettre toute une mission. Sa rigueur, sa curiosité et sa compréhension approfondie des matériaux et des procédés contribuent à garantir que les équipements survivent aux conditions extrêmes de l'espace."
                     ]
                 }
             }
@@ -756,7 +800,6 @@
             const isExpanded = civicExpand.getAttribute("aria-expanded") === "true";
             civicDetails.hidden = isExpanded;
             civicExpand.setAttribute("aria-expanded", String(!isExpanded));
-            civicExpand.textContent = isExpanded ? "+" : "−";
             refreshCivicLabel();
         });
 
