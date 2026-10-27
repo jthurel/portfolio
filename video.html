@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jules Thurel - Presentation video</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="video-page">
+    <div class="video-topbar">
+        <a class="profile-button" href="./index.html" id="back-link">← Go back to portfolio</a>
+        <span class="language-switch" role="group" aria-label="Select language">
+            <button type="button" data-language-choice="en" aria-pressed="true">EN</button>
+            <button type="button" data-language-choice="fr" aria-pressed="false">FR</button>
+        </span>
+    </div>
+
+    <main class="video-main">
+        <h1 id="video-title">Presentation video</h1>
+        <video controls autoplay playsinline preload="metadata">
+            <source src="./thurel_jules_pitch.mp4" type="video/mp4">
+        </video>
+    </main>
+
+    <script>
+        const text = {
+            en: { back: "← Go back to portfolio", title: "Presentation video" },
+            fr: { back: "← Retour au portfolio", title: "Vidéo de présentation" }
+        };
+        const choices = document.querySelectorAll("[data-language-choice]");
+        const setLanguage = (lang) => {
+            document.documentElement.lang = lang;
+            document.getElementById("back-link").textContent = text[lang].back;
+            document.getElementById("video-title").textContent = text[lang].title;
+            choices.forEach((c) => c.setAttribute("aria-pressed", String(c.dataset.languageChoice === lang)));
+            try { localStorage.setItem("portfolio-language", lang); } catch (e) {}
+        };
+        choices.forEach((c) => c.addEventListener("click", () => setLanguage(c.dataset.languageChoice)));
+        let lang = "en";
+        try { lang = localStorage.getItem("portfolio-language") === "fr" ? "fr" : "en"; } catch (e) {}
+        setLanguage(lang);
+    </script>
+</body>
+</html>
